@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.0)
 project(opencvtest)
 
 # Set the path to the OpenCV build directory
-set(OpenCV_DIR ${CMAKE_CURRENT_SOURCE_DIR}/../../../cpp_lib)
+set(OpenCV_DIR ${CMAKE_CURRENT_SOURCE_DIR}/../../cpp_lib/build)
 
 find_package(OpenCV REQUIRED)
 # Include OpenCV headers
