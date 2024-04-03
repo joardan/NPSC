@@ -78,7 +78,7 @@ int main(int argc, char** argv )
         }
 
         // Draw rectangle
-        cv::rectangle(thresh, boundingRect, BGR, 5);
+        cv::rectangle(thresh, boundingRect, BGR, 1);
     }
 
 
