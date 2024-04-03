@@ -69,28 +69,28 @@ include CMakeFiles/Image_processing.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Image_processing.dir/flags.make
 
-CMakeFiles/Image_processing.dir/image_processing.cpp.o: CMakeFiles/Image_processing.dir/flags.make
-CMakeFiles/Image_processing.dir/image_processing.cpp.o: ../image_processing.cpp
-CMakeFiles/Image_processing.dir/image_processing.cpp.o: CMakeFiles/Image_processing.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/joardan/Harddisk/Project/NPSC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Image_processing.dir/image_processing.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Image_processing.dir/image_processing.cpp.o -MF CMakeFiles/Image_processing.dir/image_processing.cpp.o.d -o CMakeFiles/Image_processing.dir/image_processing.cpp.o -c /media/joardan/Harddisk/Project/NPSC/image_processing.cpp
+CMakeFiles/Image_processing.dir/multi_numbers_processing.cpp.o: CMakeFiles/Image_processing.dir/flags.make
+CMakeFiles/Image_processing.dir/multi_numbers_processing.cpp.o: ../multi_numbers_processing.cpp
+CMakeFiles/Image_processing.dir/multi_numbers_processing.cpp.o: CMakeFiles/Image_processing.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/joardan/Harddisk/Project/NPSC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Image_processing.dir/multi_numbers_processing.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Image_processing.dir/multi_numbers_processing.cpp.o -MF CMakeFiles/Image_processing.dir/multi_numbers_processing.cpp.o.d -o CMakeFiles/Image_processing.dir/multi_numbers_processing.cpp.o -c /media/joardan/Harddisk/Project/NPSC/multi_numbers_processing.cpp
 
-CMakeFiles/Image_processing.dir/image_processing.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Image_processing.dir/image_processing.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/joardan/Harddisk/Project/NPSC/image_processing.cpp > CMakeFiles/Image_processing.dir/image_processing.cpp.i
+CMakeFiles/Image_processing.dir/multi_numbers_processing.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Image_processing.dir/multi_numbers_processing.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/joardan/Harddisk/Project/NPSC/multi_numbers_processing.cpp > CMakeFiles/Image_processing.dir/multi_numbers_processing.cpp.i
 
-CMakeFiles/Image_processing.dir/image_processing.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Image_processing.dir/image_processing.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/joardan/Harddisk/Project/NPSC/image_processing.cpp -o CMakeFiles/Image_processing.dir/image_processing.cpp.s
+CMakeFiles/Image_processing.dir/multi_numbers_processing.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Image_processing.dir/multi_numbers_processing.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/joardan/Harddisk/Project/NPSC/multi_numbers_processing.cpp -o CMakeFiles/Image_processing.dir/multi_numbers_processing.cpp.s
 
 # Object files for target Image_processing
 Image_processing_OBJECTS = \
-"CMakeFiles/Image_processing.dir/image_processing.cpp.o"
+"CMakeFiles/Image_processing.dir/multi_numbers_processing.cpp.o"
 
 # External object files for target Image_processing
 Image_processing_EXTERNAL_OBJECTS =
 
-Image_processing: CMakeFiles/Image_processing.dir/image_processing.cpp.o
+Image_processing: CMakeFiles/Image_processing.dir/multi_numbers_processing.cpp.o
 Image_processing: CMakeFiles/Image_processing.dir/build.make
 Image_processing: /media/joardan/Harddisk/cpp_lib/build/lib/libopencv_gapi.so.4.9.0
 Image_processing: /media/joardan/Harddisk/cpp_lib/build/lib/libopencv_highgui.so.4.9.0

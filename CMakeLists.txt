@@ -15,7 +15,7 @@ include_directories(${OpenCV_INCLUDE_DIRS} )
 # Include Eigen headers
 include_directories(${EIGEN_DIR})
 
-add_executable(Image_processing image_processing.cpp)
+add_executable(Image_processing multi_numbers_processing.cpp)
 
 # Link against OpenCV libraries
 target_link_libraries(Image_processing ${OpenCV_LIBS})

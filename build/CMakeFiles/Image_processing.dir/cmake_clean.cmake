@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Image_processing.dir/image_processing.cpp.o"
-  "CMakeFiles/Image_processing.dir/image_processing.cpp.o.d"
+  "CMakeFiles/Image_processing.dir/multi_numbers_processing.cpp.o"
+  "CMakeFiles/Image_processing.dir/multi_numbers_processing.cpp.o.d"
   "Image_processing"
   "Image_processing.pdb"
 )

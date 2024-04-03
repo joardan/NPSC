@@ -129,29 +129,29 @@ Image_processing/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Image_processing.dir/build.make CMakeFiles/Image_processing.dir/build
 .PHONY : Image_processing/fast
 
-image_processing.o: image_processing.cpp.o
-.PHONY : image_processing.o
+multi_numbers_processing.o: multi_numbers_processing.cpp.o
+.PHONY : multi_numbers_processing.o
 
 # target to build an object file
-image_processing.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Image_processing.dir/build.make CMakeFiles/Image_processing.dir/image_processing.cpp.o
-.PHONY : image_processing.cpp.o
+multi_numbers_processing.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Image_processing.dir/build.make CMakeFiles/Image_processing.dir/multi_numbers_processing.cpp.o
+.PHONY : multi_numbers_processing.cpp.o
 
-image_processing.i: image_processing.cpp.i
-.PHONY : image_processing.i
+multi_numbers_processing.i: multi_numbers_processing.cpp.i
+.PHONY : multi_numbers_processing.i
 
 # target to preprocess a source file
-image_processing.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Image_processing.dir/build.make CMakeFiles/Image_processing.dir/image_processing.cpp.i
-.PHONY : image_processing.cpp.i
+multi_numbers_processing.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Image_processing.dir/build.make CMakeFiles/Image_processing.dir/multi_numbers_processing.cpp.i
+.PHONY : multi_numbers_processing.cpp.i
 
-image_processing.s: image_processing.cpp.s
-.PHONY : image_processing.s
+multi_numbers_processing.s: multi_numbers_processing.cpp.s
+.PHONY : multi_numbers_processing.s
 
 # target to generate assembly for a file
-image_processing.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Image_processing.dir/build.make CMakeFiles/Image_processing.dir/image_processing.cpp.s
-.PHONY : image_processing.cpp.s
+multi_numbers_processing.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Image_processing.dir/build.make CMakeFiles/Image_processing.dir/multi_numbers_processing.cpp.s
+.PHONY : multi_numbers_processing.cpp.s
 
 # Help Target
 help:
@@ -162,9 +162,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Image_processing"
-	@echo "... image_processing.o"
-	@echo "... image_processing.i"
-	@echo "... image_processing.s"
+	@echo "... multi_numbers_processing.o"
+	@echo "... multi_numbers_processing.i"
+	@echo "... multi_numbers_processing.s"
 .PHONY : help
 
 
