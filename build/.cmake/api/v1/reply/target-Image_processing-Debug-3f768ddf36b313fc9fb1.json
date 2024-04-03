@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "opencvtest"
+			"path" : "Image_processing"
 		}
 	],
 	"backtrace" : 1,
@@ -162,7 +162,7 @@
 			]
 		}
 	],
-	"id" : "opencvtest::@6890427a1f51a3e7e1df",
+	"id" : "Image_processing::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -172,7 +172,7 @@
 				"role" : "flags"
 			},
 			{
-				"fragment" : "-rdynamic",
+				"fragment" : "",
 				"role" : "flags"
 			},
 			{
@@ -257,8 +257,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "opencvtest",
-	"nameOnDisk" : "opencvtest",
+	"name" : "Image_processing",
+	"nameOnDisk" : "Image_processing",
 	"paths" : 
 	{
 		"build" : ".",
@@ -279,7 +279,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "opencvtest.cpp",
+			"path" : "image_processing.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

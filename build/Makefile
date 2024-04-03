@@ -117,41 +117,41 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named opencvtest
+# Target rules for targets named Image_processing
 
 # Build rule for target.
-opencvtest: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 opencvtest
-.PHONY : opencvtest
+Image_processing: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Image_processing
+.PHONY : Image_processing
 
 # fast build rule for target.
-opencvtest/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencvtest.dir/build.make CMakeFiles/opencvtest.dir/build
-.PHONY : opencvtest/fast
+Image_processing/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Image_processing.dir/build.make CMakeFiles/Image_processing.dir/build
+.PHONY : Image_processing/fast
 
-opencvtest.o: opencvtest.cpp.o
-.PHONY : opencvtest.o
+image_processing.o: image_processing.cpp.o
+.PHONY : image_processing.o
 
 # target to build an object file
-opencvtest.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencvtest.dir/build.make CMakeFiles/opencvtest.dir/opencvtest.cpp.o
-.PHONY : opencvtest.cpp.o
+image_processing.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Image_processing.dir/build.make CMakeFiles/Image_processing.dir/image_processing.cpp.o
+.PHONY : image_processing.cpp.o
 
-opencvtest.i: opencvtest.cpp.i
-.PHONY : opencvtest.i
+image_processing.i: image_processing.cpp.i
+.PHONY : image_processing.i
 
 # target to preprocess a source file
-opencvtest.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencvtest.dir/build.make CMakeFiles/opencvtest.dir/opencvtest.cpp.i
-.PHONY : opencvtest.cpp.i
+image_processing.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Image_processing.dir/build.make CMakeFiles/Image_processing.dir/image_processing.cpp.i
+.PHONY : image_processing.cpp.i
 
-opencvtest.s: opencvtest.cpp.s
-.PHONY : opencvtest.s
+image_processing.s: image_processing.cpp.s
+.PHONY : image_processing.s
 
 # target to generate assembly for a file
-opencvtest.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencvtest.dir/build.make CMakeFiles/opencvtest.dir/opencvtest.cpp.s
-.PHONY : opencvtest.cpp.s
+image_processing.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Image_processing.dir/build.make CMakeFiles/Image_processing.dir/image_processing.cpp.s
+.PHONY : image_processing.cpp.s
 
 # Help Target
 help:
@@ -161,10 +161,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... opencvtest"
-	@echo "... opencvtest.o"
-	@echo "... opencvtest.i"
-	@echo "... opencvtest.s"
+	@echo "... Image_processing"
+	@echo "... image_processing.o"
+	@echo "... image_processing.i"
+	@echo "... image_processing.s"
 .PHONY : help
 
 

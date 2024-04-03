@@ -1,3 +1,3 @@
-/media/joardan/Harddisk/Project/NPSC/build/CMakeFiles/opencvtest.dir
+/media/joardan/Harddisk/Project/NPSC/build/CMakeFiles/Image_processing.dir
 /media/joardan/Harddisk/Project/NPSC/build/CMakeFiles/edit_cache.dir
 /media/joardan/Harddisk/Project/NPSC/build/CMakeFiles/rebuild_cache.dir

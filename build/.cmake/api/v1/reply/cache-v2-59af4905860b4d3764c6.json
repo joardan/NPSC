@@ -835,7 +835,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "opencvtest"
+			"value" : "Image_processing"
 		},
 		{
 			"name" : "CMAKE_RANLIB",
@@ -1118,6 +1118,18 @@
 			"value" : "FALSE"
 		},
 		{
+			"name" : "Eigen3_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "The directory containing a CMake configuration file for Eigen3."
+				}
+			],
+			"type" : "PATH",
+			"value" : "Eigen3_DIR-NOTFOUND"
+		},
+		{
 			"name" : "FIND_PACKAGE_MESSAGE_DETAILS_OpenCV",
 			"properties" : 
 			[
@@ -1128,6 +1140,42 @@
 			],
 			"type" : "INTERNAL",
 			"value" : "[/media/joardan/Harddisk/cpp_lib/build][v4.9.0()]"
+		},
+		{
+			"name" : "Image_processing_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/media/joardan/Harddisk/Project/NPSC/build"
+		},
+		{
+			"name" : "Image_processing_IS_TOP_LEVEL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "ON"
+		},
+		{
+			"name" : "Image_processing_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/media/joardan/Harddisk/Project/NPSC"
 		},
 		{
 			"name" : "opencvtest_BINARY_DIR",
