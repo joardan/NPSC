@@ -37,47 +37,57 @@ int main(int argc, char** argv )
     std::vector<std::vector<cv::Point>> contour;
     cv::findContours(thresh, contour, cv::RETR_EXTERNAL, cv::CHAIN_APPROX_SIMPLE);
 
-    // Find the contour with the largest area
-    double maxArea = 0;
-    int maxAreaIdx = -1;
+    // Find big areas using average where it's likely to be a number
+    std::vector<int> idx;
+    double avgArea = 0;
+    double sumArea = 0;
     for (size_t i = 0; i < contour.size(); ++i)
     {
+        sumArea += cv::contourArea(contour[i])
+    }
+    avgArea = sumArea / contour.size()
+    for (i = 0; i < contour.size(); ++i)
+    {
         double area = cv::contourArea(contour[i]);
-        if (area > maxArea)
+        if (area > avgArea)
         {
-            maxArea = area;
-            maxAreaIdx = i;
+            idx.push_back(area);
         }
     }
 
+    
+
     // Create a rectangle boundary
-    cv::Rect boundingRect;
-    if (maxAreaIdx >= 0)
+    std::vector<cv::Rect> boundingRects;
+    if (idx.size() > 0)
     {
-        boundingRect = cv::boundingRect(contour[maxAreaIdx]);
-        cv::Scalar intensity(100);
-
-        // Set Margin of the boundary to crop the image, done to make sure there's white space around the number just like MNIST
-        int margin = 10;
-
-        // Expand the bounding rectangle by adding the margin, then bound it in a square before recentre again
-        if (boundingRect.width > boundingRect.height)
+        for (size_t i = 0; i < contour.size(); ++i)
         {
-            boundingRect.y -= 2 * margin;
-            boundingRect.x -= margin;
-            boundingRect.width += 2 * margin;
-            boundingRect.height = boundingRect.width;
-        }
-        else
-        {
-            boundingRect.x -= 2 * margin;
-            boundingRect.y -= margin;
-            boundingRect.height += 2 * margin;
-            boundingRect.width = boundingRect.height;
-        }
+            boundingRects.push_back(cv::boundingRect(contour[maxAreaIdx]));
+            cv::Scalar intensity(100);
 
-        // Draw rectangle
-        cv::rectangle(thresh, boundingRect, intensity, 1);
+            // Set Margin of the boundary to crop the image, done to make sure there's white space around the number just like MNIST
+            int margin = 10;
+
+            // Expand the bounding rectangle by adding the margin, then bound it in a square before recentre again
+            if (boundingRects[i].width > boundingRects[i].height)
+            {
+                boundingRects[i].y -= 2 * margin;
+                boundingRects[i].x -= margin;
+                boundingRects[i].width += 2 * margin;
+                boundingRects[i].height = boundingRects[i].width;
+            }
+            else
+            {
+                boundingRects[i].x -= 2 * margin;
+                boundingRects[i].y -= margin;
+                boundingRects[i].height += 2 * margin;
+                boundingRects[i].width = boundingRects[i].height;
+            }
+
+            // Draw rectangle
+            cv::rectangle(thresh, boundingRects[i], intensity, 1);
+        }
     }
 
 
