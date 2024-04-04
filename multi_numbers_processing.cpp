@@ -34,28 +34,31 @@ int main(int argc, char** argv )
     cv::threshold(image, thresh, 127, 255, cv::THRESH_BINARY_INV);
 
     // Find contour to narrow down the image
-    std::vector<std::vector<cv::Point>> contour;
-    cv::findContours(thresh, contour, cv::RETR_EXTERNAL, cv::CHAIN_APPROX_SIMPLE);
+    std::vector<std::vector<cv::Point>> contours;
+    cv::findContours(thresh, contours, cv::RETR_EXTERNAL, cv::CHAIN_APPROX_SIMPLE);
 
-    // Find big areas using average where it's likely to be a number
+    //_ Find big areas that are larger than average where it's likely to be a number_____
     std::vector<int> idx;
     double avgArea = 0;
     double sumArea = 0;
-    for (size_t i = 0; i < contour.size(); ++i)
+    for (const auto& contour : contours)
     {
-        sumArea += cv::contourArea(contour[i]);
+        sumArea += cv::contourArea(contour);
     }
-    avgArea = sumArea / contour.size();
-    for (size_t i = 0; i < contour.size(); ++i)
+
+    avgArea = sumArea / (1.5*contours.size());
+
+    // Defined contourSize to optomise loop
+    auto contourSize {contours.size()};
+    for (auto i {0}; i < contourSize; ++i)
     {
-        double area = cv::contourArea(contour[i]);
+        double area = cv::contourArea(contours[i]);
         if (area > avgArea)
         {
             idx.push_back(i);
         }
     }
-
-    
+    //___________________________________________________________________________________
 
     // Create a rectangle boundary
     std::vector<cv::Rect> boundingRects;
@@ -63,32 +66,33 @@ int main(int argc, char** argv )
     {
         cv::Scalar intensity(100);
         // Set Margin of the boundary to crop the image, done to make sure there's white space around the number just like MNIST
-        int margin = 10;
-        std::cout << "goes in\n";
-        for (size_t i = 0; i < idx.size(); ++i)
+        auto margin = 10;
+        auto difference = 0;
+        for (auto i = 0; i < idx.size(); ++i)
         {
-            boundingRects.push_back(cv::boundingRect(contour[idx[i]]));
+            boundingRects.push_back(cv::boundingRect(contours[idx[i]]));
 
             // Expand the bounding rectangle by adding the margin, then bound it in a square before recentre again
             if (boundingRects[i].width > boundingRects[i].height)
             {
-                boundingRects[i].y -= 2 * margin;
+                difference = boundingRects[i].width - boundingRects[i].height;
                 boundingRects[i].x -= margin;
                 boundingRects[i].width += 2 * margin;
                 boundingRects[i].height = boundingRects[i].width;
+                boundingRects[i].y -= margin + (difference / 2);
             }
             else
             {
-                boundingRects[i].x -= 2 * margin;
+                difference = boundingRects[i].height - boundingRects[i].width;
                 boundingRects[i].y -= margin;
                 boundingRects[i].height += 2 * margin;
                 boundingRects[i].width = boundingRects[i].height;
+                boundingRects[i].x -= margin + (difference / 2);
             }
 
             // Draw rectangle
             cv::rectangle(thresh, boundingRects[i], intensity, 1);
 
-            std::cout << "made rect\n";
             // .........................................................Delete later
             cv::namedWindow("Display Image1", cv::WINDOW_KEEPRATIO );
             cv::imshow("Display Image1", thresh);
