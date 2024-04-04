@@ -133,7 +133,7 @@ int main(int argc, char** argv )
         resize(imgs[i], imgs[i], targetSize);
     }
 
-    // Display Image
+    // Display Images
     for (size_t i = 0; i < idx.size(); ++i)
     {
         cv::namedWindow("Display Image3", cv::WINDOW_KEEPRATIO );
