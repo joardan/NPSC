@@ -1,0 +1,4 @@
+/usr/bin/appimage
+/usr/bin/numbers.jpg
+/usr/share/applications/qtquickapp.desktop
+/usr/share/icons/hicolor/128x128/apps/qtquickapp.png

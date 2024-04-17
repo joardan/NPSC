@@ -85,6 +85,51 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+.PHONY : list_install_components/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
+
 # The main all target
 all: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /media/joardan/Harddisk/Project/NPSC/build/CMakeFiles /media/joardan/Harddisk/Project/NPSC/build//CMakeFiles/progress.marks
@@ -117,41 +162,41 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Image_processing
+# Target rules for targets named appimage
 
 # Build rule for target.
-Image_processing: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Image_processing
-.PHONY : Image_processing
+appimage: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 appimage
+.PHONY : appimage
 
 # fast build rule for target.
-Image_processing/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Image_processing.dir/build.make CMakeFiles/Image_processing.dir/build
-.PHONY : Image_processing/fast
+appimage/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/build
+.PHONY : appimage/fast
 
-multi_numbers_processing.o: multi_numbers_processing.cpp.o
-.PHONY : multi_numbers_processing.o
+test_appimage.o: test_appimage.cpp.o
+.PHONY : test_appimage.o
 
 # target to build an object file
-multi_numbers_processing.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Image_processing.dir/build.make CMakeFiles/Image_processing.dir/multi_numbers_processing.cpp.o
-.PHONY : multi_numbers_processing.cpp.o
+test_appimage.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/test_appimage.cpp.o
+.PHONY : test_appimage.cpp.o
 
-multi_numbers_processing.i: multi_numbers_processing.cpp.i
-.PHONY : multi_numbers_processing.i
+test_appimage.i: test_appimage.cpp.i
+.PHONY : test_appimage.i
 
 # target to preprocess a source file
-multi_numbers_processing.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Image_processing.dir/build.make CMakeFiles/Image_processing.dir/multi_numbers_processing.cpp.i
-.PHONY : multi_numbers_processing.cpp.i
+test_appimage.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/test_appimage.cpp.i
+.PHONY : test_appimage.cpp.i
 
-multi_numbers_processing.s: multi_numbers_processing.cpp.s
-.PHONY : multi_numbers_processing.s
+test_appimage.s: test_appimage.cpp.s
+.PHONY : test_appimage.s
 
 # target to generate assembly for a file
-multi_numbers_processing.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Image_processing.dir/build.make CMakeFiles/Image_processing.dir/multi_numbers_processing.cpp.s
-.PHONY : multi_numbers_processing.cpp.s
+test_appimage.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/test_appimage.cpp.s
+.PHONY : test_appimage.cpp.s
 
 # Help Target
 help:
@@ -160,11 +205,15 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... install"
+	@echo "... install/local"
+	@echo "... install/strip"
+	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... Image_processing"
-	@echo "... multi_numbers_processing.o"
-	@echo "... multi_numbers_processing.i"
-	@echo "... multi_numbers_processing.s"
+	@echo "... appimage"
+	@echo "... test_appimage.o"
+	@echo "... test_appimage.i"
+	@echo "... test_appimage.s"
 .PHONY : help
 
 

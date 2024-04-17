@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=QtQuickApp
+Exec=appimage
+Icon=qtquickapp
+Categories=Development;
+Name[en_AU]=qtquickapp.desktop

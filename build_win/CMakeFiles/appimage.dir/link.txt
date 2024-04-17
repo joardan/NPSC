@@ -1,0 +1,3 @@
+/usr/bin/cmake -E rm -f CMakeFiles/appimage.dir/objects.a
+/usr/bin/ar qc CMakeFiles/appimage.dir/objects.a @CMakeFiles/appimage.dir/objects1.rsp
+/usr/bin/i686-w64-mingw32-g++  -m32 -Wl,--whole-archive CMakeFiles/appimage.dir/objects.a -Wl,--no-whole-archive -o appimage.exe -Wl,--out-implib,libappimage.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/appimage.dir/linklibs.rsp

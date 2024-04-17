@@ -100,7 +100,7 @@ CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 CMAKE_EXPORT_COMPILE_COMMANDS:BOOL=TRUE
 
 //Install path prefix, prepended onto install directories.
-CMAKE_INSTALL_PREFIX:PATH=/usr/local
+CMAKE_INSTALL_PREFIX:PATH=/usr
 
 //Path to a program.
 CMAKE_LINKER:FILEPATH=/usr/bin/ld
@@ -144,7 +144,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=Image_processing
+CMAKE_PROJECT_NAME:STATIC=appimage
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
@@ -208,26 +208,26 @@ CMAKE_STRIP:FILEPATH=/usr/bin/strip
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
-//The directory containing a CMake configuration file for Eigen3.
-Eigen3_DIR:PATH=Eigen3_DIR-NOTFOUND
+//No help, variable specified on the command line.
+MAKE_INSTALL_PREFIX:UNINITIALIZED=/usr
 
 //Value Computed by CMake
-Image_processing_BINARY_DIR:STATIC=/media/joardan/Harddisk/Project/NPSC/build
+Project_BINARY_DIR:STATIC=/media/joardan/Harddisk/Project/NPSC/build
 
 //Value Computed by CMake
-Image_processing_IS_TOP_LEVEL:STATIC=ON
+Project_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
-Image_processing_SOURCE_DIR:STATIC=/media/joardan/Harddisk/Project/NPSC
+Project_SOURCE_DIR:STATIC=/media/joardan/Harddisk/Project/NPSC
 
 //Value Computed by CMake
-opencvtest_BINARY_DIR:STATIC=/media/joardan/Harddisk/Project/NPSC/build
+appimage_BINARY_DIR:STATIC=/media/joardan/Harddisk/Project/NPSC/build
 
 //Value Computed by CMake
-opencvtest_IS_TOP_LEVEL:STATIC=ON
+appimage_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
-opencvtest_SOURCE_DIR:STATIC=/media/joardan/Harddisk/Project/NPSC
+appimage_SOURCE_DIR:STATIC=/media/joardan/Harddisk/Project/NPSC
 
 
 ########################
@@ -300,6 +300,8 @@ CMAKE_EXE_LINKER_FLAGS_MINSIZEREL-ADVANCED:INTERNAL=1
 CMAKE_EXE_LINKER_FLAGS_RELEASE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO
 CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_EXPORT_COMPILE_COMMANDS
+CMAKE_EXPORT_COMPILE_COMMANDS-ADVANCED:INTERNAL=1
 //Name of external makefile project generator.
 CMAKE_EXTRA_GENERATOR:INTERNAL=
 //Name of generator.

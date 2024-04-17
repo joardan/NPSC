@@ -63,7 +63,7 @@ CMAKE_BINARY_DIR = /media/joardan/Harddisk/Project/NPSC/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/Image_processing.dir/all
+all: CMakeFiles/appimage.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -71,34 +71,34 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/Image_processing.dir/clean
+clean: CMakeFiles/appimage.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/Image_processing.dir
+# Target rules for target CMakeFiles/appimage.dir
 
 # All Build rule for target.
-CMakeFiles/Image_processing.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Image_processing.dir/build.make CMakeFiles/Image_processing.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Image_processing.dir/build.make CMakeFiles/Image_processing.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/media/joardan/Harddisk/Project/NPSC/build/CMakeFiles --progress-num=1,2 "Built target Image_processing"
-.PHONY : CMakeFiles/Image_processing.dir/all
+CMakeFiles/appimage.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/media/joardan/Harddisk/Project/NPSC/build/CMakeFiles --progress-num=1,2 "Built target appimage"
+.PHONY : CMakeFiles/appimage.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/Image_processing.dir/rule: cmake_check_build_system
+CMakeFiles/appimage.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /media/joardan/Harddisk/Project/NPSC/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Image_processing.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/appimage.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /media/joardan/Harddisk/Project/NPSC/build/CMakeFiles 0
-.PHONY : CMakeFiles/Image_processing.dir/rule
+.PHONY : CMakeFiles/appimage.dir/rule
 
 # Convenience name for target.
-Image_processing: CMakeFiles/Image_processing.dir/rule
-.PHONY : Image_processing
+appimage: CMakeFiles/appimage.dir/rule
+.PHONY : appimage
 
 # clean rule for target.
-CMakeFiles/Image_processing.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Image_processing.dir/build.make CMakeFiles/Image_processing.dir/clean
-.PHONY : CMakeFiles/Image_processing.dir/clean
+CMakeFiles/appimage.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/clean
+.PHONY : CMakeFiles/appimage.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
