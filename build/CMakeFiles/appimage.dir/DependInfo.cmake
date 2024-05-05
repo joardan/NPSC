@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/media/joardan/Harddisk/Project/NPSC/test_appimage.cpp" "CMakeFiles/appimage.dir/test_appimage.cpp.o" "gcc" "CMakeFiles/appimage.dir/test_appimage.cpp.o.d"
+  "/media/joardan/Harddisk/Project/NPSC/classify.cpp" "CMakeFiles/appimage.dir/classify.cpp.o" "gcc" "CMakeFiles/appimage.dir/classify.cpp.o.d"
   )
 
 # Targets to which this target links.

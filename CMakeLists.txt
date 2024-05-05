@@ -16,7 +16,7 @@ include_directories(${OpenCV_INCLUDE_DIRS} )
 # Include Eigen headers
 include_directories(${EIGEN_DIR})
 
-add_executable(appimage test_appimage.cpp)
+add_executable(appimage classify.cpp)
 
 # Link against OpenCV libraries
 target_link_libraries(appimage ${OpenCV_LIBS})
