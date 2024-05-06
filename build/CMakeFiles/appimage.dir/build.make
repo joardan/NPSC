@@ -69,28 +69,28 @@ include CMakeFiles/appimage.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/appimage.dir/flags.make
 
-CMakeFiles/appimage.dir/classify.cpp.o: CMakeFiles/appimage.dir/flags.make
-CMakeFiles/appimage.dir/classify.cpp.o: ../classify.cpp
-CMakeFiles/appimage.dir/classify.cpp.o: CMakeFiles/appimage.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/joardan/Harddisk/Project/NPSC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/appimage.dir/classify.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/appimage.dir/classify.cpp.o -MF CMakeFiles/appimage.dir/classify.cpp.o.d -o CMakeFiles/appimage.dir/classify.cpp.o -c /media/joardan/Harddisk/Project/NPSC/classify.cpp
+CMakeFiles/appimage.dir/encoder.cpp.o: CMakeFiles/appimage.dir/flags.make
+CMakeFiles/appimage.dir/encoder.cpp.o: ../encoder.cpp
+CMakeFiles/appimage.dir/encoder.cpp.o: CMakeFiles/appimage.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/joardan/Harddisk/Project/NPSC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/appimage.dir/encoder.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/appimage.dir/encoder.cpp.o -MF CMakeFiles/appimage.dir/encoder.cpp.o.d -o CMakeFiles/appimage.dir/encoder.cpp.o -c /media/joardan/Harddisk/Project/NPSC/encoder.cpp
 
-CMakeFiles/appimage.dir/classify.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appimage.dir/classify.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/joardan/Harddisk/Project/NPSC/classify.cpp > CMakeFiles/appimage.dir/classify.cpp.i
+CMakeFiles/appimage.dir/encoder.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appimage.dir/encoder.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/joardan/Harddisk/Project/NPSC/encoder.cpp > CMakeFiles/appimage.dir/encoder.cpp.i
 
-CMakeFiles/appimage.dir/classify.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appimage.dir/classify.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/joardan/Harddisk/Project/NPSC/classify.cpp -o CMakeFiles/appimage.dir/classify.cpp.s
+CMakeFiles/appimage.dir/encoder.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appimage.dir/encoder.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/joardan/Harddisk/Project/NPSC/encoder.cpp -o CMakeFiles/appimage.dir/encoder.cpp.s
 
 # Object files for target appimage
 appimage_OBJECTS = \
-"CMakeFiles/appimage.dir/classify.cpp.o"
+"CMakeFiles/appimage.dir/encoder.cpp.o"
 
 # External object files for target appimage
 appimage_EXTERNAL_OBJECTS =
 
-appimage: CMakeFiles/appimage.dir/classify.cpp.o
+appimage: CMakeFiles/appimage.dir/encoder.cpp.o
 appimage: CMakeFiles/appimage.dir/build.make
 appimage: /media/joardan/Harddisk/cpp_lib/build/lib/libopencv_gapi.so.4.9.0
 appimage: /media/joardan/Harddisk/cpp_lib/build/lib/libopencv_highgui.so.4.9.0

@@ -174,29 +174,29 @@ appimage/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/build
 .PHONY : appimage/fast
 
-classify.o: classify.cpp.o
-.PHONY : classify.o
+encoder.o: encoder.cpp.o
+.PHONY : encoder.o
 
 # target to build an object file
-classify.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/classify.cpp.o
-.PHONY : classify.cpp.o
+encoder.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/encoder.cpp.o
+.PHONY : encoder.cpp.o
 
-classify.i: classify.cpp.i
-.PHONY : classify.i
+encoder.i: encoder.cpp.i
+.PHONY : encoder.i
 
 # target to preprocess a source file
-classify.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/classify.cpp.i
-.PHONY : classify.cpp.i
+encoder.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/encoder.cpp.i
+.PHONY : encoder.cpp.i
 
-classify.s: classify.cpp.s
-.PHONY : classify.s
+encoder.s: encoder.cpp.s
+.PHONY : encoder.s
 
 # target to generate assembly for a file
-classify.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/classify.cpp.s
-.PHONY : classify.cpp.s
+encoder.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/encoder.cpp.s
+.PHONY : encoder.cpp.s
 
 # Help Target
 help:
@@ -211,9 +211,9 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... appimage"
-	@echo "... classify.o"
-	@echo "... classify.i"
-	@echo "... classify.s"
+	@echo "... encoder.o"
+	@echo "... encoder.i"
+	@echo "... encoder.s"
 .PHONY : help
 
 

@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/appimage.dir/classify.cpp.o"
-  "CMakeFiles/appimage.dir/classify.cpp.o.d"
+  "CMakeFiles/appimage.dir/encoder.cpp.o"
+  "CMakeFiles/appimage.dir/encoder.cpp.o.d"
   "appimage"
   "appimage.pdb"
 )

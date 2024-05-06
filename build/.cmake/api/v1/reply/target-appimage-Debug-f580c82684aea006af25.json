@@ -300,7 +300,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "classify.cpp",
+			"path" : "encoder.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],
