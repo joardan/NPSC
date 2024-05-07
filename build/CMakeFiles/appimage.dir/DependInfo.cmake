@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/media/joardan/Harddisk/Project/NPSC/encoder.cpp" "CMakeFiles/appimage.dir/encoder.cpp.o" "gcc" "CMakeFiles/appimage.dir/encoder.cpp.o.d"
+  "/media/joardan/Harddisk/Project/NPSC/functions.cpp" "CMakeFiles/appimage.dir/functions.cpp.o" "gcc" "CMakeFiles/appimage.dir/functions.cpp.o.d"
   )
 
 # Targets to which this target links.

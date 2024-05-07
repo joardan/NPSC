@@ -36,8 +36,8 @@ public:
 
 int main()
 {
-    const int numClasses = 10; // MNIST has 10 classes (digits 0-9)
-    int label = 9; // Example label
+    const unsigned char numClasses = 10; // MNIST has 10 classes (digits 0-9)
+    unsigned char label = 9; // Example label
 
     // Create an instance of the encoder/decoder
     OneHot encoderDecoder(numClasses);

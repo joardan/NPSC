@@ -66,12 +66,12 @@ unsigned char** read_mnist_image(const std::string& file_path, int num_items, in
     }
 }
 
-Eigen::MatrixXd mnistImageToEigenMatrix(unsigned char** mnist_image, int num_items, int image_size) {
-    Eigen::MatrixXd matrix(image_size, num_items);
+Eigen::MatrixXf mnistImageToEigenMatrix(unsigned char** mnist_image, int num_items, int image_size) {
+    Eigen::MatrixXf matrix(num_items, image_size);
 
     for (int i = 0; i < num_items; ++i) {
         for (int j = 0; j < image_size; ++j) {
-            matrix(j, i) = static_cast<double>(mnist_image[i][j]);
+            matrix(i, j) = static_cast<float>(mnist_image[i][j]);
         }
     }
 
@@ -83,10 +83,10 @@ int main() {
     unsigned char **mnist_image_test = read_mnist_image("/media/joardan/Harddisk/Project/NPSC/dataset/t10k-images.idx3-ubyte", 10000, 784);
     unsigned char *mnist_label_train = read_mnist_label("/media/joardan/Harddisk/Project/NPSC/dataset/train-labels.idx1-ubyte", 60000);
     unsigned char **mnist_image_train = read_mnist_image("/media/joardan/Harddisk/Project/NPSC/dataset/train-images.idx3-ubyte", 60000, 784);
-    Eigen::MatrixXd mnist_train_matrix = mnistImageToEigenMatrix(mnist_image_train, 60000, 784);
+    Eigen::MatrixXf mnist_train_matrix = mnistImageToEigenMatrix(mnist_image_train, 60000, 784);
 
     // Example of accessing a specific image (column) in the matrix
-    Eigen::VectorXd example_image = mnist_train_matrix.col(111);
+    Eigen::VectorXf example_image = mnist_train_matrix.row(111);
 
     // Displaying the example image
     std::cout << "Example image: " << std::endl;
