@@ -1,10 +1,44 @@
 #include <Eigen/Core>
 #include <Eigen/Dense>
 #include <iostream>
+
+
+class OneHot {
+private:
+    unsigned char num_classes;
+
+public:
+    // Constructor
+    OneHot(unsigned char classes) : num_classes(classes) {}
+
+    // One-hot encoder function
+    Eigen::Matrix<unsigned char, Eigen::Dynamic, 1> encode(int label) const
+    {
+        Eigen::Matrix<unsigned char, Eigen::Dynamic, 1> encoded(num_classes);
+        encoded.setZero();
+        encoded(label) = 1;
+        return encoded;
+    }
+
+    // One-hot decoder function
+    unsigned char decode(const Eigen::Matrix<unsigned char, Eigen::Dynamic, 1>& encoded) const
+    {
+        for (int i = 0; i < encoded.size(); ++i)
+        {
+            if (encoded(i) == 1)
+            {
+                return i;
+            }
+        }
+        return -1; // Invalid one-hot encoding
+    }
+};
+
 Eigen::MatrixXf relu(const Eigen::MatrixXf& input)
 {
     return input.array().max(0.0);
 }
+
 Eigen::MatrixXf feed_forward(const Eigen::MatrixXf& input, const Eigen::MatrixXf& weight) {
     // Create a bias matrix by concatenating a column vector of 1s to the input matrix
     Eigen::MatrixXf input_with_bias(input.rows(), input.cols() + 1);
@@ -37,12 +71,18 @@ Eigen::MatrixXf& target_output, Eigen::MatrixXf& target_class)
     std::cout << sample_count << std::endl << output_count << std::endl;
     double error = (target_output - output).array().square().sum() / (sample_count * output_count);
 
-    Eigen::Index maxIndex;
+    Eigen::Index maxIndex, maxIndex2;
     std::cout << output.colwise().sum();
-    float maxNorm = output.colwise().sum().maxCoeff(&maxIndex);
+    float maxNorm = output.maxCoeff(&maxIndex, &maxIndex2);
     std::cout << maxNorm << std::endl;
-    std::cout << maxIndex << std::endl;
+    std::cout << maxIndex2 << std::endl;
     // Calculate the classification error
+
+    OneHot encoderDecoder(output_count);
+    // Encode label
+    Eigen::Matrix<unsigned char, Eigen::Dynamic, 1> classes = encoderDecoder.encode(int(maxIndex2));
+    std::cout << classes << std::endl << std::endl << std::endl;
+
 
     return error;
 }
