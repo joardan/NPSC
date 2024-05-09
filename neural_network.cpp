@@ -38,8 +38,10 @@ Eigen::MatrixXf& target_output, Eigen::MatrixXf& target_class)
     double error = (target_output - output).array().square().sum() / (sample_count * output_count);
 
     Eigen::Index maxIndex;
-    float maxNorm = output.rowwise().sum().maxCoeff(&maxIndex);
+    std::cout << output.colwise().sum();
+    float maxNorm = output.colwise().sum().maxCoeff(&maxIndex);
     std::cout << maxNorm << std::endl;
+    std::cout << maxIndex << std::endl;
     // Calculate the classification error
 
     return error;
