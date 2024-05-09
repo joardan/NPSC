@@ -14,7 +14,6 @@ public:
     Eigen::Matrix<unsigned char, Eigen::Dynamic, 1> encode(int label) const
     {
         Eigen::Matrix<unsigned char, Eigen::Dynamic, 1> encoded(num_classes);
-        encoded.setZero();
         encoded(label) = 1;
         return encoded;
     }

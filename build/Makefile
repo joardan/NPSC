@@ -174,29 +174,29 @@ appimage/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/build
 .PHONY : appimage/fast
 
-functions.o: functions.cpp.o
-.PHONY : functions.o
+neural_network.o: neural_network.cpp.o
+.PHONY : neural_network.o
 
 # target to build an object file
-functions.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/functions.cpp.o
-.PHONY : functions.cpp.o
+neural_network.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/neural_network.cpp.o
+.PHONY : neural_network.cpp.o
 
-functions.i: functions.cpp.i
-.PHONY : functions.i
+neural_network.i: neural_network.cpp.i
+.PHONY : neural_network.i
 
 # target to preprocess a source file
-functions.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/functions.cpp.i
-.PHONY : functions.cpp.i
+neural_network.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/neural_network.cpp.i
+.PHONY : neural_network.cpp.i
 
-functions.s: functions.cpp.s
-.PHONY : functions.s
+neural_network.s: neural_network.cpp.s
+.PHONY : neural_network.s
 
 # target to generate assembly for a file
-functions.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/functions.cpp.s
-.PHONY : functions.cpp.s
+neural_network.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/neural_network.cpp.s
+.PHONY : neural_network.cpp.s
 
 # Help Target
 help:
@@ -211,9 +211,9 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... appimage"
-	@echo "... functions.o"
-	@echo "... functions.i"
-	@echo "... functions.s"
+	@echo "... neural_network.o"
+	@echo "... neural_network.i"
+	@echo "... neural_network.s"
 .PHONY : help
 
 
