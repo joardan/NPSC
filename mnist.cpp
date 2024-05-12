@@ -17,6 +17,7 @@ void displayMNISTImage(unsigned char* image, int rows, int cols)
     cv::destroyAllWindows();
 }
 
+// NOT USED BECAUSE THE MAGIC NUMBER IS NOT NEEDED, BUT MIGHT BE USEFUL LATER
 int reverseInt(int i) {
     unsigned char c1, c2, c3, c4;
     c1 = i & 255;
@@ -66,7 +67,8 @@ unsigned char** read_mnist_image(const std::string& file_path, int num_items, in
     }
 }
 
-Eigen::MatrixXf mnistImageToEigenMatrix(unsigned char** mnist_image, int num_items, int image_size) {
+Eigen::MatrixXf mnistImageToEigenMatrix(unsigned char** mnist_image, int num_items, int image_size)
+{
     Eigen::MatrixXf matrix(num_items, image_size);
 
     for (int i = 0; i < num_items; ++i) {
@@ -78,6 +80,8 @@ Eigen::MatrixXf mnistImageToEigenMatrix(unsigned char** mnist_image, int num_ite
     return matrix;
 }
 
+// TEST MAIN FILE, MADE JUST TO TEST READING MNIST DATASET ITSELF.
+/*
 int main() {
     unsigned char *mnist_label_test = read_mnist_label("/media/joardan/Harddisk/Project/NPSC/dataset/t10k-labels.idx1-ubyte", 10000);
     unsigned char **mnist_image_test = read_mnist_image("/media/joardan/Harddisk/Project/NPSC/dataset/t10k-images.idx3-ubyte", 10000, 784);
@@ -97,4 +101,4 @@ int main() {
     delete[] mnist_image_test;
     delete[] mnist_image_train;
     return 0;
-}
+}*/

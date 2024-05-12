@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/media/joardan/Harddisk/Project/NPSC/neural_network.cpp" "CMakeFiles/appimage.dir/neural_network.cpp.o" "gcc" "CMakeFiles/appimage.dir/neural_network.cpp.o.d"
+  "/media/joardan/Harddisk/Project/NPSC/neural_network2.cpp" "CMakeFiles/appimage.dir/neural_network2.cpp.o" "gcc" "CMakeFiles/appimage.dir/neural_network2.cpp.o.d"
   )
 
 # Targets to which this target links.

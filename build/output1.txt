@@ -1,0 +1,4000 @@
+Input to neural network is : 0 0
+Expected output is : -46.4463
+Output produced is : 0.261073
+MSE : 46.7073
+Input to neural network is : 0.141603 0.606969
+Expected output is : 10.8902
+Output produced is : -0.0260905
+MSE : 10.9163
+Input to neural network is : 0.0163006  0.242887
+Expected output is : 10.2755
+Output produced is : -0.0820714
+MSE : 10.3576
+Input to neural network is : 0.137232 0.804177
+Expected output is : 11.0786
+Output produced is : 0.438178
+MSE : 10.6404
+Input to neural network is : 0.156679 0.400944
+Expected output is : 10.7143
+Output produced is : 0.267983
+MSE : 10.4463
+Input to neural network is :  0.12979 0.108809
+Expected output is : 10.3684
+Output produced is : 0.183026
+MSE : 10.1854
+Input to neural network is : 0.998924 0.218257
+Expected output is : 12.2161
+Output produced is : 0.0831846
+MSE : 12.1329
+Input to neural network is : 0.512932 0.839112
+Expected output is : 11.865
+Output produced is : 0.942853
+MSE : 10.9221
+Input to neural network is :  0.61264 0.296032
+Expected output is : 11.5213
+Output produced is : 0.667066
+MSE : 10.8542
+Input to neural network is : 0.637552 0.524287
+Expected output is : 11.7994
+Output produced is : 1.00676
+MSE : 10.7926
+Input to neural network is : 0.493583 0.972775
+Expected output is : 11.9599
+Output produced is : 1.5506
+MSE : 10.4093
+Input to neural network is : 0.292517 0.771358
+Expected output is : 11.3564
+Output produced is : 1.56272
+MSE : 9.79368
+Input to neural network is : 0.526745 0.769914
+Expected output is : 11.8234
+Output produced is : 1.71349
+MSE : 10.1099
+Input to neural network is : 0.400229 0.891529
+Expected output is : 11.692
+Output produced is : 2.00849
+MSE : 9.68351
+Input to neural network is : 0.283315 0.352458
+Expected output is : 10.9191
+Output produced is : 1.58249
+MSE : 9.33661
+Input to neural network is : 0.807725 0.919026
+Expected output is : 12.5345
+Output produced is : 2.43647
+MSE : 10.098
+Input to neural network is : 0.0697553  0.949327
+Expected output is : 11.0888
+Output produced is : 2.57617
+MSE : 8.51263
+Input to neural network is :  0.525995 0.0860558
+Expected output is : 11.138
+Output produced is : 1.72825
+MSE : 9.40975
+Input to neural network is : 0.192214 0.663227
+Expected output is : 11.0477
+Output produced is : 2.56038
+MSE : 8.48732
+Input to neural network is : 0.890233 0.348893
+Expected output is : 12.1294
+Output produced is : 2.53633
+MSE : 9.59307
+Input to neural network is : 0.0641713  0.020023
+Expected output is : 10.1484
+Output produced is : 1.90337
+MSE : 8.24503
+Input to neural network is :  0.457702 0.0630958
+Expected output is : 10.9785
+Output produced is : 2.28722
+MSE : 8.69129
+Input to neural network is :  0.23828 0.970634
+Expected output is : 11.4472
+Output produced is : 3.7048
+MSE : 7.7424
+Input to neural network is : 0.902208  0.85092
+Expected output is : 12.6553
+Output produced is : 4.17702
+MSE : 8.47828
+Input to neural network is : 0.266666  0.53976
+Expected output is : 11.0731
+Output produced is : 3.56247
+MSE : 7.51063
+Input to neural network is : 0.375207 0.760249
+Expected output is : 11.5107
+Output produced is : 4.28197
+MSE : 7.22873
+Input to neural network is : 0.512535 0.667724
+Expected output is : 11.6928
+Output produced is : 4.49347
+MSE : 7.19933
+Input to neural network is :  0.531606 0.0392803
+Expected output is : 11.1025
+Output produced is : 3.42797
+MSE : 7.67453
+Input to neural network is : 0.437638 0.931835
+Expected output is : 11.8071
+Output produced is : 5.5586
+MSE : 6.2485
+Input to neural network is :  0.93081 0.720952
+Expected output is : 12.5826
+Output produced is : 5.97629
+MSE : 6.60631
+Input to neural network is : 0.284293 0.738534
+Expected output is : 11.3071
+Output produced is : 5.66204
+MSE : 5.64506
+Input to neural network is : 0.639979 0.354049
+Expected output is : 11.634
+Output produced is : 5.38772
+MSE : 6.24628
+Input to neural network is : 0.687861 0.165974
+Expected output is : 11.5417
+Output produced is : 5.23318
+MSE : 6.30852
+Input to neural network is : 0.440105 0.880075
+Expected output is : 11.7603
+Output produced is : 7.26238
+MSE : 4.49792
+Input to neural network is : 0.829201 0.330337
+Expected output is : 11.9887
+Output produced is : 6.56384
+MSE : 5.42486
+Input to neural network is : 0.228968 0.893372
+Expected output is : 11.3513
+Output produced is : 7.65388
+MSE : 3.69742
+Input to neural network is : 0.35036 0.68667
+Expected output is : 11.3874
+Output produced is : 7.48596
+MSE : 3.90144
+Input to neural network is : 0.956468  0.58864
+Expected output is : 12.5016
+Output produced is : 8.64807
+MSE : 3.85353
+Input to neural network is : 0.657304 0.858676
+Expected output is : 12.1733
+Output produced is : 9.4111
+MSE : 2.7622
+Input to neural network is : 0.43956 0.92397
+Expected output is : 11.8031
+Output produced is : 9.48376
+MSE : 2.31934
+Input to neural network is : 0.398437 0.814767
+Expected output is : 11.6116
+Output produced is : 9.21308
+MSE : 2.39852
+Input to neural network is : 0.684219 0.910972
+Expected output is : 12.2794
+Output produced is : 10.531
+MSE : 1.74844
+Input to neural network is : 0.482491 0.215825
+Expected output is : 11.1808
+Output produced is : 7.36508
+MSE : 3.81572
+Input to neural network is : 0.950252 0.920128
+Expected output is : 12.8206
+Output produced is : 11.8202
+MSE : 1.00038
+Input to neural network is :  0.14766 0.881062
+Expected output is : 11.1764
+Output produced is : 9.72397
+MSE : 1.45243
+Input to neural network is : 0.641081 0.431953
+Expected output is : 11.7141
+Output produced is : 9.20174
+MSE : 2.51236
+Input to neural network is : 0.619596 0.281059
+Expected output is : 11.5203
+Output produced is : 8.70321
+MSE : 2.81709
+Input to neural network is : 0.786002 0.307458
+Expected output is : 11.8795
+Output produced is : 9.53759
+MSE : 2.34191
+Input to neural network is : 0.447034 0.226107
+Expected output is : 11.1202
+Output produced is : 8.40768
+MSE : 2.71252
+Input to neural network is : 0.187533 0.276235
+Expected output is : 10.6513
+Output produced is : 8.07198
+MSE : 2.57932
+Input to neural network is : 0.556444 0.416501
+Expected output is : 11.5294
+Output produced is : 10.0527
+MSE : 1.47671
+Input to neural network is : 0.169607 0.906804
+Expected output is : 11.246
+Output produced is : 11.3869
+MSE : 0.140877
+Input to neural network is : 0.103171 0.126075
+Expected output is : 10.3324
+Output produced is : 7.36366
+MSE : 2.96874
+Input to neural network is : 0.495444 0.760475
+Expected output is : 11.7514
+Output produced is : 11.9061
+MSE : 0.154669
+Input to neural network is : 0.984752 0.935004
+Expected output is : 12.9045
+Output produced is : 14.2834
+MSE : 1.37886
+Input to neural network is : 0.684445 0.383188
+Expected output is : 11.7521
+Output produced is : 10.4229
+MSE : 1.32923
+Input to neural network is : 0.749771 0.368664
+Expected output is : 11.8682
+Output produced is : 10.7023
+MSE : 1.16594
+Input to neural network is :  0.29416 0.232262
+Expected output is : 10.8206
+Output produced is : 8.72253
+MSE : 2.09807
+Input to neural network is : 0.584489 0.244413
+Expected output is : 11.4134
+Output produced is : 9.87837
+MSE : 1.53503
+Input to neural network is :  0.15239 0.732149
+Expected output is : 11.0369
+Output produced is : 11.0572
+MSE : 0.0202856
+Input to neural network is : 0.125475  0.79347
+Expected output is : 11.0444
+Output produced is : 11.2744
+MSE : 0.229987
+Input to neural network is : 0.164102 0.745071
+Expected output is : 11.0733
+Output produced is : 11.1311
+MSE : 0.0577765
+Input to neural network is : 0.0745298  0.950104
+Expected output is : 11.0992
+Output produced is : 11.8568
+MSE : 0.757649
+Input to neural network is : 0.0525293  0.521563
+Expected output is : 10.6266
+Output produced is : 9.55877
+MSE : 1.06783
+Input to neural network is : 0.176211 0.240062
+Expected output is : 10.5925
+Output produced is : 8.65106
+MSE : 1.94144
+Input to neural network is : 0.797798 0.732654
+Expected output is : 12.3283
+Output produced is : 13.3462
+MSE : 1.01792
+Input to neural network is : 0.656564 0.967405
+Expected output is : 12.2805
+Output produced is : 13.886
+MSE : 1.60555
+Input to neural network is : 0.639458 0.759735
+Expected output is : 12.0387
+Output produced is : 12.5278
+MSE : 0.489096
+Input to neural network is : 0.0934805  0.134902
+Expected output is : 10.3219
+Output produced is : 7.7081
+MSE : 2.6138
+Input to neural network is :   0.52021 0.0782321
+Expected output is : 11.1187
+Output produced is : 8.96143
+MSE : 2.15727
+Input to neural network is : 0.0699064  0.204655
+Expected output is : 10.3445
+Output produced is : 8.29368
+MSE : 2.05082
+Input to neural network is :  0.46142 0.819677
+Expected output is : 11.7425
+Output produced is : 12.7993
+MSE : 1.05681
+Input to neural network is : 0.573319 0.755581
+Expected output is : 11.9022
+Output produced is : 12.6919
+MSE : 0.789748
+Input to neural network is : 0.0519388  0.157807
+Expected output is : 10.2617
+Output produced is : 7.98056
+MSE : 2.28114
+Input to neural network is : 0.999994 0.204329
+Expected output is : 12.2043
+Output produced is : 11.4465
+MSE : 0.757767
+Input to neural network is : 0.889956 0.125468
+Expected output is : 11.9054
+Output produced is : 10.7986
+MSE : 1.10685
+Input to neural network is :  0.997799 0.0540576
+Expected output is : 12.0497
+Output produced is : 10.9415
+MSE : 1.10819
+Input to neural network is :   0.87054 0.0723288
+Expected output is : 11.8134
+Output produced is : 10.7447
+MSE : 1.06866
+Input to neural network is : 0.00416161   0.923069
+Expected output is : 10.9314
+Output produced is : 12.1473
+MSE : 1.21594
+Input to neural network is : 0.593892 0.180372
+Expected output is : 11.3682
+Output produced is : 10.334
+MSE : 1.03419
+Input to neural network is : 0.163132  0.39169
+Expected output is : 10.718
+Output produced is : 9.98469
+MSE : 0.733308
+Input to neural network is : 0.913027 0.819695
+Expected output is : 12.6457
+Output produced is : 14.8389
+MSE : 2.19315
+Input to neural network is : 0.359095 0.552485
+Expected output is : 11.2707
+Output produced is : 11.2256
+MSE : 0.0450974
+Input to neural network is :  0.57943 0.452576
+Expected output is : 11.6114
+Output produced is : 11.489
+MSE : 0.122391
+Input to neural network is :  0.687387 0.0996401
+Expected output is : 11.4744
+Output produced is : 10.1496
+MSE : 1.32477
+Input to neural network is : 0.530808 0.757294
+Expected output is : 11.8189
+Output produced is : 12.974
+MSE : 1.15506
+Input to neural network is : 0.304295 0.992228
+Expected output is : 11.6008
+Output produced is : 13.1688
+MSE : 1.56804
+Input to neural network is : 0.576971 0.877614
+Expected output is : 12.0316
+Output produced is : 13.2863
+MSE : 1.25471
+Input to neural network is : 0.747809  0.62891
+Expected output is : 12.1245
+Output produced is : 12.4892
+MSE : 0.364711
+Input to neural network is : 0.0354209  0.747803
+Expected output is : 10.8186
+Output produced is : 10.6621
+MSE : 0.156544
+Input to neural network is : 0.833239 0.925377
+Expected output is : 12.5919
+Output produced is : 14.1026
+MSE : 1.51066
+Input to neural network is : 0.873271 0.831038
+Expected output is : 12.5776
+Output produced is : 13.5126
+MSE : 0.93496
+Input to neural network is : 0.979434 0.743811
+Expected output is : 12.7027
+Output produced is : 13.2868
+MSE : 0.584084
+Input to neural network is : 0.903366 0.983596
+Expected output is : 12.7903
+Output produced is : 14.0059
+MSE : 1.21556
+Input to neural network is :  0.66688 0.497259
+Expected output is : 11.831
+Output produced is : 10.9448
+MSE : 0.886226
+Input to neural network is : 0.163968 0.830012
+Expected output is : 11.1579
+Output produced is : 10.9672
+MSE : 0.190656
+Input to neural network is :  0.888949 0.0769947
+Expected output is : 11.8549
+Output produced is : 9.9099
+MSE : 1.945
+Input to neural network is : 0.649707 0.248044
+Expected output is : 11.5475
+Output produced is : 10.1294
+MSE : 1.41811
+Input to neural network is :  0.62948 0.229137
+Expected output is : 11.4881
+Output produced is : 10.1241
+MSE : 1.36405
+Input to neural network is :  0.70062 0.316867
+Expected output is : 11.7181
+Output produced is : 10.8894
+MSE : 0.828732
+Input to neural network is : 0.328777 0.231428
+Expected output is : 10.889
+Output produced is : 9.36602
+MSE : 1.52298
+Input to neural network is : 0.074161 0.633072
+Expected output is : 10.7814
+Output produced is : 10.4796
+MSE : 0.301774
+Input to neural network is : 0.223656 0.651132
+Expected output is : 11.0984
+Output produced is : 11.0951
+MSE : 0.00325584
+Input to neural network is : 0.510686 0.971466
+Expected output is : 11.9928
+Output produced is : 13.5327
+MSE : 1.53987
+Input to neural network is : 0.280042 0.546107
+Expected output is : 11.1062
+Output produced is : 10.6019
+MSE : 0.504315
+Input to neural network is : 0.719269 0.113281
+Expected output is : 11.5518
+Output produced is : 10.1504
+MSE : 1.40139
+Input to neural network is : 0.471483  0.59254
+Expected output is : 11.5355
+Output produced is : 11.643
+MSE : 0.107472
+Input to neural network is : 0.944318 0.450918
+Expected output is : 12.3396
+Output produced is : 12.576
+MSE : 0.236391
+Input to neural network is : 0.336351 0.847684
+Expected output is : 11.5204
+Output produced is : 12.3027
+MSE : 0.782344
+Input to neural network is :   0.434513 0.00323146
+Expected output is : 10.8723
+Output produced is : 8.73353
+MSE : 2.13877
+Input to neural network is : 0.344943 0.598481
+Expected output is : 11.2884
+Output produced is : 11.2878
+MSE : 0.000616074
+Input to neural network is : 0.833243 0.233892
+Expected output is : 11.9004
+Output produced is : 11.2936
+MSE : 0.606789
+Input to neural network is : 0.675476  0.48295
+Expected output is : 11.8339
+Output produced is : 11.9611
+MSE : 0.127184
+Input to neural network is : 0.481936 0.304956
+Expected output is : 11.2688
+Output produced is : 10.4769
+MSE : 0.791883
+Input to neural network is : 0.712087 0.182556
+Expected output is : 11.6067
+Output produced is : 10.7891
+MSE : 0.817571
+Input to neural network is :  0.621823 0.0408643
+Expected output is : 11.2845
+Output produced is : 9.91608
+MSE : 1.36842
+Input to neural network is : 0.413984 0.695984
+Expected output is : 11.524
+Output produced is : 12.3381
+MSE : 0.814072
+Input to neural network is : 0.673936  0.63764
+Expected output is : 11.9855
+Output produced is : 12.875
+MSE : 0.889502
+Input to neural network is : 0.347116 0.184622
+Expected output is : 10.8789
+Output produced is : 9.56401
+MSE : 1.31489
+Input to neural network is : 0.609106 0.627158
+Expected output is : 11.8454
+Output produced is : 12.6073
+MSE : 0.76193
+Input to neural network is : 0.730729 0.328374
+Expected output is : 11.7898
+Output produced is : 11.5728
+MSE : 0.21705
+Input to neural network is : 0.740438 0.202213
+Expected output is : 11.6831
+Output produced is : 11.0628
+MSE : 0.620337
+Input to neural network is : 0.920914 0.684757
+Expected output is : 12.5266
+Output produced is : 13.9597
+MSE : 1.43305
+Input to neural network is :  0.65313 0.257265
+Expected output is : 11.5635
+Output produced is : 10.8805
+MSE : 0.683018
+Input to neural network is :  0.532441 0.0876436
+Expected output is : 11.1525
+Output produced is : 9.78012
+MSE : 1.37238
+Input to neural network is : 0.260497 0.877384
+Expected output is : 11.3984
+Output produced is : 12.5159
+MSE : 1.11751
+Input to neural network is :  0.686125 0.0937402
+Expected output is : 11.466
+Output produced is : 10.3528
+MSE : 1.11319
+Input to neural network is : 0.111276 0.361601
+Expected output is : 10.5842
+Output produced is : 9.64628
+MSE : 0.937916
+Input to neural network is :  0.57669 0.593211
+Expected output is : 11.7466
+Output produced is : 12.4098
+MSE : 0.663207
+Input to neural network is : 0.666557 0.288778
+Expected output is : 11.6219
+Output produced is : 11.2764
+MSE : 0.345546
+Input to neural network is : 0.775767 0.288379
+Expected output is : 11.8399
+Output produced is : 11.6987
+MSE : 0.141207
+Input to neural network is : 0.329642 0.189751
+Expected output is : 10.849
+Output produced is : 9.70228
+MSE : 1.14672
+Input to neural network is :   0.984363 0.00357857
+Expected output is : 11.9723
+Output produced is : 11.2892
+MSE : 0.683135
+Input to neural network is : 0.827391 0.331479
+Expected output is : 11.9863
+Output produced is : 12.301
+MSE : 0.314733
+Input to neural network is : 0.188201 0.436497
+Expected output is : 10.8129
+Output produced is : 10.4417
+MSE : 0.371211
+Input to neural network is : 0.958637  0.91893
+Expected output is : 12.8362
+Output produced is : 15.4292
+MSE : 2.59295
+Input to neural network is : 0.764871 0.699075
+Expected output is : 12.2288
+Output produced is : 13.2411
+MSE : 1.01232
+Input to neural network is : 0.121143 0.685786
+Expected output is : 10.9281
+Output produced is : 10.8587
+MSE : 0.0693598
+Input to neural network is : 0.383832 0.774274
+Expected output is : 11.5419
+Output produced is : 12.1278
+MSE : 0.585893
+Input to neural network is : 0.943051 0.916273
+Expected output is : 12.8024
+Output produced is : 14.5197
+MSE : 1.7173
+Input to neural network is : 0.861917 0.203548
+Expected output is : 11.9274
+Output produced is : 10.9629
+MSE : 0.964471
+Input to neural network is : 0.793657 0.548042
+Expected output is : 12.1354
+Output produced is : 12.2886
+MSE : 0.153171
+Input to neural network is : 0.297288 0.904932
+Expected output is : 11.4995
+Output produced is : 12.1232
+MSE : 0.623703
+Input to neural network is : 0.909643 0.873979
+Expected output is : 12.6933
+Output produced is : 13.8997
+MSE : 1.20636
+Input to neural network is : 0.498144   0.5762
+Expected output is : 11.5725
+Output produced is : 11.1608
+MSE : 0.411737
+Input to neural network is : 0.162757 0.273911
+Expected output is : 10.5994
+Output produced is : 8.91307
+MSE : 1.68633
+Input to neural network is : 0.864579 0.492399
+Expected output is : 12.2216
+Output produced is : 12.1996
+MSE : 0.0220184
+Input to neural network is : 0.463662 0.848942
+Expected output is : 11.7763
+Output produced is : 12.3685
+MSE : 0.592194
+Input to neural network is : 0.495977 0.291053
+Expected output is : 11.283
+Output produced is : 10.1213
+MSE : 1.16169
+Input to neural network is : 0.180421 0.684178
+Expected output is : 11.045
+Output produced is : 10.8176
+MSE : 0.227411
+Input to neural network is :  0.72755 0.139058
+Expected output is : 11.5942
+Output produced is : 10.3828
+MSE : 1.2114
+Input to neural network is : 0.603109 0.492422
+Expected output is : 11.6986
+Output produced is : 11.5633
+MSE : 0.13531
+Input to neural network is : 0.838134 0.724252
+Expected output is : 12.4005
+Output produced is : 13.32
+MSE : 0.919519
+Input to neural network is : 0.178208 0.221966
+Expected output is : 10.5784
+Output produced is : 8.95628
+MSE : 1.62212
+Input to neural network is : 0.498525 0.121259
+Expected output is : 11.1183
+Output produced is : 9.71693
+MSE : 1.40137
+Input to neural network is : 0.138238 0.360443
+Expected output is : 10.6369
+Output produced is : 9.63227
+MSE : 1.00463
+Input to neural network is : 0.324807 0.931895
+Expected output is : 11.5815
+Output produced is : 12.7438
+MSE : 1.16229
+Input to neural network is : 0.908485 0.622095
+Expected output is : 12.4391
+Output produced is : 13.2333
+MSE : 0.794222
+Input to neural network is : 0.836828 0.818128
+Expected output is : 12.4918
+Output produced is : 13.6657
+MSE : 1.1739
+Input to neural network is : 0.496074 0.334972
+Expected output is : 11.3271
+Output produced is : 10.4251
+MSE : 0.902014
+Input to neural network is : 0.394327 0.658831
+Expected output is : 11.4475
+Output produced is : 11.4919
+MSE : 0.0443554
+Input to neural network is : 0.608883 0.258906
+Expected output is : 11.4767
+Output produced is : 10.5687
+MSE : 0.90799
+Input to neural network is :  0.15123 0.072545
+Expected output is : 10.375
+Output produced is : 8.4043
+MSE : 1.9707
+Input to neural network is : 0.107848 0.647207
+Expected output is : 10.8629
+Output produced is : 10.7496
+MSE : 0.113254
+Input to neural network is : 0.363598  0.28827
+Expected output is : 11.0155
+Output produced is : 10.1381
+MSE : 0.877403
+Input to neural network is :  0.331386 0.0911486
+Expected output is : 10.7539
+Output produced is : 9.29569
+MSE : 1.45821
+Input to neural network is : 0.427328 0.934495
+Expected output is : 11.7892
+Output produced is : 13.2449
+MSE : 1.4557
+Input to neural network is :  0.58357 0.265461
+Expected output is : 11.4326
+Output produced is : 10.8138
+MSE : 0.618818
+Input to neural network is : 0.658747 0.761778
+Expected output is : 12.0793
+Output produced is : 13.1573
+MSE : 1.07804
+Input to neural network is : 0.487427 0.157272
+Expected output is : 11.1321
+Output produced is : 9.99258
+MSE : 1.13952
+Input to neural network is : 0.883037 0.625665
+Expected output is : 12.3917
+Output produced is : 13.3144
+MSE : 0.92269
+Input to neural network is : 0.517715 0.207844
+Expected output is : 11.2433
+Output produced is : 10.2897
+MSE : 0.953585
+Input to neural network is : 0.557561 0.426199
+Expected output is : 11.5413
+Output produced is : 11.3925
+MSE : 0.148848
+Input to neural network is : 0.829939 0.394388
+Expected output is : 12.0543
+Output produced is : 12.1883
+MSE : 0.133961
+Input to neural network is : 0.244327 0.326013
+Expected output is : 10.8147
+Output produced is : 9.94894
+MSE : 0.865764
+Input to neural network is :  0.72936 0.638654
+Expected output is : 12.0974
+Output produced is : 12.9131
+MSE : 0.815726
+Input to neural network is : 0.984845 0.338243
+Expected output is : 12.3079
+Output produced is : 12.429
+MSE : 0.121108
+Input to neural network is :  0.89756 0.136075
+Expected output is : 11.9312
+Output produced is : 11.3136
+MSE : 0.617624
+Input to neural network is :   0.410788 0.00540855
+Expected output is : 10.827
+Output produced is : 9.24673
+MSE : 1.58027
+Input to neural network is : 0.783282 0.774386
+Expected output is : 12.341
+Output produced is : 13.7452
+MSE : 1.40424
+Input to neural network is : 0.293678 0.114668
+Expected output is : 10.702
+Output produced is : 9.27266
+MSE : 1.42934
+Input to neural network is : 0.865535 0.721006
+Expected output is : 12.4521
+Output produced is : 13.7125
+MSE : 1.26044
+Input to neural network is : 0.0491625  0.449105
+Expected output is : 10.5474
+Output produced is : 9.76291
+MSE : 0.784494
+Input to neural network is : 0.986467 0.707909
+Expected output is : 12.6808
+Output produced is : 13.9222
+MSE : 1.24136
+Input to neural network is : 0.210883 0.473894
+Expected output is : 10.8957
+Output produced is : 10.3044
+MSE : 0.591267
+Input to neural network is :  0.865181 0.0939195
+Expected output is : 11.8243
+Output produced is : 10.9803
+MSE : 0.843989
+Input to neural network is : 0.0995593  0.382896
+Expected output is : 10.582
+Output produced is : 9.72237
+MSE : 0.859626
+Input to neural network is : 0.301763  0.65712
+Expected output is : 11.2606
+Output produced is : 11.5382
+MSE : 0.277637
+Input to neural network is : 0.809095 0.131702
+Expected output is : 11.7499
+Output produced is : 11.0951
+MSE : 0.654768
+Input to neural network is : 0.0515083 0.0534223
+Expected output is : 10.1564
+Output produced is : 8.36656
+MSE : 1.78984
+Input to neural network is : 0.457716 0.780868
+Expected output is : 11.6963
+Output produced is : 12.7299
+MSE : 1.03356
+Input to neural network is : 0.692076  0.44256
+Expected output is : 11.8267
+Output produced is : 12.0247
+MSE : 0.198021
+Input to neural network is : 0.119111 0.589637
+Expected output is : 10.8279
+Output produced is : 10.6999
+MSE : 0.127998
+Input to neural network is : 0.578635 0.529899
+Expected output is : 11.6872
+Output produced is : 11.9834
+MSE : 0.296214
+Input to neural network is : 0.595045 0.361917
+Expected output is : 11.552
+Output produced is : 11.3441
+MSE : 0.20791
+Input to neural network is : 0.304285 0.888723
+Expected output is : 11.4973
+Output produced is : 12.4763
+MSE : 0.979041
+Input to neural network is : 0.476585  0.16982
+Expected output is : 11.123
+Output produced is : 10.127
+MSE : 0.996032
+Input to neural network is : 0.609729 0.525747
+Expected output is : 11.7452
+Output produced is : 12.0331
+MSE : 0.287949
+Input to neural network is : 0.618925 0.596196
+Expected output is : 11.834
+Output produced is : 12.2981
+MSE : 0.464127
+Input to neural network is : 0.233656 0.829808
+Expected output is : 11.2971
+Output produced is : 11.8846
+MSE : 0.587453
+Input to neural network is : 0.0700902 0.0988374
+Expected output is : 10.239
+Output produced is : 8.5001
+MSE : 1.7389
+Input to neural network is : 0.923728 0.169649
+Expected output is : 12.0171
+Output produced is : 11.6623
+MSE : 0.354798
+Input to neural network is : 0.481733 0.225491
+Expected output is : 11.189
+Output produced is : 10.4804
+MSE : 0.70857
+Input to neural network is : 0.826769 0.290829
+Expected output is : 11.9444
+Output produced is : 11.9377
+MSE : 0.00669193
+Input to neural network is : 0.357193 0.878278
+Expected output is : 11.5927
+Output produced is : 12.663
+MSE : 1.07028
+Input to neural network is : 0.344251 0.814909
+Expected output is : 11.5034
+Output produced is : 12.2236
+MSE : 0.720162
+Input to neural network is :  0.659146 0.0363274
+Expected output is : 11.3546
+Output produced is : 10.216
+MSE : 1.13862
+Input to neural network is : 0.257469 0.778257
+Expected output is : 11.2932
+Output produced is : 11.8187
+MSE : 0.525522
+Input to neural network is : 0.625964 0.836104
+Expected output is : 12.088
+Output produced is : 13.1715
+MSE : 1.08347
+Input to neural network is : 0.308157 0.221009
+Expected output is : 10.8373
+Output produced is : 9.70882
+MSE : 1.12848
+Input to neural network is : 0.198021 0.612442
+Expected output is : 11.0085
+Output produced is : 10.9005
+MSE : 0.10803
+Input to neural network is : 0.109733 0.674605
+Expected output is : 10.8941
+Output produced is : 10.8568
+MSE : 0.0373402
+Input to neural network is : 0.782262 0.719462
+Expected output is : 12.284
+Output produced is : 13.2103
+MSE : 0.92625
+Input to neural network is : 0.200352 0.401188
+Expected output is : 10.8019
+Output produced is : 10.0315
+MSE : 0.770415
+Input to neural network is : 0.315658 0.434009
+Expected output is : 11.0653
+Output produced is : 10.5915
+MSE : 0.473791
+Input to neural network is : 0.230996 0.385748
+Expected output is : 10.8477
+Output produced is : 10.1852
+MSE : 0.662498
+Input to neural network is : 0.532846 0.154724
+Expected output is : 11.2204
+Output produced is : 10.3609
+MSE : 0.859547
+Input to neural network is :  0.555398 0.0145793
+Expected output is : 11.1254
+Output produced is : 9.99103
+MSE : 1.13437
+Input to neural network is : 0.380215 0.382167
+Expected output is : 11.1426
+Output produced is : 10.9038
+MSE : 0.2388
+Input to neural network is : 0.305408 0.737408
+Expected output is : 11.3482
+Output produced is : 12.0239
+MSE : 0.675742
+Input to neural network is : 0.260445 0.649659
+Expected output is : 11.1705
+Output produced is : 11.46
+MSE : 0.289497
+Input to neural network is : 0.552316 0.919591
+Expected output is : 12.0242
+Output produced is : 13.3978
+MSE : 1.37356
+Input to neural network is : 0.685986 0.809785
+Expected output is : 12.1818
+Output produced is : 13.2012
+MSE : 1.01944
+Input to neural network is : 0.697848  0.31195
+Expected output is : 11.7076
+Output produced is : 11.2866
+MSE : 0.421049
+Input to neural network is :   0.645889 0.00600477
+Expected output is : 11.2978
+Output produced is : 10.0672
+MSE : 1.23059
+Input to neural network is : 0.53296 0.84391
+Expected output is : 11.9098
+Output produced is : 12.8566
+MSE : 0.946827
+Input to neural network is : 0.618447 0.642693
+Expected output is : 11.8796
+Output produced is : 12.2688
+MSE : 0.389165
+Input to neural network is : 0.518515 0.400709
+Expected output is : 11.4377
+Output produced is : 11.0372
+MSE : 0.400474
+Input to neural network is : 0.362154 0.718867
+Expected output is : 11.4432
+Output produced is : 11.7121
+MSE : 0.268885
+Input to neural network is : 0.801897 0.677812
+Expected output is : 12.2816
+Output produced is : 12.941
+MSE : 0.659381
+Input to neural network is :  0.152876 0.0328927
+Expected output is : 10.3386
+Output produced is : 8.51425
+MSE : 1.82435
+Input to neural network is : 0.0635606  0.685722
+Expected output is : 10.8128
+Output produced is : 10.6652
+MSE : 0.147618
+Input to neural network is : 0.187616 0.618958
+Expected output is : 10.9942
+Output produced is : 10.8412
+MSE : 0.152953
+Input to neural network is : 0.700301 0.567831
+Expected output is : 11.9684
+Output produced is : 12.3198
+MSE : 0.351439
+Input to neural network is : 0.00112548 0.00570914
+Expected output is : 10.008
+Output produced is : 8.05151
+MSE : 1.95649
+Input to neural network is : 0.305239  0.26157
+Expected output is : 10.872
+Output produced is : 10.0654
+MSE : 0.806577
+Input to neural network is : 0.655368 0.857555
+Expected output is : 12.1683
+Output produced is : 13.4043
+MSE : 1.23603
+Input to neural network is : 0.181161 0.341354
+Expected output is : 10.7037
+Output produced is : 9.88154
+MSE : 0.822156
+Input to neural network is : 0.667341 0.879009
+Expected output is : 12.2137
+Output produced is : 13.4033
+MSE : 1.18965
+Input to neural network is : 0.653305  0.31323
+Expected output is : 11.6198
+Output produced is : 11.2001
+MSE : 0.419744
+Input to neural network is : 0.885014 0.186265
+Expected output is : 11.9563
+Output produced is : 11.537
+MSE : 0.419282
+Input to neural network is : 0.157139 0.503461
+Expected output is : 10.8177
+Output produced is : 10.3862
+MSE : 0.431533
+Input to neural network is : 0.828957 0.675654
+Expected output is : 12.3336
+Output produced is : 13.1696
+MSE : 0.836001
+Input to neural network is :  0.90417 0.191112
+Expected output is : 11.9995
+Output produced is : 11.5935
+MSE : 0.406002
+Input to neural network is : 0.394521 0.706067
+Expected output is : 11.4951
+Output produced is : 11.8232
+MSE : 0.328056
+Input to neural network is : 0.868924 0.547397
+Expected output is : 12.2852
+Output produced is : 12.7277
+MSE : 0.44247
+Input to neural network is : 0.738959 0.932485
+Expected output is : 12.4104
+Output produced is : 13.5761
+MSE : 1.16573
+Input to neural network is : 0.233119 0.926576
+Expected output is : 11.3928
+Output produced is : 11.7975
+MSE : 0.404669
+Input to neural network is : 0.551443  0.93342
+Expected output is : 12.0363
+Output produced is : 12.7368
+MSE : 0.700519
+Input to neural network is : 0.494407 0.552568
+Expected output is : 11.5414
+Output produced is : 11.1986
+MSE : 0.342815
+Input to neural network is : 0.939129 0.799646
+Expected output is : 12.6779
+Output produced is : 13.4049
+MSE : 0.727024
+Input to neural network is : 0.814139 0.594497
+Expected output is : 12.2228
+Output produced is : 12.2288
+MSE : 0.00597954
+Input to neural network is : 0.657201   0.9953
+Expected output is : 12.3097
+Output produced is : 13.0683
+MSE : 0.75862
+Input to neural network is : 0.935852 0.324541
+Expected output is : 12.1962
+Output produced is : 11.6008
+MSE : 0.595429
+Input to neural network is : 0.874309 0.589157
+Expected output is : 12.3378
+Output produced is : 12.3552
+MSE : 0.0173597
+Input to neural network is : 0.637771 0.759324
+Expected output is : 12.0349
+Output produced is : 12.1972
+MSE : 0.162329
+Input to neural network is : 0.775421  0.79491
+Expected output is : 12.3458
+Output produced is : 12.699
+MSE : 0.35323
+Input to neural network is : 0.262785 0.604379
+Expected output is : 11.1299
+Output produced is : 10.5122
+MSE : 0.617658
+Input to neural network is : 0.470564 0.166955
+Expected output is : 11.1081
+Output produced is : 9.77813
+MSE : 1.32997
+Input to neural network is :  0.79549 0.865085
+Expected output is : 12.4561
+Output produced is : 13.157
+MSE : 0.700914
+Input to neural network is : 0.873021 0.664414
+Expected output is : 12.4105
+Output produced is : 12.6204
+MSE : 0.209942
+Input to neural network is : 0.412483 0.611981
+Expected output is : 11.4369
+Output produced is : 11.0493
+MSE : 0.387631
+Input to neural network is : 0.596899 0.645602
+Expected output is : 11.8394
+Output produced is : 11.7523
+MSE : 0.0871096
+Input to neural network is : 0.538557 0.148342
+Expected output is : 11.2255
+Output produced is : 9.98003
+MSE : 1.24547
+Input to neural network is :  0.579022 0.0329634
+Expected output is : 11.191
+Output produced is : 9.84124
+MSE : 1.34976
+Input to neural network is :  0.70091 0.518151
+Expected output is : 11.92
+Output produced is : 11.9355
+MSE : 0.0154781
+Input to neural network is : 0.832609 0.515049
+Expected output is : 12.1803
+Output produced is : 12.3295
+MSE : 0.149223
+Input to neural network is : 0.112648  0.48981
+Expected output is : 10.7151
+Output produced is : 10.01
+MSE : 0.705113
+Input to neural network is :  0.510349 0.0484997
+Expected output is : 11.0692
+Output produced is : 9.84488
+MSE : 1.22432
+Input to neural network is : 0.814351 0.384658
+Expected output is : 12.0134
+Output produced is : 12.0244
+MSE : 0.010972
+Input to neural network is : 0.637656 0.452122
+Expected output is : 11.7274
+Output produced is : 11.6935
+MSE : 0.0339365
+Input to neural network is : 0.143982 0.413078
+Expected output is : 10.701
+Output produced is : 10.0202
+MSE : 0.680842
+Input to neural network is : 0.247033 0.406767
+Expected output is : 10.9008
+Output produced is : 10.3833
+MSE : 0.517546
+Input to neural network is : 0.0174566  0.717597
+Expected output is : 10.7525
+Output produced is : 10.7508
+MSE : 0.00168133
+Input to neural network is : 0.573721 0.812947
+Expected output is : 11.9604
+Output produced is : 12.8313
+MSE : 0.870876
+Input to neural network is : 0.582682 0.446743
+Expected output is : 11.6121
+Output produced is : 11.5126
+MSE : 0.0995293
+Input to neural network is : 0.477361 0.995165
+Expected output is : 11.9499
+Output produced is : 13.0152
+MSE : 1.06534
+Input to neural network is : 0.0587232 0.0742604
+Expected output is : 10.1917
+Output produced is : 8.55464
+MSE : 1.63706
+Input to neural network is : 0.640766  0.59728
+Expected output is : 11.8788
+Output produced is : 12.1885
+MSE : 0.309713
+Input to neural network is : 0.222602 0.219788
+Expected output is : 10.665
+Output produced is : 9.62124
+MSE : 1.04376
+Input to neural network is : 0.630243 0.923513
+Expected output is : 12.184
+Output produced is : 13.2892
+MSE : 1.10524
+Input to neural network is : 0.737939 0.462852
+Expected output is : 11.9387
+Output produced is : 11.95
+MSE : 0.0112762
+Input to neural network is : 0.438562 0.850586
+Expected output is : 11.7277
+Output produced is : 12.2786
+MSE : 0.550853
+Input to neural network is : 0.952662 0.948911
+Expected output is : 12.8542
+Output produced is : 14.0794
+MSE : 1.22524
+Input to neural network is : 0.899086 0.767014
+Expected output is : 12.5652
+Output produced is : 13.1062
+MSE : 0.541045
+Input to neural network is : 0.333569 0.536743
+Expected output is : 11.2039
+Output produced is : 10.6407
+MSE : 0.56324
+Input to neural network is : 0.219136 0.477551
+Expected output is : 10.9158
+Output produced is : 10.1761
+MSE : 0.739691
+Input to neural network is :  0.94982 0.466169
+Expected output is : 12.3658
+Output produced is : 12.3823
+MSE : 0.016469
+Input to neural network is : 0.884318 0.967277
+Expected output is : 12.7359
+Output produced is : 13.7528
+MSE : 1.01687
+Input to neural network is : 0.183765 0.458039
+Expected output is : 10.8256
+Output produced is : 9.95203
+MSE : 0.873569
+Input to neural network is : 0.780224 0.766448
+Expected output is : 12.3269
+Output produced is : 12.7343
+MSE : 0.407408
+Input to neural network is : 0.904782 0.257585
+Expected output is : 12.0671
+Output produced is : 11.4689
+MSE : 0.598224
+Input to neural network is : 0.761612 0.963505
+Expected output is : 12.4867
+Output produced is : 13.3065
+MSE : 0.81978
+Input to neural network is : 0.331846 0.402379
+Expected output is : 11.0661
+Output produced is : 10.2058
+MSE : 0.860324
+Input to neural network is : 0.560785 0.554448
+Expected output is : 11.676
+Output produced is : 11.4221
+MSE : 0.253932
+Input to neural network is : 0.622167 0.191028
+Expected output is : 11.4354
+Output produced is : 10.5146
+MSE : 0.920843
+Input to neural network is : 0.477961 0.360105
+Expected output is : 11.316
+Output produced is : 10.7034
+MSE : 0.612642
+Input to neural network is :  0.65388 0.916523
+Expected output is : 12.2243
+Output produced is : 13.0273
+MSE : 0.803019
+Input to neural network is : 0.210692 0.606542
+Expected output is : 11.0279
+Output produced is : 10.631
+MSE : 0.396884
+Input to neural network is : 0.865434 0.109778
+Expected output is : 11.8406
+Output produced is : 11.0818
+MSE : 0.758776
+Input to neural network is : 0.373556 0.199003
+Expected output is : 10.9461
+Output produced is : 9.97181
+MSE : 0.974289
+Input to neural network is :  0.64652 0.592692
+Expected output is : 11.8857
+Output produced is : 12.1153
+MSE : 0.229642
+Input to neural network is : 0.676554 0.596341
+Expected output is : 11.9494
+Output produced is : 12.1868
+MSE : 0.237403
+Input to neural network is : 0.0588605  0.560872
+Expected output is : 10.6786
+Output produced is : 10.1822
+MSE : 0.496355
+Input to neural network is : 0.563617 0.242626
+Expected output is : 11.3699
+Output produced is : 10.7609
+MSE : 0.609006
+Input to neural network is : 0.0189108  0.343841
+Expected output is : 10.3817
+Output produced is : 9.48149
+MSE : 0.900212
+Input to neural network is : 0.00907344   0.923692
+Expected output is : 10.9418
+Output produced is : 11.3578
+MSE : 0.416001
+Input to neural network is : 0.601427 0.770686
+Expected output is : 11.9735
+Output produced is : 12.6321
+MSE : 0.658589
+Input to neural network is : 0.887197 0.933273
+Expected output is : 12.7077
+Output produced is : 13.9036
+MSE : 1.19588
+Input to neural network is : 0.173065 0.447982
+Expected output is : 10.7941
+Output produced is : 10.0903
+MSE : 0.703841
+Input to neural network is : 0.487721 0.795231
+Expected output is : 11.7707
+Output produced is : 12.1488
+MSE : 0.378141
+Input to neural network is : 0.639009 0.965682
+Expected output is : 12.2437
+Output produced is : 13.061
+MSE : 0.817344
+Input to neural network is : 0.155336 0.292889
+Expected output is : 10.6036
+Output produced is : 9.50208
+MSE : 1.10152
+Input to neural network is : 0.882204 0.366028
+Expected output is : 12.1304
+Output produced is : 11.946
+MSE : 0.184386
+Input to neural network is : 0.899431 0.747638
+Expected output is : 12.5465
+Output produced is : 13.1749
+MSE : 0.628427
+Input to neural network is : 0.475806 0.272987
+Expected output is : 11.2246
+Output produced is : 10.4145
+MSE : 0.810143
+Input to neural network is :  0.94664 0.122326
+Expected output is : 12.0156
+Output produced is : 11.4233
+MSE : 0.592261
+Input to neural network is : 0.865679 0.623194
+Expected output is : 12.3546
+Output produced is : 12.7744
+MSE : 0.419776
+Input to neural network is : 0.718666  0.92454
+Expected output is : 12.3619
+Output produced is : 13.1798
+MSE : 0.817883
+Input to neural network is : 0.184066 0.282284
+Expected output is : 10.6504
+Output produced is : 9.58524
+MSE : 1.06516
+Input to neural network is : 0.167165 0.202977
+Expected output is : 10.5373
+Output produced is : 9.38465
+MSE : 1.15265
+Input to neural network is : 0.626125 0.176239
+Expected output is : 11.4285
+Output produced is : 10.7491
+MSE : 0.67944
+Input to neural network is : 0.126669 0.227552
+Expected output is : 10.4809
+Output produced is : 9.48512
+MSE : 0.995775
+Input to neural network is :  0.946925 0.0138663
+Expected output is : 11.9077
+Output produced is : 11.3742
+MSE : 0.533547
+Input to neural network is : 0.160824 0.119989
+Expected output is : 10.4416
+Output produced is : 9.38502
+MSE : 1.05658
+Input to neural network is : 0.461848 0.648545
+Expected output is : 11.5722
+Output produced is : 12.0073
+MSE : 0.435118
+Input to neural network is : 0.915221 0.100857
+Expected output is : 11.9313
+Output produced is : 11.657
+MSE : 0.27428
+Input to neural network is : 0.614227 0.070557
+Expected output is : 11.299
+Output produced is : 10.6823
+MSE : 0.616743
+Input to neural network is : 0.393746 0.496431
+Expected output is : 11.2839
+Output produced is : 11.374
+MSE : 0.0901318
+Input to neural network is : 0.436585 0.293177
+Expected output is : 11.1663
+Output produced is : 10.8727
+MSE : 0.293605
+Input to neural network is : 0.244069 0.912391
+Expected output is : 11.4005
+Output produced is : 12.2117
+MSE : 0.811166
+Input to neural network is : 0.566164 0.190709
+Expected output is : 11.323
+Output produced is : 10.8986
+MSE : 0.424438
+Input to neural network is : 0.0347164  0.431844
+Expected output is : 10.5013
+Output produced is : 10.0402
+MSE : 0.461104
+Input to neural network is : 0.813904 0.753383
+Expected output is : 12.3812
+Output produced is : 13.4643
+MSE : 1.08313
+Input to neural network is : 0.356383  0.99797
+Expected output is : 11.7107
+Output produced is : 12.6288
+MSE : 0.918069
+Input to neural network is : 0.0356664  0.523548
+Expected output is : 10.5949
+Output produced is : 10.1328
+MSE : 0.462053
+Input to neural network is : 0.200947 0.661792
+Expected output is : 11.0637
+Output produced is : 11.0795
+MSE : 0.0158138
+Input to neural network is : 0.699787 0.327616
+Expected output is : 11.7272
+Output produced is : 11.5867
+MSE : 0.140543
+Input to neural network is : 0.889343 0.646712
+Expected output is : 12.4254
+Output produced is : 13.1174
+MSE : 0.692009
+Input to neural network is :  0.341482 0.0501679
+Expected output is : 10.7331
+Output produced is : 9.63279
+MSE : 1.10031
+Input to neural network is : 0.766701  0.80333
+Expected output is : 12.3367
+Output produced is : 13.2123
+MSE : 0.875581
+Input to neural network is : 0.698713 0.681922
+Expected output is : 12.0793
+Output produced is : 12.5138
+MSE : 0.434521
+Input to neural network is : 0.904187  0.31294
+Expected output is : 12.1213
+Output produced is : 11.9917
+MSE : 0.129629
+Input to neural network is : 0.752479 0.297933
+Expected output is : 11.8029
+Output produced is : 11.5207
+MSE : 0.282176
+Input to neural network is : 0.809371 0.189064
+Expected output is : 11.8078
+Output produced is : 11.4088
+MSE : 0.399014
+Input to neural network is :  0.591111 0.0534394
+Expected output is : 11.2357
+Output produced is : 10.4164
+MSE : 0.819324
+Input to neural network is : 0.101454 0.157275
+Expected output is : 10.3602
+Output produced is : 9.32875
+MSE : 1.03145
+Input to neural network is : 0.244149 0.136171
+Expected output is : 10.6245
+Output produced is : 9.77524
+MSE : 0.849262
+Input to neural network is :  0.589119 0.0580523
+Expected output is : 11.2363
+Output produced is : 10.6628
+MSE : 0.573544
+Input to neural network is : 0.889553 0.945502
+Expected output is : 12.7246
+Output produced is : 14.2627
+MSE : 1.53811
+Input to neural network is : 0.0560222   0.92522
+Expected output is : 11.0373
+Output produced is : 11.4189
+MSE : 0.381561
+Input to neural network is :  0.46905 0.256969
+Expected output is : 11.1951
+Output produced is : 10.6975
+MSE : 0.497588
+Input to neural network is : 0.587011 0.168837
+Expected output is : 11.3429
+Output produced is : 10.8468
+MSE : 0.496061
+Input to neural network is : 0.584585 0.476355
+Expected output is : 11.6455
+Output produced is : 11.7707
+MSE : 0.125182
+Input to neural network is : 0.815549 0.926068
+Expected output is : 12.5572
+Output produced is : 13.7321
+MSE : 1.17489
+Input to neural network is : 0.526523  0.58225
+Expected output is : 11.6353
+Output produced is : 11.7078
+MSE : 0.0724678
+Input to neural network is : 0.729398 0.225236
+Expected output is : 11.684
+Output produced is : 11.2992
+MSE : 0.384838
+Input to neural network is : 0.264172 0.633585
+Expected output is : 11.1619
+Output produced is : 11.1141
+MSE : 0.0478487
+Input to neural network is :  0.538175 0.0166506
+Expected output is : 11.093
+Output produced is : 10.2024
+MSE : 0.890608
+Input to neural network is : 0.931518 0.347546
+Expected output is : 12.2106
+Output produced is : 12.3868
+MSE : 0.176189
+Input to neural network is : 0.205714 0.522629
+Expected output is : 10.9341
+Output produced is : 10.6962
+MSE : 0.237929
+Input to neural network is : 0.400985 0.307168
+Expected output is : 11.1091
+Output produced is : 10.6952
+MSE : 0.413893
+Input to neural network is : 0.679904 0.645134
+Expected output is : 12.0049
+Output produced is : 12.5227
+MSE : 0.517757
+Input to neural network is : 0.443339 0.269022
+Expected output is : 11.1557
+Output produced is : 10.6945
+MSE : 0.461214
+Input to neural network is : 0.703186 0.332892
+Expected output is : 11.7393
+Output produced is : 11.6932
+MSE : 0.0460539
+Input to neural network is : 0.214524 0.759208
+Expected output is : 11.1883
+Output produced is : 11.4403
+MSE : 0.25201
+Input to neural network is : 0.258112 0.683574
+Expected output is : 11.1998
+Output produced is : 11.328
+MSE : 0.128241
+Input to neural network is : 0.0161775  0.845123
+Expected output is : 10.8775
+Output produced is : 11.0457
+MSE : 0.168166
+Input to neural network is : 0.852411 0.600763
+Expected output is : 12.3056
+Output produced is : 12.8277
+MSE : 0.522088
+Input to neural network is : 0.321478  0.66796
+Expected output is : 11.3109
+Output produced is : 11.3707
+MSE : 0.0597878
+Input to neural network is : 0.52683   0.848
+Expected output is : 11.9017
+Output produced is : 12.4642
+MSE : 0.562488
+Input to neural network is :  0.25021 0.256228
+Expected output is : 10.7566
+Output produced is : 9.9587
+MSE : 0.7979
+Input to neural network is : 0.0732357  0.514382
+Expected output is : 10.6609
+Output produced is : 10.2161
+MSE : 0.444791
+Input to neural network is : 0.889813 0.611411
+Expected output is : 12.391
+Output produced is : 12.9289
+MSE : 0.537861
+Input to neural network is : 0.531033 0.821331
+Expected output is : 11.8834
+Output produced is : 12.3726
+MSE : 0.489227
+Input to neural network is : 0.958957 0.736747
+Expected output is : 12.6547
+Output produced is : 13.3103
+MSE : 0.655601
+Input to neural network is : 0.343959 0.359942
+Expected output is : 11.0479
+Output produced is : 10.4272
+MSE : 0.620717
+Input to neural network is : 0.0439153 0.0238632
+Expected output is : 10.1117
+Output produced is : 8.71588
+MSE : 1.39582
+Input to neural network is : 0.0050762  0.487254
+Expected output is : 10.4974
+Output produced is : 9.95742
+MSE : 0.539979
+Input to neural network is : 0.292886 0.708262
+Expected output is : 11.294
+Output produced is : 11.4437
+MSE : 0.149657
+Input to neural network is : 0.820146  0.50741
+Expected output is : 12.1477
+Output produced is : 12.4048
+MSE : 0.257109
+Input to neural network is :  0.467471 0.0782579
+Expected output is : 11.0132
+Output produced is : 10.1857
+MSE : 0.827488
+Input to neural network is : 0.190984 0.483648
+Expected output is : 10.8656
+Output produced is : 10.5629
+MSE : 0.302719
+Input to neural network is :  0.923381 0.0433947
+Expected output is : 11.8902
+Output produced is : 11.5214
+MSE : 0.3688
+Input to neural network is : 0.084411 0.244858
+Expected output is : 10.4137
+Output produced is : 9.65941
+MSE : 0.754287
+Input to neural network is : 0.711355 0.611241
+Expected output is : 12.034
+Output produced is : 12.5801
+MSE : 0.546131
+Input to neural network is : 0.0928584  0.961565
+Expected output is : 11.1473
+Output produced is : 11.6534
+MSE : 0.506094
+Input to neural network is : 0.867469 0.166094
+Expected output is : 11.901
+Output produced is : 11.684
+MSE : 0.217008
+Input to neural network is : 0.475947 0.757282
+Expected output is : 11.7092
+Output produced is : 12.1731
+MSE : 0.463949
+Input to neural network is :   0.777505 0.00698012
+Expected output is : 11.562
+Output produced is : 10.9654
+MSE : 0.596601
+Input to neural network is : 0.578613 0.736462
+Expected output is : 11.8937
+Output produced is : 12.421
+MSE : 0.527302
+Input to neural network is : 0.743727 0.922572
+Expected output is : 12.41
+Output produced is : 13.3248
+MSE : 0.914805
+Input to neural network is : 0.0964041  0.787642
+Expected output is : 10.9805
+Output produced is : 10.9555
+MSE : 0.025012
+Input to neural network is : 0.946435  0.10148
+Expected output is : 11.9944
+Output produced is : 11.5923
+MSE : 0.402069
+Input to neural network is : 0.274897 0.239321
+Expected output is : 10.7891
+Output produced is : 10.07
+MSE : 0.719142
+Input to neural network is :  0.809743 0.0950428
+Expected output is : 11.7145
+Output produced is : 11.303
+MSE : 0.411459
+Input to neural network is :  0.74673 0.277214
+Expected output is : 11.7707
+Output produced is : 11.6521
+MSE : 0.118617
+Input to neural network is : 0.173301 0.937714
+Expected output is : 11.2843
+Output produced is : 11.743
+MSE : 0.458711
+Input to neural network is :  0.760862 0.0966814
+Expected output is : 11.6184
+Output produced is : 11.1802
+MSE : 0.438233
+Input to neural network is : 0.981109 0.845273
+Expected output is : 12.8075
+Output produced is : 13.857
+MSE : 1.04946
+Input to neural network is :  0.34154 0.692463
+Expected output is : 11.3755
+Output produced is : 11.4187
+MSE : 0.0432205
+Input to neural network is : 0.456514 0.434398
+Expected output is : 11.3474
+Output produced is : 11.0773
+MSE : 0.270051
+Input to neural network is : 0.654029 0.323983
+Expected output is : 11.632
+Output produced is : 11.3895
+MSE : 0.242525
+Input to neural network is : 0.600492 0.129976
+Expected output is : 11.331
+Output produced is : 10.7583
+MSE : 0.572669
+Input to neural network is : 0.081265 0.377997
+Expected output is : 10.5405
+Output produced is : 9.94988
+MSE : 0.590623
+Input to neural network is : 0.136956 0.659878
+Expected output is : 10.9338
+Output produced is : 10.9033
+MSE : 0.0305195
+Input to neural network is : 0.114459 0.880683
+Expected output is : 11.1096
+Output produced is : 11.4208
+MSE : 0.311244
+Input to neural network is :  0.58245 0.210863
+Expected output is : 11.3758
+Output produced is : 10.9992
+MSE : 0.376576
+Input to neural network is : 0.668326 0.528885
+Expected output is : 11.8655
+Output produced is : 12.1242
+MSE : 0.258654
+Input to neural network is : 0.312343 0.943222
+Expected output is : 11.5679
+Output produced is : 12.1305
+MSE : 0.562631
+Input to neural network is : 0.768206 0.122086
+Expected output is : 11.6585
+Output produced is : 11.2573
+MSE : 0.401233
+Input to neural network is : 0.0382648  0.514936
+Expected output is : 10.5915
+Output produced is : 10.1851
+MSE : 0.406371
+Input to neural network is :   0.3993 0.211565
+Expected output is : 11.0102
+Output produced is : 10.4921
+MSE : 0.518119
+Input to neural network is :  0.45265 0.160162
+Expected output is : 11.0655
+Output produced is : 10.5631
+MSE : 0.502413
+Input to neural network is : 0.308247 0.433758
+Expected output is : 11.0503
+Output produced is : 10.8996
+MSE : 0.150705
+Input to neural network is : 0.00543489   0.649787
+Expected output is : 10.6607
+Output produced is : 10.5829
+MSE : 0.0778131
+Input to neural network is : 0.126222 0.461949
+Expected output is : 10.7144
+Output produced is : 10.4557
+MSE : 0.258665
+Input to neural network is : 0.0841846   0.78025
+Expected output is : 10.9486
+Output produced is : 11.1943
+MSE : 0.245722
+Input to neural network is : 0.785932 0.684677
+Expected output is : 12.2565
+Output produced is : 12.9993
+MSE : 0.742834
+Input to neural network is : 0.910227 0.867197
+Expected output is : 12.6876
+Output produced is : 13.7192
+MSE : 1.03159
+Input to neural network is : 0.0626739 0.0471826
+Expected output is : 10.1725
+Output produced is : 9.01245
+MSE : 1.16005
+Input to neural network is : 0.527075 0.177133
+Expected output is : 11.2313
+Output produced is : 10.7674
+MSE : 0.463914
+Input to neural network is : 0.927866 0.109525
+Expected output is : 11.9653
+Output produced is : 11.8053
+MSE : 0.159971
+Input to neural network is : 0.387996 0.596191
+Expected output is : 11.3722
+Output produced is : 11.4994
+MSE : 0.12724
+Input to neural network is : 0.638409  0.70034
+Expected output is : 11.9772
+Output produced is : 12.4796
+MSE : 0.502439
+Input to neural network is : 0.539413 0.406615
+Expected output is : 11.4854
+Output produced is : 11.3777
+MSE : 0.107742
+Input to neural network is : 0.822426 0.577678
+Expected output is : 12.2225
+Output produced is : 12.642
+MSE : 0.419489
+Input to neural network is : 0.921551 0.221726
+Expected output is : 12.0648
+Output produced is : 11.9669
+MSE : 0.0978909
+Input to neural network is : 0.789244 0.374201
+Expected output is : 11.9527
+Output produced is : 11.9843
+MSE : 0.0315905
+Input to neural network is :  0.381888 0.0974906
+Expected output is : 10.8613
+Output produced is : 10.1122
+MSE : 0.749136
+Input to neural network is : 0.807959 0.387323
+Expected output is : 12.0032
+Output produced is : 12.1449
+MSE : 0.14169
+Input to neural network is : 0.747277 0.934181
+Expected output is : 12.4287
+Output produced is : 13.3325
+MSE : 0.903833
+Input to neural network is : 0.849272 0.831462
+Expected output is : 12.53
+Output produced is : 13.2079
+MSE : 0.677908
+Input to neural network is : 0.714432 0.635204
+Expected output is : 12.0641
+Output produced is : 12.2322
+MSE : 0.168131
+Input to neural network is : 0.516139 0.624658
+Expected output is : 11.6569
+Output produced is : 11.628
+MSE : 0.0289326
+Input to neural network is : 0.502401 0.578813
+Expected output is : 11.5836
+Output produced is : 11.4815
+MSE : 0.102126
+Input to neural network is :  0.671841 0.0294762
+Expected output is : 11.3732
+Output produced is : 10.629
+MSE : 0.74419
+Input to neural network is : 0.755946 0.599707
+Expected output is : 12.1116
+Output produced is : 12.3411
+MSE : 0.229478
+Input to neural network is : 0.139001 0.143942
+Expected output is : 10.4219
+Output produced is : 9.45495
+MSE : 0.96695
+Input to neural network is : 0.195898  0.77741
+Expected output is : 11.1692
+Output produced is : 11.2453
+MSE : 0.0760679
+Input to neural network is : 0.844281 0.735311
+Expected output is : 12.4239
+Output produced is : 12.9735
+MSE : 0.549628
+Input to neural network is : 0.184025 0.666707
+Expected output is : 11.0348
+Output produced is : 10.8618
+MSE : 0.173039
+Input to neural network is :  0.31299 0.105576
+Expected output is : 10.7316
+Output produced is : 9.87819
+MSE : 0.853411
+Input to neural network is : 0.888433 0.102233
+Expected output is : 11.8791
+Output produced is : 11.5722
+MSE : 0.306925
+Input to neural network is : 0.479777 0.270321
+Expected output is : 11.2299
+Output produced is : 10.8584
+MSE : 0.37155
+Input to neural network is : 0.199724 0.287736
+Expected output is : 10.6872
+Output produced is : 10.1363
+MSE : 0.550892
+Input to neural network is : 0.657643 0.947001
+Expected output is : 12.2623
+Output produced is : 13.1313
+MSE : 0.869035
+Input to neural network is : 0.221918 0.506915
+Expected output is : 10.9508
+Output produced is : 10.6808
+MSE : 0.270007
+Input to neural network is : 0.778463 0.936349
+Expected output is : 12.4933
+Output produced is : 13.3341
+MSE : 0.840836
+Input to neural network is : 0.142119 0.294601
+Expected output is : 10.5788
+Output produced is : 9.87132
+MSE : 0.70748
+Input to neural network is : 0.561007  0.64452
+Expected output is : 11.7665
+Output produced is : 11.9481
+MSE : 0.181614
+Input to neural network is : 0.873414 0.232848
+Expected output is : 11.9797
+Output produced is : 11.8152
+MSE : 0.164456
+Input to neural network is : 0.673996 0.629359
+Expected output is : 11.9774
+Output produced is : 12.2267
+MSE : 0.249271
+Input to neural network is : 0.832555 0.812997
+Expected output is : 12.4781
+Output produced is : 13.075
+MSE : 0.596864
+Input to neural network is :  0.773301 0.0284525
+Expected output is : 11.5751
+Output produced is : 10.9594
+MSE : 0.615654
+Input to neural network is : 0.590407 0.617582
+Expected output is : 11.7984
+Output produced is : 11.9112
+MSE : 0.112795
+Input to neural network is : 0.763764 0.774432
+Expected output is : 12.302
+Output produced is : 12.7514
+MSE : 0.449427
+Input to neural network is :  0.284289 0.0767534
+Expected output is : 10.6453
+Output produced is : 9.71815
+MSE : 0.927151
+Input to neural network is : 0.880009 0.172722
+Expected output is : 11.9327
+Output produced is : 11.6833
+MSE : 0.249444
+Input to neural network is : 0.178987 0.359786
+Expected output is : 10.7178
+Output produced is : 10.1884
+MSE : 0.529436
+Input to neural network is : 0.443043  0.37871
+Expected output is : 11.2648
+Output produced is : 11.024
+MSE : 0.240777
+Input to neural network is : 0.647522 0.100686
+Expected output is : 11.3957
+Output produced is : 10.9657
+MSE : 0.429955
+Input to neural network is : 0.325711  0.86944
+Expected output is : 11.5209
+Output produced is : 11.9302
+MSE : 0.409298
+Input to neural network is :   0.6076 0.104174
+Expected output is : 11.3194
+Output produced is : 10.8632
+MSE : 0.456237
+Input to neural network is : 0.805789 0.749719
+Expected output is : 12.3613
+Output produced is : 13.007
+MSE : 0.645688
+Input to neural network is : 0.398775 0.366796
+Expected output is : 11.1643
+Output produced is : 10.8581
+MSE : 0.306152
+Input to neural network is : 0.394239 0.272189
+Expected output is : 11.0607
+Output produced is : 10.6536
+MSE : 0.407137
+Input to neural network is :  0.599644 0.0682348
+Expected output is : 11.2675
+Output produced is : 10.7941
+MSE : 0.473368
+Input to neural network is : 0.901549 0.432199
+Expected output is : 12.2353
+Output produced is : 12.5666
+MSE : 0.331341
+Input to neural network is : 0.881232  0.67485
+Expected output is : 12.4373
+Output produced is : 13.0313
+MSE : 0.593987
+Input to neural network is : 0.460652 0.471639
+Expected output is : 11.3929
+Output produced is : 11.2798
+MSE : 0.113094
+Input to neural network is : 0.292432 0.224415
+Expected output is : 10.8093
+Output produced is : 10.2428
+MSE : 0.566514
+Input to neural network is : 0.246071 0.576721
+Expected output is : 11.0689
+Output produced is : 10.9872
+MSE : 0.0817347
+Input to neural network is : 0.301169  0.12608
+Expected output is : 10.7284
+Output produced is : 10.0937
+MSE : 0.634736
+Input to neural network is : 0.749443 0.480155
+Expected output is : 11.979
+Output produced is : 12.2569
+MSE : 0.277888
+Input to neural network is : 0.485866 0.192486
+Expected output is : 11.1642
+Output produced is : 10.7976
+MSE : 0.366646
+Input to neural network is : 0.858866 0.133388
+Expected output is : 11.8511
+Output produced is : 11.7548
+MSE : 0.0962534
+Input to neural network is : 0.293171 0.184577
+Expected output is : 10.7709
+Output produced is : 10.2769
+MSE : 0.494044
+Input to neural network is : 0.00282779   0.900772
+Expected output is : 10.9064
+Output produced is : 11.1841
+MSE : 0.277728
+Input to neural network is : 0.288752 0.808617
+Expected output is : 11.3861
+Output produced is : 11.7493
+MSE : 0.363204
+Input to neural network is : 0.650491 0.687527
+Expected output is : 11.9885
+Output produced is : 12.4493
+MSE : 0.460773
+Input to neural network is :  0.175413 0.0447295
+Expected output is : 10.3956
+Output produced is : 9.55334
+MSE : 0.842265
+Input to neural network is : 0.959716 0.775058
+Expected output is : 12.6945
+Output produced is : 13.544
+MSE : 0.849503
+Input to neural network is : 0.112964 0.861265
+Expected output is : 11.0872
+Output produced is : 11.2213
+MSE : 0.134087
+Input to neural network is : 0.207257 0.994196
+Expected output is : 11.4087
+Output produced is : 11.7702
+MSE : 0.361509
+Input to neural network is : 0.536115 0.667908
+Expected output is : 11.7401
+Output produced is : 11.8972
+MSE : 0.157063
+Input to neural network is : 0.465835 0.828546
+Expected output is : 11.7602
+Output produced is : 12.0432
+MSE : 0.282971
+Input to neural network is : 0.892324 0.711906
+Expected output is : 12.4966
+Output produced is : 12.9213
+MSE : 0.424663
+Input to neural network is : 0.405267 0.193493
+Expected output is : 11.004
+Output produced is : 10.3678
+MSE : 0.636191
+Input to neural network is : 0.837986 0.154711
+Expected output is : 11.8307
+Output produced is : 11.5329
+MSE : 0.297805
+Input to neural network is : 0.673648 0.323852
+Expected output is : 11.6711
+Output produced is : 11.4922
+MSE : 0.17892
+Input to neural network is : 0.347196 0.532514
+Expected output is : 11.2269
+Output produced is : 11.0726
+MSE : 0.154346
+Input to neural network is :  0.45724 0.640368
+Expected output is : 11.5548
+Output produced is : 11.6376
+MSE : 0.0827904
+Input to neural network is : 0.717092 0.460067
+Expected output is : 11.8943
+Output produced is : 11.9465
+MSE : 0.0522194
+Input to neural network is :    0.54114 0.00584319
+Expected output is : 11.0881
+Output produced is : 10.4336
+MSE : 0.654549
+Input to neural network is : 0.268684  0.19163
+Expected output is : 10.729
+Output produced is : 10.1495
+MSE : 0.579459
+Input to neural network is :  0.69337 0.444097
+Expected output is : 11.8308
+Output produced is : 11.9655
+MSE : 0.134664
+Input to neural network is :  0.23636 0.653087
+Expected output is : 11.1258
+Output produced is : 11.134
+MSE : 0.00818157
+Input to neural network is : 0.219155 0.349324
+Expected output is : 10.7876
+Output produced is : 10.4005
+MSE : 0.387118
+Input to neural network is : 0.514352 0.426412
+Expected output is : 11.4551
+Output produced is : 11.4424
+MSE : 0.0127144
+Input to neural network is :   0.34352 0.0504663
+Expected output is : 10.7375
+Output produced is : 10.1112
+MSE : 0.626321
+Input to neural network is : 0.0943199  0.809355
+Expected output is : 10.998
+Output produced is : 11.1805
+MSE : 0.182475
+Input to neural network is : 0.879013 0.986644
+Expected output is : 12.7447
+Output produced is : 13.7842
+MSE : 1.03954
+Input to neural network is : 0.521261  0.28428
+Expected output is : 11.3268
+Output produced is : 11.0403
+MSE : 0.28645
+Input to neural network is : 0.180136 0.359247
+Expected output is : 10.7195
+Output produced is : 10.2853
+MSE : 0.434177
+Input to neural network is :  0.43899 0.853785
+Expected output is : 11.7318
+Output produced is : 12.1448
+MSE : 0.41298
+Input to neural network is : 0.683098 0.786187
+Expected output is : 12.1524
+Output produced is : 12.6167
+MSE : 0.464333
+Input to neural network is : 0.386299 0.140338
+Expected output is : 10.9129
+Output produced is : 10.3209
+MSE : 0.59195
+Input to neural network is : 0.426555  0.10339
+Expected output is : 10.9565
+Output produced is : 10.4048
+MSE : 0.551721
+Input to neural network is : 0.600405 0.967694
+Expected output is : 12.1685
+Output produced is : 12.8373
+MSE : 0.668836
+Input to neural network is : 0.109233  0.86909
+Expected output is : 11.0876
+Output produced is : 11.156
+MSE : 0.0683603
+Input to neural network is : 0.159324 0.802604
+Expected output is : 11.1213
+Output produced is : 11.1428
+MSE : 0.0214968
+Input to neural network is : 0.313187 0.395684
+Expected output is : 11.0221
+Output produced is : 10.6893
+MSE : 0.332754
+Input to neural network is :  0.45569 0.532342
+Expected output is : 11.4437
+Output produced is : 11.4119
+MSE : 0.0317841
+Input to neural network is : 0.745008 0.970042
+Expected output is : 12.4601
+Output produced is : 13.1646
+MSE : 0.70453
+Input to neural network is :  0.958753 0.0885283
+Expected output is : 12.006
+Output produced is : 11.7525
+MSE : 0.253548
+Input to neural network is : 0.0205084 0.0530733
+Expected output is : 10.0941
+Output produced is : 9.12942
+MSE : 0.964684
+Input to neural network is : 0.897883 0.899521
+Expected output is : 12.6953
+Output produced is : 13.4331
+MSE : 0.73775
+Input to neural network is : 0.039717 0.419144
+Expected output is : 10.4986
+Output produced is : 9.95111
+MSE : 0.547487
+Input to neural network is : 0.183801 0.219853
+Expected output is : 10.5875
+Output produced is : 9.97037
+MSE : 0.617129
+Input to neural network is : 0.778391 0.622791
+Expected output is : 12.1796
+Output produced is : 12.5085
+MSE : 0.328903
+Input to neural network is : 0.0736379  0.461489
+Expected output is : 10.6088
+Output produced is : 10.1972
+MSE : 0.411615
+Input to neural network is : 0.408978 0.459936
+Expected output is : 11.2779
+Output produced is : 11.1477
+MSE : 0.130165
+Input to neural network is : 0.601827 0.835533
+Expected output is : 12.0392
+Output produced is : 12.4888
+MSE : 0.449642
+Input to neural network is : 0.563327 0.202232
+Expected output is : 11.3289
+Output produced is : 10.9828
+MSE : 0.346125
+Input to neural network is : 0.803227  0.67256
+Expected output is : 12.279
+Output produced is : 12.6677
+MSE : 0.38868
+Input to neural network is : 0.071322 0.962551
+Expected output is : 11.1052
+Output produced is : 11.2301
+MSE : 0.124933
+Input to neural network is : 0.475164 0.384509
+Expected output is : 11.3348
+Output produced is : 11.1005
+MSE : 0.234252
+Input to neural network is : 0.358235 0.930854
+Expected output is : 11.6473
+Output produced is : 11.9525
+MSE : 0.305249
+Input to neural network is : 0.916851 0.103244
+Expected output is : 11.9369
+Output produced is : 11.7009
+MSE : 0.236035
+Input to neural network is : 0.900896 0.875604
+Expected output is : 12.6774
+Output produced is : 13.2981
+MSE : 0.620682
+Input to neural network is : 0.191772 0.921405
+Expected output is : 11.3049
+Output produced is : 11.3735
+MSE : 0.0686083
+Input to neural network is : 0.928678 0.089655
+Expected output is : 11.947
+Output produced is : 11.6392
+MSE : 0.307761
+Input to neural network is : 0.820926 0.968395
+Expected output is : 12.6102
+Output produced is : 13.193
+MSE : 0.582753
+Input to neural network is :   0.508799 0.00472651
+Expected output is : 11.0223
+Output produced is : 10.3052
+MSE : 0.717128
+Input to neural network is : 0.188248 0.287189
+Expected output is : 10.6637
+Output produced is : 10.0808
+MSE : 0.582918
+Input to neural network is : 0.627518 0.261886
+Expected output is : 11.5169
+Output produced is : 11.2675
+MSE : 0.249389
+Input to neural network is :  0.748678 0.0364959
+Expected output is : 11.5339
+Output produced is : 11.1632
+MSE : 0.370725
+Input to neural network is : 0.721822 0.350505
+Expected output is : 11.7941
+Output produced is : 11.7761
+MSE : 0.0180206
+Input to neural network is : 0.872028 0.285149
+Expected output is : 12.0292
+Output produced is : 12.055
+MSE : 0.0257807
+Input to neural network is : 0.552738 0.675255
+Expected output is : 11.7807
+Output produced is : 11.9789
+MSE : 0.198215
+Input to neural network is : 0.957709  0.62406
+Expected output is : 12.5395
+Output produced is : 12.9518
+MSE : 0.412326
+Input to neural network is : 0.637806 0.432873
+Expected output is : 11.7085
+Output produced is : 11.6314
+MSE : 0.0770807
+Input to neural network is : 0.00856861   0.996042
+Expected output is : 11.0132
+Output produced is : 11.081
+MSE : 0.0678377
+Input to neural network is : 0.363727  0.92542
+Expected output is : 11.6529
+Output produced is : 11.8894
+MSE : 0.236529
+Input to neural network is : 0.0992851  0.264624
+Expected output is : 10.4632
+Output produced is : 9.81316
+MSE : 0.650035
+Input to neural network is : 0.801024 0.291057
+Expected output is : 11.8931
+Output produced is : 11.8189
+MSE : 0.074235
+Input to neural network is : 0.186029 0.729702
+Expected output is : 11.1018
+Output produced is : 11.0506
+MSE : 0.0512285
+Input to neural network is :   0.380712 0.00695418
+Expected output is : 10.7684
+Output produced is : 10.1174
+MSE : 0.65099
+Input to neural network is : 0.698096 0.889511
+Expected output is : 12.2857
+Output produced is : 12.8372
+MSE : 0.551482
+Input to neural network is : 0.0116807  0.886344
+Expected output is : 10.9097
+Output produced is : 10.8834
+MSE : 0.0263157
+Input to neural network is :   0.1767 0.639199
+Expected output is : 10.9926
+Output produced is : 10.8365
+MSE : 0.156124
+Input to neural network is :  0.14823 0.925379
+Expected output is : 11.2218
+Output produced is : 11.3524
+MSE : 0.130626
+Input to neural network is : 0.675694 0.870053
+Expected output is : 12.2214
+Output produced is : 12.6515
+MSE : 0.430123
+Input to neural network is : 0.275884 0.547723
+Expected output is : 11.0995
+Output produced is : 10.8687
+MSE : 0.230832
+Input to neural network is : 0.155202 0.828622
+Expected output is : 11.139
+Output produced is : 11.1278
+MSE : 0.0111694
+Input to neural network is : 0.222978 0.112911
+Expected output is : 10.5589
+Output produced is : 9.88399
+MSE : 0.674912
+Input to neural network is : 0.452681 0.860784
+Expected output is : 11.7661
+Output produced is : 12.0589
+MSE : 0.292824
+Input to neural network is : 0.545784  0.46125
+Expected output is : 11.5528
+Output produced is : 11.4737
+MSE : 0.0790615
+Input to neural network is : 0.856826 0.909512
+Expected output is : 12.6232
+Output produced is : 13.2155
+MSE : 0.592347
+Input to neural network is : 0.386669 0.956111
+Expected output is : 11.7294
+Output produced is : 11.9452
+MSE : 0.215751
+Input to neural network is : 0.174136 0.187693
+Expected output is : 10.536
+Output produced is : 9.85044
+MSE : 0.685565
+Input to neural network is : 0.247168 0.360164
+Expected output is : 10.8545
+Output produced is : 10.439
+MSE : 0.41549
+Input to neural network is : 0.917395  0.62788
+Expected output is : 12.4627
+Output produced is : 12.8036
+MSE : 0.340889
+Input to neural network is : 0.367118 0.615491
+Expected output is : 11.3497
+Output produced is : 11.2575
+MSE : 0.0921926
+Input to neural network is : 0.517391 0.378799
+Expected output is : 11.4136
+Output produced is : 11.2047
+MSE : 0.208861
+Input to neural network is : 0.501835 0.694091
+Expected output is : 11.6978
+Output produced is : 11.8058
+MSE : 0.108039
+Input to neural network is : 0.0179977  0.650066
+Expected output is : 10.6861
+Output produced is : 10.4129
+MSE : 0.273194
+Input to neural network is :  0.61947 0.693692
+Expected output is : 11.9326
+Output produced is : 12.1357
+MSE : 0.203124
+Input to neural network is : 0.520118 0.895354
+Expected output is : 11.9356
+Output produced is : 12.2387
+MSE : 0.303053
+Input to neural network is : 0.241415  0.67532
+Expected output is : 11.1581
+Output produced is : 11.0248
+MSE : 0.133299
+Input to neural network is : 0.723975 0.464393
+Expected output is : 11.9123
+Output produced is : 11.9105
+MSE : 0.00181389
+Input to neural network is : 0.788231 0.176656
+Expected output is : 11.7531
+Output produced is : 11.5194
+MSE : 0.233716
+Input to neural network is : 0.325177 0.334016
+Expected output is : 10.9844
+Output produced is : 10.6197
+MSE : 0.364744
+Input to neural network is : 0.637906 0.182003
+Expected output is : 11.4578
+Output produced is : 11.1931
+MSE : 0.26475
+Input to neural network is :  0.243528 0.0245755
+Expected output is : 10.5116
+Output produced is : 9.85041
+MSE : 0.661193
+Input to neural network is : 0.138114 0.417663
+Expected output is : 10.6939
+Output produced is : 10.396
+MSE : 0.297948
+Input to neural network is : 0.212269 0.385282
+Expected output is : 10.8098
+Output produced is : 10.5597
+MSE : 0.250051
+Input to neural network is : 0.777828 0.129663
+Expected output is : 11.6853
+Output produced is : 11.6101
+MSE : 0.075243
+Input to neural network is : 0.0131615  0.144946
+Expected output is : 10.1713
+Output produced is : 9.56929
+MSE : 0.602014
+Input to neural network is : 0.745154 0.530552
+Expected output is : 12.0209
+Output produced is : 12.3845
+MSE : 0.363645
+Input to neural network is : 0.523745  0.24699
+Expected output is : 11.2945
+Output produced is : 11.1691
+MSE : 0.125418
+Input to neural network is : 0.224643 0.541743
+Expected output is : 10.991
+Output produced is : 10.9574
+MSE : 0.0335741
+Input to neural network is : 0.897055 0.844113
+Expected output is : 12.6382
+Output produced is : 13.3902
+MSE : 0.752019
+Input to neural network is : 0.235435 0.417174
+Expected output is : 10.888
+Output produced is : 10.649
+MSE : 0.23903
+Input to neural network is : 0.739467  0.47685
+Expected output is : 11.9558
+Output produced is : 12.1394
+MSE : 0.183622
+Input to neural network is : 0.0924937  0.463442
+Expected output is : 10.6484
+Output produced is : 10.3604
+MSE : 0.28799
+Input to neural network is : 0.941243 0.880725
+Expected output is : 12.7632
+Output produced is : 13.4781
+MSE : 0.714878
+Input to neural network is : 0.640098  0.26642
+Expected output is : 11.5466
+Output produced is : 11.365
+MSE : 0.181616
+Input to neural network is : 0.214741 0.278005
+Expected output is : 10.7075
+Output produced is : 10.284
+MSE : 0.423532
+Input to neural network is : 0.448423 0.458269
+Expected output is : 11.3551
+Output produced is : 11.2902
+MSE : 0.0648956
+Input to neural network is :  0.30258 0.586537
+Expected output is : 11.1917
+Output produced is : 11.1594
+MSE : 0.0322628
+Input to neural network is : 0.875932 0.514849
+Expected output is : 12.2667
+Output produced is : 12.5457
+MSE : 0.278989
+Input to neural network is : 0.971818  0.65376
+Expected output is : 12.5974
+Output produced is : 13.0256
+MSE : 0.428185
+Input to neural network is : 0.644512  0.98498
+Expected output is : 12.274
+Output produced is : 12.7312
+MSE : 0.457232
+Input to neural network is : 0.798706 0.389667
+Expected output is : 11.9871
+Output produced is : 11.9286
+MSE : 0.0584736
+Input to neural network is : 0.515532 0.322451
+Expected output is : 11.3535
+Output produced is : 11.0735
+MSE : 0.279994
+Input to neural network is : 0.636656 0.740175
+Expected output is : 12.0135
+Output produced is : 12.2123
+MSE : 0.198819
+Input to neural network is : 0.864194 0.533712
+Expected output is : 12.2621
+Output produced is : 12.3849
+MSE : 0.122776
+Input to neural network is :  0.584288 0.0996293
+Expected output is : 11.2682
+Output produced is : 10.822
+MSE : 0.446194
+Input to neural network is : 0.950885 0.323755
+Expected output is : 12.2255
+Output produced is : 12.2483
+MSE : 0.0227795
+Input to neural network is : 0.576479 0.043379
+Expected output is : 11.1963
+Output produced is : 10.7378
+MSE : 0.458467
+Input to neural network is : 0.787197 0.517722
+Expected output is : 12.0921
+Output produced is : 12.2371
+MSE : 0.14499
+Input to neural network is : 0.924104 0.427295
+Expected output is : 12.2755
+Output produced is : 12.404
+MSE : 0.128542
+Input to neural network is : 0.784142 0.138845
+Expected output is : 11.7071
+Output produced is : 11.4747
+MSE : 0.23243
+Input to neural network is :   0.7053 0.232565
+Expected output is : 11.6432
+Output produced is : 11.4733
+MSE : 0.169909
+Input to neural network is :   0.597113 0.00788008
+Expected output is : 11.2021
+Output produced is : 10.7826
+MSE : 0.419485
+Input to neural network is : 0.819102 0.473045
+Expected output is : 12.1112
+Output produced is : 12.2966
+MSE : 0.18536
+Input to neural network is : 0.522729  0.79092
+Expected output is : 11.8364
+Output produced is : 12.0913
+MSE : 0.254914
+Input to neural network is : 0.126805 0.167241
+Expected output is : 10.4209
+Output produced is : 9.84147
+MSE : 0.579427
+Input to neural network is : 0.775899 0.925511
+Expected output is : 12.4773
+Output produced is : 13.0335
+MSE : 0.556169
+Input to neural network is : 0.556908 0.291431
+Expected output is : 11.4052
+Output produced is : 11.1837
+MSE : 0.221493
+Input to neural network is : 0.247962 0.193564
+Expected output is : 10.6895
+Output produced is : 10.2162
+MSE : 0.473301
+Input to neural network is : 0.0316064  0.112157
+Expected output is : 10.1754
+Output produced is : 9.53523
+MSE : 0.640171
+Input to neural network is : 0.727276 0.615894
+Expected output is : 12.0704
+Output produced is : 12.3664
+MSE : 0.295959
+Input to neural network is : 0.211786 0.678161
+Expected output is : 11.1017
+Output produced is : 11.0887
+MSE : 0.0129929
+Input to neural network is : 0.939649 0.788265
+Expected output is : 12.6676
+Output produced is : 13.2054
+MSE : 0.537824
+Input to neural network is :  0.72154 0.726846
+Expected output is : 12.1699
+Output produced is : 12.4302
+MSE : 0.260346
+Input to neural network is : 0.305987 0.645644
+Expected output is : 11.2576
+Output produced is : 11.1699
+MSE : 0.0876808
+Input to neural network is :  0.154141 0.0901297
+Expected output is : 10.3984
+Output produced is : 9.7658
+MSE : 0.632598
+Input to neural network is : 0.784489 0.859441
+Expected output is : 12.4284
+Output produced is : 12.8713
+MSE : 0.442899
+Input to neural network is : 0.322695 0.381603
+Expected output is : 11.027
+Output produced is : 10.7368
+MSE : 0.290185
+Input to neural network is : 0.867321 0.141796
+Expected output is : 11.8764
+Output produced is : 11.7305
+MSE : 0.145857
+Input to neural network is : 0.854648  0.39005
+Expected output is : 12.0993
+Output produced is : 12.1721
+MSE : 0.0727797
+Input to neural network is : 0.932716 0.981453
+Expected output is : 12.8469
+Output produced is : 13.4476
+MSE : 0.600705
+Input to neural network is : 0.557291 0.708616
+Expected output is : 11.8232
+Output produced is : 11.8814
+MSE : 0.0581789
+Input to neural network is : 0.906964 0.114199
+Expected output is : 11.9281
+Output produced is : 11.6961
+MSE : 0.232049
+Input to neural network is : 4.68777e-05    0.154927
+Expected output is : 10.155
+Output produced is : 9.47883
+MSE : 0.676173
+Input to neural network is :  0.307763 0.0316532
+Expected output is : 10.6472
+Output produced is : 10.0964
+MSE : 0.550828
+Input to neural network is :  0.267083 0.0350389
+Expected output is : 10.5692
+Output produced is : 10.0437
+MSE : 0.52545
+Input to neural network is : 0.647548 0.478869
+Expected output is : 11.774
+Output produced is : 11.8817
+MSE : 0.107702
+Input to neural network is :   0.7132 0.587197
+Expected output is : 12.0136
+Output produced is : 12.2349
+MSE : 0.221319
+Input to neural network is : 0.267134  0.43474
+Expected output is : 10.969
+Output produced is : 10.7782
+MSE : 0.190769
+Input to neural network is : 0.314043 0.573122
+Expected output is : 11.2012
+Output produced is : 11.1691
+MSE : 0.032095
+Input to neural network is : 0.080384 0.468185
+Expected output is : 10.629
+Output produced is : 10.3783
+MSE : 0.250682
+Input to neural network is : 0.663252 0.864873
+Expected output is : 12.1914
+Output produced is : 12.633
+MSE : 0.441576
+Input to neural network is : 0.327626 0.985946
+Expected output is : 11.6412
+Output produced is : 11.9189
+MSE : 0.277729
+Input to neural network is : 0.246476 0.194948
+Expected output is : 10.6879
+Output produced is : 10.2579
+MSE : 0.430017
+Input to neural network is : 0.127743 0.101124
+Expected output is : 10.3566
+Output produced is : 9.82125
+MSE : 0.535352
+Input to neural network is :  0.584998 0.0604589
+Expected output is : 11.2305
+Output produced is : 10.9694
+MSE : 0.261149
+Input to neural network is : 0.082577 0.142289
+Expected output is : 10.3074
+Output produced is : 9.84302
+MSE : 0.464379
+Input to neural network is : 0.769074 0.989541
+Expected output is : 12.5277
+Output produced is : 13.195
+MSE : 0.667282
+Input to neural network is : 0.256489 0.769121
+Expected output is : 11.2821
+Output produced is : 11.3688
+MSE : 0.0866995
+Input to neural network is : 0.144468 0.564252
+Expected output is : 10.8532
+Output produced is : 10.7091
+MSE : 0.144074
+Input to neural network is : 0.800775 0.411551
+Expected output is : 12.0131
+Output produced is : 12.1351
+MSE : 0.121983
+Input to neural network is : 0.599291 0.448322
+Expected output is : 11.6469
+Output produced is : 11.6683
+MSE : 0.0214281
+Input to neural network is :  0.89042 0.312491
+Expected output is : 12.0933
+Output produced is : 12.1697
+MSE : 0.0764122
+Input to neural network is : 0.0355193  0.157555
+Expected output is : 10.2286
+Output produced is : 9.70304
+MSE : 0.525556
+Input to neural network is : 0.747231 0.349562
+Expected output is : 11.844
+Output produced is : 11.9061
+MSE : 0.0620661
+Input to neural network is : 0.730677 0.827615
+Expected output is : 12.289
+Output produced is : 12.7036
+MSE : 0.414572
+Input to neural network is : 0.817747 0.393928
+Expected output is : 12.0294
+Output produced is : 12.0973
+MSE : 0.0678635
+Input to neural network is : 0.692488 0.145373
+Expected output is : 11.5303
+Output produced is : 11.3353
+MSE : 0.195007
+Input to neural network is : 0.379874 0.938963
+Expected output is : 11.6987
+Output produced is : 11.9553
+MSE : 0.25664
+Input to neural network is : 0.340321 0.507617
+Expected output is : 11.1883
+Output produced is : 11.067
+MSE : 0.121314
+Input to neural network is : 0.0400871  0.925318
+Expected output is : 11.0055
+Output produced is : 11.0471
+MSE : 0.0416098
+Input to neural network is : 0.568076 0.122664
+Expected output is : 11.2588
+Output produced is : 10.9818
+MSE : 0.277042
+Input to neural network is : 0.0676078   0.33715
+Expected output is : 10.4724
+Output produced is : 10.1105
+MSE : 0.361948
+Input to neural network is : 0.112205 0.324096
+Expected output is : 10.5485
+Output produced is : 10.2321
+MSE : 0.316444
+Input to neural network is : 0.106272 0.256673
+Expected output is : 10.4692
+Output produced is : 10.1252
+MSE : 0.343959
+Input to neural network is : 0.888348 0.907046
+Expected output is : 12.6837
+Output produced is : 13.3095
+MSE : 0.625842
+Input to neural network is : 0.668225 0.487639
+Expected output is : 11.8241
+Output produced is : 11.9082
+MSE : 0.0840731
+Input to neural network is : 0.355369 0.558645
+Expected output is : 11.2694
+Output produced is : 11.2304
+MSE : 0.0390463
+Input to neural network is : 0.800129 0.390888
+Expected output is : 11.9911
+Output produced is : 12.0674
+MSE : 0.0762815
+Input to neural network is : 0.716199  0.54736
+Expected output is : 11.9798
+Output produced is : 12.1166
+MSE : 0.13677
+Input to neural network is : 0.740451 0.446876
+Expected output is : 11.9278
+Output produced is : 11.9853
+MSE : 0.057539
+Input to neural network is : 0.374975 0.558198
+Expected output is : 11.3081
+Output produced is : 11.2511
+MSE : 0.0570307
+Input to neural network is :  0.840804 0.0674623
+Expected output is : 11.7491
+Output produced is : 11.5811
+MSE : 0.167974
+Input to neural network is : 0.703571 0.220679
+Expected output is : 11.6278
+Output produced is : 11.5208
+MSE : 0.106951
+Input to neural network is : 0.0064256 0.0438913
+Expected output is : 10.0567
+Output produced is : 9.46402
+MSE : 0.592678
+Input to neural network is :  0.728296 0.0465127
+Expected output is : 11.5031
+Output produced is : 11.343
+MSE : 0.160148
+Input to neural network is :  0.96921 0.296372
+Expected output is : 12.2348
+Output produced is : 12.4087
+MSE : 0.173854
+Input to neural network is :  0.169177 0.0368176
+Expected output is : 10.3752
+Output produced is : 9.90595
+MSE : 0.469251
+Input to neural network is : 0.633522 0.281382
+Expected output is : 11.5484
+Output produced is : 11.549
+MSE : 0.000614166
+Input to neural network is : 0.360914 0.739794
+Expected output is : 11.4616
+Output produced is : 11.6537
+MSE : 0.192145
+Input to neural network is : 0.538055 0.249262
+Expected output is : 11.3254
+Output produced is : 11.2293
+MSE : 0.0960951
+Input to neural network is : 0.64684 0.20628
+Expected output is : 11.5
+Output produced is : 11.4412
+MSE : 0.0587854
+Input to neural network is :   0.736901 0.00220922
+Expected output is : 11.476
+Output produced is : 11.3227
+MSE : 0.153312
+Input to neural network is : 0.764925  0.53703
+Expected output is : 12.0669
+Output produced is : 12.3405
+MSE : 0.273588
+Input to neural network is : 0.393097 0.481124
+Expected output is : 11.2673
+Output produced is : 11.2625
+MSE : 0.00478554
+Input to neural network is : 0.0843902  0.133548
+Expected output is : 10.3023
+Output produced is : 9.87988
+MSE : 0.422419
+Input to neural network is :    0.928 0.459365
+Expected output is : 12.3154
+Output produced is : 12.6224
+MSE : 0.306961
+Input to neural network is : 0.691745 0.768804
+Expected output is : 12.1523
+Output produced is : 12.5121
+MSE : 0.359751
+Input to neural network is : 0.526827 0.395316
+Expected output is : 11.449
+Output produced is : 11.4059
+MSE : 0.0430651
+Input to neural network is : 0.989483 0.533253
+Expected output is : 12.5122
+Output produced is : 12.8079
+MSE : 0.295717
+Input to neural network is : 0.439207 0.717779
+Expected output is : 11.5962
+Output produced is : 11.7008
+MSE : 0.104562
+Input to neural network is : 0.579765 0.408417
+Expected output is : 11.5679
+Output produced is : 11.5135
+MSE : 0.0543594
+Input to neural network is : 0.0141502  0.748942
+Expected output is : 10.7772
+Output produced is : 10.6874
+MSE : 0.0897551
+Input to neural network is : 0.445235 0.647672
+Expected output is : 11.5381
+Output produced is : 11.6001
+MSE : 0.0620184
+Input to neural network is : 0.030324 0.806149
+Expected output is : 10.8668
+Output produced is : 10.8277
+MSE : 0.0391121
+Input to neural network is : 0.387466 0.568379
+Expected output is : 11.3433
+Output produced is : 11.3184
+MSE : 0.0248966
+Input to neural network is : 0.0554106 0.0343068
+Expected output is : 10.1451
+Output produced is : 9.58606
+MSE : 0.559039
+Input to neural network is : 0.774659 0.792311
+Expected output is : 12.3416
+Output produced is : 12.718
+MSE : 0.376365
+Input to neural network is : 0.036516 0.539584
+Expected output is : 10.6126
+Output produced is : 10.3989
+MSE : 0.213666
+Input to neural network is : 0.329342 0.429613
+Expected output is : 11.0883
+Output produced is : 10.9607
+MSE : 0.127602
+Input to neural network is : 0.0207081  0.413732
+Expected output is : 10.4551
+Output produced is : 10.1786
+MSE : 0.276521
+Input to neural network is : 0.563161 0.948708
+Expected output is : 12.075
+Output produced is : 12.4662
+MSE : 0.3912
+Input to neural network is : 0.873097 0.254906
+Expected output is : 12.0011
+Output produced is : 12.004
+MSE : 0.00287914
+Input to neural network is : 0.717512 0.399924
+Expected output is : 11.8349
+Output produced is : 11.8624
+MSE : 0.0274973
+Input to neural network is : 0.650222 0.706995
+Expected output is : 12.0074
+Output produced is : 12.209
+MSE : 0.201606
+Input to neural network is :  0.933176 0.0894297
+Expected output is : 11.9558
+Output produced is : 11.8444
+MSE : 0.111421
+Input to neural network is : 0.424774 0.512941
+Expected output is : 11.3625
+Output produced is : 11.312
+MSE : 0.0504541
+Input to neural network is : 0.497847 0.438924
+Expected output is : 11.4346
+Output produced is : 11.3743
+MSE : 0.0603094
+Input to neural network is : 0.261883 0.943081
+Expected output is : 11.4668
+Output produced is : 11.6433
+MSE : 0.176451
+Input to neural network is : 0.0865962  0.292207
+Expected output is : 10.4654
+Output produced is : 10.0987
+MSE : 0.366664
+Input to neural network is :  0.74923 0.474063
+Expected output is : 11.9725
+Output produced is : 12.0761
+MSE : 0.103589
+Input to neural network is : 0.860587 0.804641
+Expected output is : 12.5258
+Output produced is : 12.891
+MSE : 0.365243
+Input to neural network is : 0.508369 0.635246
+Expected output is : 11.652
+Output produced is : 11.6838
+MSE : 0.0318451
+Input to neural network is : 0.596952 0.544885
+Expected output is : 11.7388
+Output produced is : 11.7475
+MSE : 0.00865173
+Input to neural network is :  0.17483 0.926294
+Expected output is : 11.276
+Output produced is : 11.3429
+MSE : 0.0669155
+Input to neural network is : 0.974499 0.195538
+Expected output is : 12.1445
+Output produced is : 12.0861
+MSE : 0.0583839
+Input to neural network is : 0.340026  0.53766
+Expected output is : 11.2177
+Output produced is : 11.1034
+MSE : 0.114332
+Input to neural network is : 0.144246 0.213122
+Expected output is : 10.5016
+Output produced is : 10.0967
+MSE : 0.404902
+Input to neural network is : 0.792566 0.861759
+Expected output is : 12.4469
+Output produced is : 12.8072
+MSE : 0.360286
+Input to neural network is : 0.613046 0.442789
+Expected output is : 11.6689
+Output produced is : 11.6173
+MSE : 0.0516415
+Input to neural network is : 0.568754 0.546222
+Expected output is : 11.6837
+Output produced is : 11.6855
+MSE : 0.00177765
+Input to neural network is : 0.532218 0.993528
+Expected output is : 12.058
+Output produced is : 12.333
+MSE : 0.275019
+Input to neural network is : 0.0591633 0.0300651
+Expected output is : 10.1484
+Output produced is : 9.56235
+MSE : 0.586048
+Input to neural network is : 0.432452 0.321047
+Expected output is : 11.186
+Output produced is : 10.996
+MSE : 0.190018
+Input to neural network is : 0.973147 0.519048
+Expected output is : 12.4653
+Output produced is : 12.666
+MSE : 0.200669
+Input to neural network is : 0.613254 0.722377
+Expected output is : 11.9489
+Output produced is : 12.0883
+MSE : 0.139359
+Input to neural network is :  0.99311 0.473841
+Expected output is : 12.4601
+Output produced is : 12.5885
+MSE : 0.128448
+Input to neural network is : 0.527017  0.50148
+Expected output is : 11.5555
+Output produced is : 11.4818
+MSE : 0.0737333
+Input to neural network is : 0.109087 0.123969
+Expected output is : 10.3421
+Output produced is : 9.86014
+MSE : 0.481958
+Input to neural network is : 0.0463652  0.283917
+Expected output is : 10.3766
+Output produced is : 10.0065
+MSE : 0.370064
+Input to neural network is : 0.0502633 0.0208639
+Expected output is : 10.1214
+Output produced is : 9.61475
+MSE : 0.506649
+Input to neural network is : 0.479455 0.390289
+Expected output is : 11.3492
+Output produced is : 11.3121
+MSE : 0.0371265
+Input to neural network is : 0.558524 0.623701
+Expected output is : 11.7407
+Output produced is : 11.8941
+MSE : 0.153406
+Input to neural network is : 0.603411  0.35109
+Expected output is : 11.5579
+Output produced is : 11.5369
+MSE : 0.0210285
+Input to neural network is :  0.48546 0.216457
+Expected output is : 11.1874
+Output produced is : 11.0299
+MSE : 0.157503
+Input to neural network is : 0.793878 0.054214
+Expected output is : 11.642
+Output produced is : 11.535
+MSE : 0.107002
+Input to neural network is : 0.762679 0.326097
+Expected output is : 11.8515
+Output produced is : 11.9186
+MSE : 0.0671043
+Input to neural network is : 0.0477418  0.821842
+Expected output is : 10.9173
+Output produced is : 10.9712
+MSE : 0.053895
+Input to neural network is : 0.356162 0.480193
+Expected output is : 11.1925
+Output produced is : 11.1604
+MSE : 0.0320988
+Input to neural network is : 0.142889 0.329309
+Expected output is : 10.6151
+Output produced is : 10.3929
+MSE : 0.222192
+Input to neural network is : 0.999241 0.756143
+Expected output is : 12.7546
+Output produced is : 13.2194
+MSE : 0.464847
+Input to neural network is : 0.0516852  0.992352
+Expected output is : 11.0957
+Output produced is : 11.2164
+MSE : 0.120741
+Input to neural network is : 0.229984 0.578702
+Expected output is : 11.0387
+Output produced is : 10.9631
+MSE : 0.0755682
+Input to neural network is : 0.493831 0.339071
+Expected output is : 11.3267
+Output produced is : 11.2233
+MSE : 0.103424
+Input to neural network is : 0.702672 0.540197
+Expected output is : 11.9455
+Output produced is : 12.0692
+MSE : 0.123685
+Input to neural network is : 0.622988 0.752935
+Expected output is : 11.9989
+Output produced is : 12.2039
+MSE : 0.205029
+Input to neural network is :  0.56106 0.102443
+Expected output is : 11.2246
+Output produced is : 10.9762
+MSE : 0.248442
+Input to neural network is : 0.143224 0.119584
+Expected output is : 10.406
+Output produced is : 10.0147
+MSE : 0.391281
+Input to neural network is : 0.726144 0.746635
+Expected output is : 12.1989
+Output produced is : 12.4813
+MSE : 0.28243
+Input to neural network is : 0.470674 0.211604
+Expected output is : 11.153
+Output produced is : 10.9593
+MSE : 0.193675
+Input to neural network is : 0.963092 0.264553
+Expected output is : 12.1907
+Output produced is : 12.2596
+MSE : 0.0688648
+Input to neural network is : 0.265818 0.725771
+Expected output is : 11.2574
+Output produced is : 11.3016
+MSE : 0.0442162
+Input to neural network is : 0.590649  0.31356
+Expected output is : 11.4949
+Output produced is : 11.4207
+MSE : 0.074173
+Input to neural network is : 0.547613 0.946811
+Expected output is : 12.042
+Output produced is : 12.344
+MSE : 0.301961
+Input to neural network is : 0.793753 0.690502
+Expected output is : 12.278
+Output produced is : 12.4826
+MSE : 0.204558
+Input to neural network is :  0.27612 0.792995
+Expected output is : 11.3452
+Output produced is : 11.3691
+MSE : 0.0239258
+Input to neural network is : 0.446645 0.327805
+Expected output is : 11.2211
+Output produced is : 11.0389
+MSE : 0.182233
+Input to neural network is : 0.785346 0.676628
+Expected output is : 12.2473
+Output produced is : 12.4279
+MSE : 0.180583
+Input to neural network is : 0.906507 0.279178
+Expected output is : 12.0922
+Output produced is : 12.0628
+MSE : 0.0293827
+Input to neural network is : 0.0156992  0.609179
+Expected output is : 10.6406
+Output produced is : 10.449
+MSE : 0.191635
+Input to neural network is : 0.819374 0.638687
+Expected output is : 12.2774
+Output produced is : 12.4476
+MSE : 0.17022
+Input to neural network is : 0.362115 0.380434
+Expected output is : 11.1047
+Output produced is : 10.9173
+MSE : 0.187393
+Input to neural network is :  0.74113 0.505339
+Expected output is : 11.9876
+Output produced is : 12.0446
+MSE : 0.0569506
+Input to neural network is : 0.500019 0.467274
+Expected output is : 11.4673
+Output produced is : 11.398
+MSE : 0.0692558
+Input to neural network is : 0.251974 0.970693
+Expected output is : 11.4746
+Output produced is : 11.6092
+MSE : 0.134605
+Input to neural network is : 0.678878 0.215066
+Expected output is : 11.5728
+Output produced is : 11.4202
+MSE : 0.15261
+Input to neural network is : 0.235245 0.944697
+Expected output is : 11.4152
+Output produced is : 11.5261
+MSE : 0.110855
+Input to neural network is : 0.940837 0.825895
+Expected output is : 12.7076
+Output produced is : 13.0184
+MSE : 0.310772
+Input to neural network is : 0.258257  0.48845
+Expected output is : 11.005
+Output produced is : 10.8073
+MSE : 0.197682
+Input to neural network is :  0.772706 0.0520103
+Expected output is : 11.5974
+Output produced is : 11.3716
+MSE : 0.225848
+Input to neural network is :  0.178952 0.0488258
+Expected output is : 10.4067
+Output produced is : 9.9684
+MSE : 0.4383
+Input to neural network is : 0.845005 0.625596
+Expected output is : 12.3156
+Output produced is : 12.5158
+MSE : 0.200154
+Input to neural network is : 0.376631 0.630351
+Expected output is : 11.3836
+Output produced is : 11.3695
+MSE : 0.0140686
+Input to neural network is : 0.302225 0.283138
+Expected output is : 10.8876
+Output produced is : 10.6482
+MSE : 0.239402
+Input to neural network is : 0.909529 0.317924
+Expected output is : 12.137
+Output produced is : 12.185
+MSE : 0.0479956
+Input to neural network is : 0.892318 0.728903
+Expected output is : 12.5135
+Output produced is : 12.7829
+MSE : 0.269446
+Input to neural network is : 0.956611 0.254432
+Expected output is : 12.1677
+Output produced is : 12.1511
+MSE : 0.0165634
+Input to neural network is : 0.109337 0.697741
+Expected output is : 10.9164
+Output produced is : 10.8221
+MSE : 0.094306
+Input to neural network is : 0.759771 0.609356
+Expected output is : 12.1289
+Output produced is : 12.2484
+MSE : 0.119502
+Input to neural network is :  0.165015 0.0117453
+Expected output is : 10.3418
+Output produced is : 9.8809
+MSE : 0.460902
+Input to neural network is : 0.580048 0.843894
+Expected output is : 12.004
+Output produced is : 12.2113
+MSE : 0.20727
+Input to neural network is : 0.226811 0.815294
+Expected output is : 11.2689
+Output produced is : 11.294
+MSE : 0.0250731
+Input to neural network is :  0.78859 0.167648
+Expected output is : 11.7448
+Output produced is : 11.6244
+MSE : 0.120427
+Input to neural network is :  0.641188 0.0468473
+Expected output is : 11.3292
+Output produced is : 11.0992
+MSE : 0.230038
+Input to neural network is : 0.656098 0.413894
+Expected output is : 11.7261
+Output produced is : 11.7311
+MSE : 0.0049963
+Input to neural network is : 0.0988576   0.83505
+Expected output is : 11.0328
+Output produced is : 11.0499
+MSE : 0.0171385
+Input to neural network is :  0.46272 0.943863
+Expected output is : 11.8693
+Output produced is : 12.0897
+MSE : 0.220388
+Input to neural network is : 0.460646 0.839351
+Expected output is : 11.7606
+Output produced is : 11.8904
+MSE : 0.129819
+Input to neural network is : 0.574214 0.762871
+Expected output is : 11.9113
+Output produced is : 12.0257
+MSE : 0.114381
+Input to neural network is : 0.122489 0.483742
+Expected output is : 10.7287
+Output produced is : 10.5058
+MSE : 0.222924
+Input to neural network is : 0.0807953 0.0148069
+Expected output is : 10.1764
+Output produced is : 9.70489
+MSE : 0.471513
+Input to neural network is :  0.212645 0.0374063
+Expected output is : 10.4627
+Output produced is : 10.0912
+MSE : 0.371504
+Input to neural network is : 0.269239 0.321982
+Expected output is : 10.8605
+Output produced is : 10.6976
+MSE : 0.162892
+Input to neural network is :  0.735147 0.0290106
+Expected output is : 11.4993
+Output produced is : 11.3782
+MSE : 0.121148
+Input to neural network is : 0.931338 0.900163
+Expected output is : 12.7628
+Output produced is : 13.2166
+MSE : 0.453846
+Input to neural network is : 0.0407559  0.511386
+Expected output is : 10.5929
+Output produced is : 10.4145
+MSE : 0.178399
+Input to neural network is : 0.744056 0.267567
+Expected output is : 11.7557
+Output produced is : 11.7351
+MSE : 0.0206041
+Input to neural network is :  0.32668 0.532647
+Expected output is : 11.186
+Output produced is : 11.1483
+MSE : 0.0377131
+Input to neural network is : 0.435216 0.967868
+Expected output is : 11.8383
+Output produced is : 12.0799
+MSE : 0.241622
+Input to neural network is :  0.579494 0.0913142
+Expected output is : 11.2503
+Output produced is : 11.0517
+MSE : 0.198573
+Input to neural network is : 0.381762 0.678351
+Expected output is : 11.4419
+Output produced is : 11.496
+MSE : 0.0541458
+Input to neural network is : 0.926364 0.844482
+Expected output is : 12.6972
+Output produced is : 13.0417
+MSE : 0.34452
+Input to neural network is : 0.622214 0.387011
+Expected output is : 11.6314
+Output produced is : 11.5702
+MSE : 0.0612097
+Input to neural network is : 0.683833 0.196428
+Expected output is : 11.5641
+Output produced is : 11.4358
+MSE : 0.1283
+Input to neural network is : 0.149882 0.806322
+Expected output is : 11.1061
+Output produced is : 11.1044
+MSE : 0.00165558
+Input to neural network is :  0.68017 0.230677
+Expected output is : 11.591
+Output produced is : 11.4937
+MSE : 0.0972519
+Input to neural network is : 0.821129 0.892815
+Expected output is : 12.5351
+Output produced is : 12.8421
+MSE : 0.306965
+Input to neural network is :  0.268084 0.0903681
+Expected output is : 10.6265
+Output produced is : 10.28
+MSE : 0.346515
+Input to neural network is :   0.214797 0.00323105
+Expected output is : 10.4328
+Output produced is : 10.0522
+MSE : 0.380591
+Input to neural network is : 0.119379 0.146135
+Expected output is : 10.3849
+Output produced is : 10.0712
+MSE : 0.31372
+Input to neural network is : 0.903394 0.160135
+Expected output is : 11.9669
+Output produced is : 11.9863
+MSE : 0.0194416
+Input to neural network is : 0.657522  0.64745
+Expected output is : 11.9625
+Output produced is : 12.1329
+MSE : 0.170353
+Input to neural network is : 0.427702 0.984202
+Expected output is : 11.8396
+Output produced is : 12.0691
+MSE : 0.229506
+Input to neural network is : 0.180096 0.862918
+Expected output is : 11.2231
+Output produced is : 11.2676
+MSE : 0.044466
+Input to neural network is : 0.95207 0.75959
+Expected output is : 12.6637
+Output produced is : 12.9353
+MSE : 0.271585
+Input to neural network is : 0.954232 0.333832
+Expected output is : 12.2423
+Output produced is : 12.2645
+MSE : 0.0221577
+Input to neural network is : 0.437942 0.880596
+Expected output is : 11.7565
+Output produced is : 11.8543
+MSE : 0.0978355
+Input to neural network is :  0.178314 0.0601557
+Expected output is : 10.4168
+Output produced is : 10.0247
+MSE : 0.392067
+Input to neural network is : 0.267607 0.862147
+Expected output is : 11.3974
+Output produced is : 11.4488
+MSE : 0.0514154
+Input to neural network is : 0.256583 0.417489
+Expected output is : 10.9307
+Output produced is : 10.7618
+MSE : 0.168909
+Input to neural network is : 0.668469 0.936754
+Expected output is : 12.2737
+Output produced is : 12.5154
+MSE : 0.241738
+Input to neural network is : 0.648167 0.489597
+Expected output is : 11.7859
+Output produced is : 11.7736
+MSE : 0.0122929
+Input to neural network is : 0.829569  0.91625
+Expected output is : 12.5754
+Output produced is : 12.8256
+MSE : 0.250239
+Input to neural network is :  0.579965 0.0443661
+Expected output is : 11.2043
+Output produced is : 10.9331
+MSE : 0.271192
+Input to neural network is : 0.919482 0.699344
+Expected output is : 12.5383
+Output produced is : 12.7093
+MSE : 0.171005
+Input to neural network is : 0.190501 0.822875
+Expected output is : 11.2039
+Output produced is : 11.1576
+MSE : 0.0463457
+Input to neural network is : 0.859479 0.848023
+Expected output is : 12.567
+Output produced is : 12.7624
+MSE : 0.19537
+Input to neural network is : 0.470325 0.287181
+Expected output is : 11.2278
+Output produced is : 11.0158
+MSE : 0.212032
+Input to neural network is : 0.832225 0.650421
+Expected output is : 12.3149
+Output produced is : 12.4063
+MSE : 0.0914316
+Input to neural network is : 0.150099 0.784295
+Expected output is : 11.0845
+Output produced is : 10.9971
+MSE : 0.0873709
+Input to neural network is : 0.410011 0.104331
+Expected output is : 10.9244
+Output produced is : 10.6305
+MSE : 0.293934
+Input to neural network is : 0.118126 0.847953
+Expected output is : 11.0842
+Output produced is : 11.052
+MSE : 0.0321579
+Input to neural network is : 0.984927  0.29644
+Expected output is : 12.2663
+Output produced is : 12.2839
+MSE : 0.0176048
+Input to neural network is : 0.908109 0.252535
+Expected output is : 12.0688
+Output produced is : 12.0381
+MSE : 0.0307369
+Input to neural network is : 0.158587 0.164692
+Expected output is : 10.4819
+Output produced is : 10.1613
+MSE : 0.320625
+Input to neural network is : 0.670024 0.827056
+Expected output is : 12.1671
+Output produced is : 12.3506
+MSE : 0.183509
+Input to neural network is : 0.101446 0.318191
+Expected output is : 10.5211
+Output produced is : 10.2576
+MSE : 0.263528
+Input to neural network is : 0.316653 0.931014
+Expected output is : 11.5643
+Output produced is : 11.6736
+MSE : 0.109336
+Input to neural network is : 0.234441 0.896618
+Expected output is : 11.3655
+Output produced is : 11.4165
+MSE : 0.0510149
+Input to neural network is :  0.97538 0.153923
+Expected output is : 12.1047
+Output produced is : 12.0696
+MSE : 0.0350771
+Input to neural network is : 0.595963 0.165882
+Expected output is : 11.3578
+Output produced is : 11.2042
+MSE : 0.153558
+Input to neural network is : 0.976798 0.455442
+Expected output is : 12.409
+Output produced is : 12.5327
+MSE : 0.123663
+Input to neural network is : 0.0139049  0.447123
+Expected output is : 10.4749
+Output produced is : 10.2499
+MSE : 0.225025
+Input to neural network is : 0.742623  0.84613
+Expected output is : 12.3314
+Output produced is : 12.5541
+MSE : 0.2227
+Input to neural network is : 0.0975437  0.892721
+Expected output is : 11.0878
+Output produced is : 11.0816
+MSE : 0.00622749
+Input to neural network is : 0.630424 0.507555
+Expected output is : 11.7684
+Output produced is : 11.7703
+MSE : 0.00191307
+Input to neural network is : 0.997052 0.748551
+Expected output is : 12.7427
+Output produced is : 12.9713
+MSE : 0.228604
+Input to neural network is : 0.355508  0.98198
+Expected output is : 11.693
+Output produced is : 11.777
+MSE : 0.0840282
+Input to neural network is : 0.044991 0.263617
+Expected output is : 10.3536
+Output produced is : 10.0227
+MSE : 0.330909
+Input to neural network is : 0.234514 0.203578
+Expected output is : 10.6726
+Output produced is : 10.4035
+MSE : 0.269063
+Input to neural network is : 0.428309 0.904539
+Expected output is : 11.7612
+Output produced is : 11.8831
+MSE : 0.121881
+Input to neural network is : 0.0306337  0.529754
+Expected output is : 10.591
+Output produced is : 10.4071
+MSE : 0.18386
+Input to neural network is : 0.222729 0.347287
+Expected output is : 10.7927
+Output produced is : 10.6092
+MSE : 0.183457
+Input to neural network is : 0.460768 0.457171
+Expected output is : 11.3787
+Output produced is : 11.3383
+MSE : 0.0404406
+Input to neural network is : 0.243905 0.436149
+Expected output is : 10.924
+Output produced is : 10.8074
+MSE : 0.116633
+Input to neural network is : 0.611093 0.839868
+Expected output is : 12.0621
+Output produced is : 12.2573
+MSE : 0.195187
+Input to neural network is :  0.60203 0.587891
+Expected output is : 11.792
+Output produced is : 11.8457
+MSE : 0.0537434
+Input to neural network is : 0.295309 0.615935
+Expected output is : 11.2066
+Output produced is : 11.1668
+MSE : 0.0397511
+Input to neural network is : 0.0350138  0.037932
+Expected output is : 10.108
+Output produced is : 9.73836
+MSE : 0.369644
+Input to neural network is : 0.462065 0.132558
+Expected output is : 11.0567
+Output produced is : 10.8963
+MSE : 0.160361
+Input to neural network is :  0.930653 0.0924893
+Expected output is : 11.9538
+Output produced is : 11.9472
+MSE : 0.00660324
+Input to neural network is : 0.640113 0.927706
+Expected output is : 12.2079
+Output produced is : 12.4715
+MSE : 0.263578
+Input to neural network is : 0.84104 0.99562
+Expected output is : 12.6777
+Output produced is : 12.9922
+MSE : 0.314528
+Input to neural network is : 0.909686 0.886031
+Expected output is : 12.7054
+Output produced is : 12.9376
+MSE : 0.232196
+Input to neural network is : 0.259237   0.1442
+Expected output is : 10.6627
+Output produced is : 10.368
+MSE : 0.29467
+Input to neural network is : 0.089609 0.687545
+Expected output is : 10.8668
+Output produced is : 10.7642
+MSE : 0.102558
+Input to neural network is : 0.0487385  0.120243
+Expected output is : 10.2177
+Output produced is : 9.88453
+MSE : 0.333171
+Input to neural network is :   0.2173 0.271468
+Expected output is : 10.7061
+Output produced is : 10.5122
+MSE : 0.193939
+Input to neural network is : 0.467529 0.678068
+Expected output is : 11.6131
+Output produced is : 11.6812
+MSE : 0.0681467
+Input to neural network is : 0.728638 0.711434
+Expected output is : 12.1687
+Output produced is : 12.3221
+MSE : 0.153415
+Input to neural network is : 0.114216 0.339732
+Expected output is : 10.5682
+Output produced is : 10.3646
+MSE : 0.203637
+Input to neural network is : 0.551302 0.716247
+Expected output is : 11.8189
+Output produced is : 11.9191
+MSE : 0.100205
+Input to neural network is : 0.927623 0.846611
+Expected output is : 12.7019
+Output produced is : 12.954
+MSE : 0.252131
+Input to neural network is : 0.332182 0.962637
+Expected output is : 11.627
+Output produced is : 11.7088
+MSE : 0.08181
+Input to neural network is : 0.884543 0.794247
+Expected output is : 12.5633
+Output produced is : 12.7251
+MSE : 0.161803
+Input to neural network is : 0.0951945  0.815197
+Expected output is : 11.0056
+Output produced is : 10.9305
+MSE : 0.0751333
+Input to neural network is : 0.886736 0.735307
+Expected output is : 12.5088
+Output produced is : 12.6308
+MSE : 0.122003
+Input to neural network is : 0.742903 0.727776
+Expected output is : 12.2136
+Output produced is : 12.2738
+MSE : 0.0601645
+Input to neural network is : 0.730928 0.652588
+Expected output is : 12.1144
+Output produced is : 12.1342
+MSE : 0.0197535
+Input to neural network is : 0.613807 0.990165
+Expected output is : 12.2178
+Output produced is : 12.33
+MSE : 0.112194
+Input to neural network is : 0.796788 0.703416
+Expected output is : 12.297
+Output produced is : 12.333
+MSE : 0.0360422
+Input to neural network is :  0.67771 0.845527
+Expected output is : 12.2009
+Output produced is : 12.2527
+MSE : 0.0518284
+Input to neural network is : 0.823659  0.89501
+Expected output is : 12.5423
+Output produced is : 12.6419
+MSE : 0.0995865
+Input to neural network is : 0.116995 0.291188
+Expected output is : 10.5252
+Output produced is : 10.211
+MSE : 0.314204
+Input to neural network is : 0.573077 0.845633
+Expected output is : 11.9918
+Output produced is : 12.0253
+MSE : 0.033452
+Input to neural network is : 0.00262258   0.687294
+Expected output is : 10.6925
+Output produced is : 10.5167
+MSE : 0.175794
+Input to neural network is : 0.185365 0.553925
+Expected output is : 10.9247
+Output produced is : 10.7649
+MSE : 0.15977
+Input to neural network is : 0.403541 0.112988
+Expected output is : 10.9201
+Output produced is : 10.6678
+MSE : 0.252275
+Input to neural network is : 0.400536 0.735723
+Expected output is : 11.5368
+Output produced is : 11.5433
+MSE : 0.0065136
+Input to neural network is : 0.0756249   0.28508
+Expected output is : 10.4363
+Output produced is : 10.1837
+MSE : 0.252623
+Input to neural network is :  0.52997 0.170819
+Expected output is : 11.2308
+Output produced is : 11.0796
+MSE : 0.151217
+Input to neural network is : 0.100276 0.416706
+Expected output is : 10.6173
+Output produced is : 10.4569
+MSE : 0.160357
+Input to neural network is : 0.906126 0.843179
+Expected output is : 12.6554
+Output produced is : 12.9024
+MSE : 0.246972
+Input to neural network is : 0.144482 0.637054
+Expected output is : 10.926
+Output produced is : 10.8472
+MSE : 0.0787725
+Input to neural network is : 0.495767  0.75829
+Expected output is : 11.7498
+Output produced is : 11.8201
+MSE : 0.0703011
+Input to neural network is : 0.627218 0.292555
+Expected output is : 11.547
+Output produced is : 11.4668
+MSE : 0.080245
+Input to neural network is : 0.461706 0.304929
+Expected output is : 11.2283
+Output produced is : 11.1173
+MSE : 0.110998
+Input to neural network is : 0.138082 0.285365
+Expected output is : 10.5615
+Output produced is : 10.366
+MSE : 0.195518
+Input to neural network is : 0.199938 0.255076
+Expected output is : 10.655
+Output produced is : 10.4817
+MSE : 0.173263
+Input to neural network is : 0.576553 0.773016
+Expected output is : 11.9261
+Output produced is : 12.0752
+MSE : 0.14908
+Input to neural network is : 0.100709 0.579176
+Expected output is : 10.7806
+Output produced is : 10.7038
+MSE : 0.0767984
+Input to neural network is : 0.460309 0.286074
+Expected output is : 11.2067
+Output produced is : 11.1238
+MSE : 0.0828524
+Input to neural network is :  0.1331 0.86385
+Expected output is : 11.13
+Output produced is : 11.1882
+MSE : 0.0581617
+Input to neural network is : 0.399062 0.533636
+Expected output is : 11.3318
+Output produced is : 11.3295
+MSE : 0.002285
+Input to neural network is : 0.599573 0.474687
+Expected output is : 11.6738
+Output produced is : 11.7048
+MSE : 0.0309887
+Input to neural network is : 0.818716 0.129542
+Expected output is : 11.767
+Output produced is : 11.7223
+MSE : 0.0446672
+Input to neural network is : 0.645507 0.918992
+Expected output is : 12.21
+Output produced is : 12.426
+MSE : 0.215966
+Input to neural network is : 0.546248 0.551633
+Expected output is : 11.6441
+Output produced is : 11.6616
+MSE : 0.0175152
+Input to neural network is : 0.762171 0.690731
+Expected output is : 12.2151
+Output produced is : 12.3402
+MSE : 0.125147
+Input to neural network is : 0.188687 0.257939
+Expected output is : 10.6353
+Output produced is : 10.4319
+MSE : 0.203403
+Input to neural network is :  0.44902 0.815905
+Expected output is : 11.7139
+Output produced is : 11.805
+MSE : 0.0910511
+Input to neural network is : 0.550494 0.910726
+Expected output is : 12.0117
+Output produced is : 12.152
+MSE : 0.140276
+Input to neural network is : 0.120834 0.688576
+Expected output is : 10.9302
+Output produced is : 10.8582
+MSE : 0.072032
+Input to neural network is : 0.196091 0.320772
+Expected output is : 10.713
+Output produced is : 10.5346
+MSE : 0.178414
+Input to neural network is : 0.943652 0.772644
+Expected output is : 12.6599
+Output produced is : 12.8602
+MSE : 0.200305
+Input to neural network is : 0.0937877 0.0443619
+Expected output is : 10.2319
+Output produced is : 9.9219
+MSE : 0.310001
+Input to neural network is : 0.351819 0.554097
+Expected output is : 11.2577
+Output produced is : 11.2221
+MSE : 0.0355873
+Input to neural network is : 0.330436 0.484919
+Expected output is : 11.1458
+Output produced is : 11.0835
+MSE : 0.0622654
+Input to neural network is : 0.417947 0.729499
+Expected output is : 11.5654
+Output produced is : 11.6213
+MSE : 0.0558634
+Input to neural network is : 0.0185558 0.0175198
+Expected output is : 10.0546
+Output produced is : 9.74329
+MSE : 0.311312
+Input to neural network is : 0.204186 0.837272
+Expected output is : 11.2456
+Output produced is : 11.3044
+MSE : 0.0588112
+Input to neural network is : 0.147062 0.849692
+Expected output is : 11.1438
+Output produced is : 11.1849
+MSE : 0.0411196
+Input to neural network is : 0.756264 0.693311
+Expected output is : 12.2058
+Output produced is : 12.3435
+MSE : 0.137671
+Input to neural network is : 0.401325 0.518436
+Expected output is : 11.3211
+Output produced is : 11.2867
+MSE : 0.0344372
+Input to neural network is : 0.384041 0.590012
+Expected output is : 11.3581
+Output produced is : 11.3485
+MSE : 0.00963402
+Input to neural network is : 0.776374 0.833062
+Expected output is : 12.3858
+Output produced is : 12.5631
+MSE : 0.177312
+Input to neural network is : 0.405917 0.326868
+Expected output is : 11.1387
+Output produced is : 11.0206
+MSE : 0.118069
+Input to neural network is : 0.743788 0.526751
+Expected output is : 12.0143
+Output produced is : 12.062
+MSE : 0.0477228
+Input to neural network is : 0.0154439  0.939879
+Expected output is : 10.9708
+Output produced is : 10.9759
+MSE : 0.00512218
+Input to neural network is : 0.847523 0.959096
+Expected output is : 12.6541
+Output produced is : 12.8706
+MSE : 0.216461
+Input to neural network is : 0.712522 0.941311
+Expected output is : 12.3664
+Output produced is : 12.5055
+MSE : 0.139141
+Input to neural network is : 0.00345808  0.0643416
+Expected output is : 10.0713
+Output produced is : 9.73574
+MSE : 0.335558
+Input to neural network is : 0.495408 0.333894
+Expected output is : 11.3247
+Output produced is : 11.2189
+MSE : 0.105762
+Input to neural network is : 0.549261 0.913355
+Expected output is : 12.0119
+Output produced is : 12.1239
+MSE : 0.111982
+Input to neural network is : 0.0633928  0.567817
+Expected output is : 10.6946
+Output produced is : 10.5632
+MSE : 0.131423
+Input to neural network is : 0.930875 0.267578
+Expected output is : 12.1293
+Output produced is : 12.1139
+MSE : 0.0154228
+Input to neural network is :  0.405089 0.0779371
+Expected output is : 10.8881
+Output produced is : 10.6881
+MSE : 0.200024
+Input to neural network is : 0.117271 0.161353
+Expected output is : 10.3959
+Output produced is : 10.1731
+MSE : 0.222787
+Input to neural network is : 0.771248 0.518596
+Expected output is : 12.0611
+Output produced is : 12.1371
+MSE : 0.0760355
+Input to neural network is : 0.679788 0.155289
+Expected output is : 11.5149
+Output produced is : 11.4363
+MSE : 0.0786266
+Input to neural network is : 0.108608 0.456162
+Expected output is : 10.6734
+Output produced is : 10.5659
+MSE : 0.107478
+Input to neural network is : 0.988351 0.514525
+Expected output is : 12.4912
+Output produced is : 12.6297
+MSE : 0.13853
+Input to neural network is : 0.783031 0.732138
+Expected output is : 12.2982
+Output produced is : 12.4386
+MSE : 0.140441
+Input to neural network is : 0.041276 0.798474
+Expected output is : 10.881
+Output produced is : 10.8501
+MSE : 0.0309258
+Input to neural network is : 0.672017 0.888799
+Expected output is : 12.2328
+Output produced is : 12.3814
+MSE : 0.148634
+Input to neural network is : 0.757571 0.384539
+Expected output is : 11.8997
+Output produced is : 11.8806
+MSE : 0.0191326
+Input to neural network is :  0.83011 0.761029
+Expected output is : 12.4212
+Output produced is : 12.5432
+MSE : 0.121974
+Input to neural network is : 0.448881 0.325518
+Expected output is : 11.2233
+Output produced is : 11.1025
+MSE : 0.120768
+Input to neural network is : 0.094923 0.998142
+Expected output is : 11.188
+Output produced is : 11.2169
+MSE : 0.0289497
+Input to neural network is : 0.238873 0.158316
+Expected output is : 10.6361
+Output produced is : 10.4242
+MSE : 0.211917
+Input to neural network is : 0.565959 0.169748
+Expected output is : 11.3017
+Output produced is : 11.1863
+MSE : 0.115423
+Input to neural network is : 0.425894 0.971047
+Expected output is : 11.8228
+Output produced is : 11.9475
+MSE : 0.124712
+Input to neural network is : 0.247685 0.543165
+Expected output is : 11.0385
+Output produced is : 10.9677
+MSE : 0.0707779
+Input to neural network is :    0.1324 0.0189329
+Expected output is : 10.2837
+Output produced is : 10.0256
+MSE : 0.258073
+Input to neural network is : 0.0617606  0.812189
+Expected output is : 10.9357
+Output produced is : 10.9375
+MSE : 0.0018158
+Input to neural network is : 0.174222 0.170368
+Expected output is : 10.5188
+Output produced is : 10.3397
+MSE : 0.179068
+Input to neural network is : 0.268351 0.162573
+Expected output is : 10.6993
+Output produced is : 10.5551
+MSE : 0.144212
+Input to neural network is :  0.684893 0.0513816
+Expected output is : 11.4212
+Output produced is : 11.3534
+MSE : 0.0677853
+Input to neural network is : 0.894711 0.726169
+Expected output is : 12.5156
+Output produced is : 12.7275
+MSE : 0.211851
+Input to neural network is : 0.849856 0.566728
+Expected output is : 12.2664
+Output produced is : 12.3818
+MSE : 0.115407
+Input to neural network is : 0.614968 0.607427
+Expected output is : 11.8374
+Output produced is : 11.8952
+MSE : 0.0577888
+Input to neural network is : 0.951267 0.445079
+Expected output is : 12.3476
+Output produced is : 12.4223
+MSE : 0.0747442
+Input to neural network is : 0.368455 0.400148
+Expected output is : 11.1371
+Output produced is : 11.0584
+MSE : 0.0787354
+Input to neural network is : 0.770597 0.463378
+Expected output is : 12.0046
+Output produced is : 12.0429
+MSE : 0.0383482
+Input to neural network is :    0.39829 0.00947013
+Expected output is : 10.806
+Output produced is : 10.6158
+MSE : 0.190153
+Input to neural network is : 0.621694 0.964248
+Expected output is : 12.2076
+Output produced is : 12.3839
+MSE : 0.176316
+Input to neural network is :  0.179218 0.0475882
+Expected output is : 10.406
+Output produced is : 10.1785
+MSE : 0.227457
+Input to neural network is : 0.935296 0.426904
+Expected output is : 12.2975
+Output produced is : 12.3728
+MSE : 0.0752583
+Input to neural network is : 0.590753 0.067696
+Expected output is : 11.2492
+Output produced is : 11.1289
+MSE : 0.120299
+Input to neural network is : 0.445836 0.652514
+Expected output is : 11.5442
+Output produced is : 11.5825
+MSE : 0.0382824
+Input to neural network is : 0.879885 0.620058
+Expected output is : 12.3798
+Output produced is : 12.4998
+MSE : 0.11998
+Input to neural network is : 0.822882 0.148236
+Expected output is : 11.794
+Output produced is : 11.7418
+MSE : 0.0521631
+Input to neural network is : 0.782631 0.507775
+Expected output is : 12.073
+Output produced is : 12.1265
+MSE : 0.0534945
+Input to neural network is : 0.199617 0.677342
+Expected output is : 11.0766
+Output produced is : 11.0476
+MSE : 0.0290222
+Input to neural network is :  0.233944 0.0494732
+Expected output is : 10.5174
+Output produced is : 10.3111
+MSE : 0.206305
+Input to neural network is : 0.244069 0.848912
+Expected output is : 11.3371
+Output produced is : 11.391
+MSE : 0.0538778
+Input to neural network is :   0.6569 0.195336
+Expected output is : 11.5091
+Output produced is : 11.4515
+MSE : 0.0576086
+Input to neural network is :  0.293991 0.0253549
+Expected output is : 10.6133
+Output produced is : 10.431
+MSE : 0.182302
+Input to neural network is :  0.595484 0.0645876
+Expected output is : 11.2556
+Output produced is : 11.1688
+MSE : 0.0868082
+Input to neural network is : 0.488733 0.993774
+Expected output is : 11.9712
+Output produced is : 12.1496
+MSE : 0.178385
+Input to neural network is : 0.0740577  0.110427
+Expected output is : 10.2585
+Output produced is : 10.0585
+MSE : 0.199977
+Input to neural network is : 0.958022 0.253276
+Expected output is : 12.1693
+Output produced is : 12.2265
+MSE : 0.0571661
+Input to neural network is : 0.158015 0.893318
+Expected output is : 11.2093
+Output produced is : 11.2683
+MSE : 0.0590239
+Input to neural network is :  0.68018 0.748768
+Expected output is : 12.1091
+Output produced is : 12.234
+MSE : 0.124852
+Input to neural network is : 0.961014 0.126016
+Expected output is : 12.048
+Output produced is : 12.0372
+MSE : 0.0107594
+Input to neural network is : 0.401282 0.840899
+Expected output is : 11.6435
+Output produced is : 11.7173
+MSE : 0.0738325
+Input to neural network is : 0.746074 0.224164
+Expected output is : 11.7163
+Output produced is : 11.6799
+MSE : 0.0364113
+Input to neural network is : 0.989134 0.528705
+Expected output is : 12.507
+Output produced is : 12.6136
+MSE : 0.106556
+Input to neural network is : 0.731938 0.188752
+Expected output is : 11.6526
+Output produced is : 11.5931
+MSE : 0.0595169
+Input to neural network is : 0.206047 0.965882
+Expected output is : 11.378
+Output produced is : 11.4319
+MSE : 0.0539093
+Input to neural network is : 0.238225 0.450117
+Expected output is : 10.9266
+Output produced is : 10.8367
+MSE : 0.0899239
+Input to neural network is : 0.814794 0.895125
+Expected output is : 12.5247
+Output produced is : 12.6911
+MSE : 0.16642
+Input to neural network is : 0.645453 0.108785
+Expected output is : 11.3997
+Output produced is : 11.2887
+MSE : 0.110964
+Input to neural network is : 0.920479 0.240937
+Expected output is : 12.0819
+Output produced is : 12.0768
+MSE : 0.00512791
+Input to neural network is : 0.173373 0.409213
+Expected output is : 10.756
+Output produced is : 10.6411
+MSE : 0.114857
+Input to neural network is : 0.234711 0.247431
+Expected output is : 10.7169
+Output produced is : 10.581
+MSE : 0.135862
+Input to neural network is :  0.51964 0.192734
+Expected output is : 11.232
+Output produced is : 11.1542
+MSE : 0.0778122
+Input to neural network is : 0.500707 0.677655
+Expected output is : 11.6791
+Output produced is : 11.7409
+MSE : 0.0618048
+Input to neural network is : 0.0860517  0.180886
+Expected output is : 10.353
+Output produced is : 10.1799
+MSE : 0.173105
+Input to neural network is :  0.426423 0.0470658
+Expected output is : 10.8999
+Output produced is : 10.7776
+MSE : 0.122332
+Input to neural network is : 0.306902 0.827705
+Expected output is : 11.4415
+Output produced is : 11.5236
+MSE : 0.0821362
+Input to neural network is :  0.887964 0.0529768
+Expected output is : 11.8289
+Output produced is : 11.8127
+MSE : 0.0161829
+Input to neural network is : 0.0518689  0.877099
+Expected output is : 10.9808
+Output produced is : 11.0119
+MSE : 0.031064
+Input to neural network is : 0.581682 0.783807
+Expected output is : 11.9472
+Output produced is : 12.0648
+MSE : 0.11757
+Input to neural network is : 0.0658506  0.787729
+Expected output is : 10.9194
+Output produced is : 10.9106
+MSE : 0.00879383
+Input to neural network is :  0.74969 0.304075
+Expected output is : 11.8035
+Output produced is : 11.8112
+MSE : 0.0077219

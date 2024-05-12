@@ -1,8 +1,5 @@
 #include <iostream>
-#include <cmath>
-#include <Eigen/Core>
-#include <Eigen/Dense>
-
+#include "functions.hpp"
 
 Eigen::MatrixXf relu(const Eigen::MatrixXf& input)
 {
@@ -16,6 +13,8 @@ Eigen::MatrixXf softmax(const Eigen::MatrixXf& input)
     return expValues / sum;
 }
 
+// TEST MAIN FILE
+/*
 int main()
 {
     Eigen::MatrixXf input(1, 10); // Example: 1 sample, 10 classes
@@ -27,3 +26,4 @@ int main()
     Eigen::MatrixXf output2 = softmax(input);
     std::cout << "relu: " << output1 << "\nsoftmax: " << output2;
 }
+*/
