@@ -69,28 +69,60 @@ include CMakeFiles/appimage.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/appimage.dir/flags.make
 
-CMakeFiles/appimage.dir/neural_network2.cpp.o: CMakeFiles/appimage.dir/flags.make
-CMakeFiles/appimage.dir/neural_network2.cpp.o: ../neural_network2.cpp
-CMakeFiles/appimage.dir/neural_network2.cpp.o: CMakeFiles/appimage.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/joardan/Harddisk/Project/NPSC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/appimage.dir/neural_network2.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/appimage.dir/neural_network2.cpp.o -MF CMakeFiles/appimage.dir/neural_network2.cpp.o.d -o CMakeFiles/appimage.dir/neural_network2.cpp.o -c /media/joardan/Harddisk/Project/NPSC/neural_network2.cpp
+CMakeFiles/appimage.dir/encoder.cpp.o: CMakeFiles/appimage.dir/flags.make
+CMakeFiles/appimage.dir/encoder.cpp.o: ../encoder.cpp
+CMakeFiles/appimage.dir/encoder.cpp.o: CMakeFiles/appimage.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/joardan/Harddisk/Project/NPSC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/appimage.dir/encoder.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/appimage.dir/encoder.cpp.o -MF CMakeFiles/appimage.dir/encoder.cpp.o.d -o CMakeFiles/appimage.dir/encoder.cpp.o -c /media/joardan/Harddisk/Project/NPSC/encoder.cpp
 
-CMakeFiles/appimage.dir/neural_network2.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appimage.dir/neural_network2.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/joardan/Harddisk/Project/NPSC/neural_network2.cpp > CMakeFiles/appimage.dir/neural_network2.cpp.i
+CMakeFiles/appimage.dir/encoder.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appimage.dir/encoder.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/joardan/Harddisk/Project/NPSC/encoder.cpp > CMakeFiles/appimage.dir/encoder.cpp.i
 
-CMakeFiles/appimage.dir/neural_network2.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appimage.dir/neural_network2.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/joardan/Harddisk/Project/NPSC/neural_network2.cpp -o CMakeFiles/appimage.dir/neural_network2.cpp.s
+CMakeFiles/appimage.dir/encoder.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appimage.dir/encoder.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/joardan/Harddisk/Project/NPSC/encoder.cpp -o CMakeFiles/appimage.dir/encoder.cpp.s
+
+CMakeFiles/appimage.dir/mnist2.cpp.o: CMakeFiles/appimage.dir/flags.make
+CMakeFiles/appimage.dir/mnist2.cpp.o: ../mnist2.cpp
+CMakeFiles/appimage.dir/mnist2.cpp.o: CMakeFiles/appimage.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/joardan/Harddisk/Project/NPSC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/appimage.dir/mnist2.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/appimage.dir/mnist2.cpp.o -MF CMakeFiles/appimage.dir/mnist2.cpp.o.d -o CMakeFiles/appimage.dir/mnist2.cpp.o -c /media/joardan/Harddisk/Project/NPSC/mnist2.cpp
+
+CMakeFiles/appimage.dir/mnist2.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appimage.dir/mnist2.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/joardan/Harddisk/Project/NPSC/mnist2.cpp > CMakeFiles/appimage.dir/mnist2.cpp.i
+
+CMakeFiles/appimage.dir/mnist2.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appimage.dir/mnist2.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/joardan/Harddisk/Project/NPSC/mnist2.cpp -o CMakeFiles/appimage.dir/mnist2.cpp.s
+
+CMakeFiles/appimage.dir/neural_network3.cpp.o: CMakeFiles/appimage.dir/flags.make
+CMakeFiles/appimage.dir/neural_network3.cpp.o: ../neural_network3.cpp
+CMakeFiles/appimage.dir/neural_network3.cpp.o: CMakeFiles/appimage.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/joardan/Harddisk/Project/NPSC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/appimage.dir/neural_network3.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/appimage.dir/neural_network3.cpp.o -MF CMakeFiles/appimage.dir/neural_network3.cpp.o.d -o CMakeFiles/appimage.dir/neural_network3.cpp.o -c /media/joardan/Harddisk/Project/NPSC/neural_network3.cpp
+
+CMakeFiles/appimage.dir/neural_network3.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appimage.dir/neural_network3.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/joardan/Harddisk/Project/NPSC/neural_network3.cpp > CMakeFiles/appimage.dir/neural_network3.cpp.i
+
+CMakeFiles/appimage.dir/neural_network3.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appimage.dir/neural_network3.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/joardan/Harddisk/Project/NPSC/neural_network3.cpp -o CMakeFiles/appimage.dir/neural_network3.cpp.s
 
 # Object files for target appimage
 appimage_OBJECTS = \
-"CMakeFiles/appimage.dir/neural_network2.cpp.o"
+"CMakeFiles/appimage.dir/encoder.cpp.o" \
+"CMakeFiles/appimage.dir/mnist2.cpp.o" \
+"CMakeFiles/appimage.dir/neural_network3.cpp.o"
 
 # External object files for target appimage
 appimage_EXTERNAL_OBJECTS =
 
-appimage: CMakeFiles/appimage.dir/neural_network2.cpp.o
+appimage: CMakeFiles/appimage.dir/encoder.cpp.o
+appimage: CMakeFiles/appimage.dir/mnist2.cpp.o
+appimage: CMakeFiles/appimage.dir/neural_network3.cpp.o
 appimage: CMakeFiles/appimage.dir/build.make
 appimage: /media/joardan/Harddisk/cpp_lib/build/lib/libopencv_gapi.so.4.9.0
 appimage: /media/joardan/Harddisk/cpp_lib/build/lib/libopencv_highgui.so.4.9.0
@@ -108,7 +140,7 @@ appimage: /media/joardan/Harddisk/cpp_lib/build/lib/libopencv_flann.so.4.9.0
 appimage: /media/joardan/Harddisk/cpp_lib/build/lib/libopencv_imgproc.so.4.9.0
 appimage: /media/joardan/Harddisk/cpp_lib/build/lib/libopencv_core.so.4.9.0
 appimage: CMakeFiles/appimage.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/media/joardan/Harddisk/Project/NPSC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable appimage"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/media/joardan/Harddisk/Project/NPSC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable appimage"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/appimage.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

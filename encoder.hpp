@@ -6,17 +6,17 @@
 class OneHot
 {
 private:
-    unsigned char num_classes;
+    int num_classes;
 
 public:
     // Constructor
-    OneHot(unsigned char classes);
+    OneHot(int classes);
 
     // One-hot encoder function
-    Eigen::Matrix<unsigned char, 1, Eigen::Dynamic> encode(int label) const;
+    Eigen::RowVectorXf encode(int label) const;
 
     // One-hot decoder function
-    unsigned char decode(const Eigen::Matrix<unsigned char, Eigen::Dynamic, 1>& encoded) const;
+    int decode(const Eigen::RowVectorXf& encoded) const;
 };
 
 #endif

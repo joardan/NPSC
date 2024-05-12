@@ -1,6 +1,10 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/appimage.dir/neural_network2.cpp.o"
-  "CMakeFiles/appimage.dir/neural_network2.cpp.o.d"
+  "CMakeFiles/appimage.dir/encoder.cpp.o"
+  "CMakeFiles/appimage.dir/encoder.cpp.o.d"
+  "CMakeFiles/appimage.dir/mnist2.cpp.o"
+  "CMakeFiles/appimage.dir/mnist2.cpp.o.d"
+  "CMakeFiles/appimage.dir/neural_network3.cpp.o"
+  "CMakeFiles/appimage.dir/neural_network3.cpp.o.d"
   "appimage"
   "appimage.pdb"
 )

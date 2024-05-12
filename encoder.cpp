@@ -2,19 +2,19 @@
 #include "encoder.hpp"
 
 // Constructor definition
-OneHot::OneHot(unsigned char classes) : num_classes(classes) {}
+OneHot::OneHot(int classes) : num_classes(classes) {}
 
 // One-hot encoder function definition
-Eigen::Matrix<unsigned char, 1, Eigen::Dynamic> OneHot::encode(int label) const
+Eigen::RowVectorXf OneHot::encode(int label) const
 {
-    Eigen::Matrix<unsigned char, 1, Eigen::Dynamic> encoded(num_classes);
+    Eigen::RowVectorXf encoded(num_classes);
     encoded.setZero();
     encoded(label) = 1;
     return encoded;
 }
 
 // One-hot decoder function definition
-unsigned char OneHot::decode(const Eigen::Matrix<unsigned char, Eigen::Dynamic, 1>& encoded) const
+int OneHot::decode(const Eigen::RowVectorXf& encoded) const
 {
     for (int i = 0; i < encoded.size(); ++i)
     {

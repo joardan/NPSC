@@ -174,29 +174,77 @@ appimage/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/build
 .PHONY : appimage/fast
 
-neural_network2.o: neural_network2.cpp.o
-.PHONY : neural_network2.o
+encoder.o: encoder.cpp.o
+.PHONY : encoder.o
 
 # target to build an object file
-neural_network2.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/neural_network2.cpp.o
-.PHONY : neural_network2.cpp.o
+encoder.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/encoder.cpp.o
+.PHONY : encoder.cpp.o
 
-neural_network2.i: neural_network2.cpp.i
-.PHONY : neural_network2.i
+encoder.i: encoder.cpp.i
+.PHONY : encoder.i
 
 # target to preprocess a source file
-neural_network2.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/neural_network2.cpp.i
-.PHONY : neural_network2.cpp.i
+encoder.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/encoder.cpp.i
+.PHONY : encoder.cpp.i
 
-neural_network2.s: neural_network2.cpp.s
-.PHONY : neural_network2.s
+encoder.s: encoder.cpp.s
+.PHONY : encoder.s
 
 # target to generate assembly for a file
-neural_network2.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/neural_network2.cpp.s
-.PHONY : neural_network2.cpp.s
+encoder.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/encoder.cpp.s
+.PHONY : encoder.cpp.s
+
+mnist2.o: mnist2.cpp.o
+.PHONY : mnist2.o
+
+# target to build an object file
+mnist2.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/mnist2.cpp.o
+.PHONY : mnist2.cpp.o
+
+mnist2.i: mnist2.cpp.i
+.PHONY : mnist2.i
+
+# target to preprocess a source file
+mnist2.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/mnist2.cpp.i
+.PHONY : mnist2.cpp.i
+
+mnist2.s: mnist2.cpp.s
+.PHONY : mnist2.s
+
+# target to generate assembly for a file
+mnist2.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/mnist2.cpp.s
+.PHONY : mnist2.cpp.s
+
+neural_network3.o: neural_network3.cpp.o
+.PHONY : neural_network3.o
+
+# target to build an object file
+neural_network3.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/neural_network3.cpp.o
+.PHONY : neural_network3.cpp.o
+
+neural_network3.i: neural_network3.cpp.i
+.PHONY : neural_network3.i
+
+# target to preprocess a source file
+neural_network3.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/neural_network3.cpp.i
+.PHONY : neural_network3.cpp.i
+
+neural_network3.s: neural_network3.cpp.s
+.PHONY : neural_network3.s
+
+# target to generate assembly for a file
+neural_network3.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/neural_network3.cpp.s
+.PHONY : neural_network3.cpp.s
 
 # Help Target
 help:
@@ -211,9 +259,15 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... appimage"
-	@echo "... neural_network2.o"
-	@echo "... neural_network2.i"
-	@echo "... neural_network2.s"
+	@echo "... encoder.o"
+	@echo "... encoder.i"
+	@echo "... encoder.s"
+	@echo "... mnist2.o"
+	@echo "... mnist2.i"
+	@echo "... mnist2.s"
+	@echo "... neural_network3.o"
+	@echo "... neural_network3.i"
+	@echo "... neural_network3.s"
 .PHONY : help
 
 

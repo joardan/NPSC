@@ -1,6 +1,7 @@
 #include "neural_network2.hpp"
 #include <iostream>
 #include <fstream>
+
 NeuralNetwork::NeuralNetwork(std::vector<unsigned int> neuron_layer_num, float learning_rate)
 {
     this->neuron_layer_num = neuron_layer_num;
@@ -76,20 +77,27 @@ void NeuralNetwork::eval_err(Eigen::RowVectorXf& output)
 void NeuralNetwork::update_weights()
 {
 	// topology.size()-1 = weights.size()
-	for (unsigned int i = 0; i < neuron_layer_num.size() - 1; i++) {
+	for (unsigned int i = 0; i < neuron_layer_num.size() - 1; i++)
+	{
 		// in this loop we are iterating over the different layers (from first hidden to output layer)
 		// if this layer is the output layer, there is no bias neuron there, number of neurons specified = number of cols
 		// if this layer not the output layer, there is a bias neuron and number of neurons specified = number of cols -1
-		if (i != neuron_layer_num.size() - 2) {
-			for (unsigned int c = 0; c < weights[i]->cols() - 1; c++) {
-				for (unsigned int r = 0; r < weights[i]->rows(); r++) {
+		if (i != neuron_layer_num.size() - 2)
+		{
+			for (unsigned int c = 0; c < weights[i]->cols() - 1; c++)
+			{
+				for (unsigned int r = 0; r < weights[i]->rows(); r++)
+				{
 					weights[i]->coeffRef(r, c) += learning_rate * deltas[i + 1]->coeffRef(c) * activationFunctionDerivative(unactive_layers[i + 1]->coeffRef(c)) * layers[i]->coeffRef(r);
 				}
 			}
 		}
-		else {
-			for (unsigned int c = 0; c < weights[i]->cols(); c++) {
-				for (unsigned int r = 0; r < weights[i]->rows(); r++) {
+		else
+		{
+			for (unsigned int c = 0; c < weights[i]->cols(); c++)
+			{
+				for (unsigned int r = 0; r < weights[i]->rows(); r++)
+				{
 					weights[i]->coeffRef(r, c) += learning_rate * deltas[i + 1]->coeffRef(c) * activationFunctionDerivative(unactive_layers[i + 1]->coeffRef(c)) * layers[i]->coeffRef(r);
 				}
 			}
@@ -105,7 +113,8 @@ void NeuralNetwork::backward_prop(Eigen::RowVectorXf& output)
 
 void NeuralNetwork::train(std::vector<Eigen::RowVectorXf*> input_data, std::vector<Eigen::RowVectorXf*> output_data)
 {
-	for (unsigned int i = 0; i < input_data.size(); i++) {
+	for (unsigned int i = 0; i < input_data.size(); i++)
+	{
 		std::cout << "Input to neural network is : " << *input_data[i] << std::endl;
 		forward_prop(*input_data[i]);
 		std::cout << "Expected output is : " << *output_data[i] << std::endl;
@@ -114,6 +123,7 @@ void NeuralNetwork::train(std::vector<Eigen::RowVectorXf*> input_data, std::vect
 		std::cout << "MSE : " << std::sqrt((*deltas.back()).dot((*deltas.back())) / deltas.back()->size()) << std::endl;
 	}
 }
+
 void ReadCSV(std::string filename, std::vector<Eigen::RowVectorXf*>& data)
 {
 	data.clear();
@@ -123,22 +133,27 @@ void ReadCSV(std::string filename, std::vector<Eigen::RowVectorXf*>& data)
 	getline(file, line, '\n');
 	std::stringstream ss(line);
 	std::vector<float> parsed_vec;
-	while (getline(ss, word, ',')) {
+	while (getline(ss, word, ','))
+	{
 		parsed_vec.push_back(float(std::stof(&word[0])));
 	}
 	unsigned int cols = parsed_vec.size();
 	data.push_back(new Eigen::RowVectorXf(cols));
-	for (unsigned int i = 0; i < cols; i++) {
+	for (unsigned int i = 0; i < cols; i++)
+	{
 		data.back()->coeffRef(1, i) = parsed_vec[i];
 	}
 
 	// read the file
-	if (file.is_open()) {
-		while (getline(file, line, '\n')) {
+	if (file.is_open())
+	{
+		while (getline(file, line, '\n'))
+		{
 			std::stringstream ss(line);
 			data.push_back(new Eigen::RowVectorXf(1, cols));
 			unsigned int i = 0;
-			while (getline(ss, word, ',')) {
+			while (getline(ss, word, ','))
+			{
 				data.back()->coeffRef(i) = float(std::stof(&word[0]));
 				i++;
 			}
@@ -160,7 +175,7 @@ void genData(std::string filename)
 	file2.close();
 }
 
-
+/*
 int main()
 {
     NeuralNetwork n({2, 3, 1}, 0.005);
@@ -171,3 +186,4 @@ int main()
     n.train(in_dat, out_dat);
     return 0;
 }
+*/
