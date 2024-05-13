@@ -49,6 +49,11 @@ float activationFunction(float x)
 	return std::max(0.0f, x);
 }
 
+void activationFunction2(Eigen::RowVectorXf& input)
+{
+	input.array().max(0.0f);
+}
+
 float activationFunctionDerivative(float x)
 {
 	return x > 0.0f ? 1.0f : 0.0f;
@@ -60,13 +65,20 @@ Eigen::RowVectorXf softmax(const Eigen::RowVectorXf& x)
     return exp_values / exp_values.sum();
 }
 
+int max_arg(const Eigen::RowVectorXf& x)
+{
+	Eigen::Index arg;
+	x.maxCoeff(&arg);
+    return arg;
+}
+
 void NeuralNetwork::forward_prop(Eigen::RowVectorXf& input)
 {
     layers.front()->block(0, 0, 1, layers.front()->size()-1) = input;
     for(unsigned int i = 1; i < neuron_layer_num.size(); i++)
     {
         (*layers[i]) = (*layers[i-1]) * (*weights[i-1]);
-        layers[i]->block(0, 0, 1, neuron_layer_num[i]).unaryExpr(std::ptr_fun(activationFunction));
+        activationFunction2(*layers[i]);
     }
     (*layers.back()) = softmax(*layers.back());
 }
@@ -148,63 +160,12 @@ void NeuralNetwork::train(std::vector<Eigen::RowVectorXf*> input_data, std::vect
 		std::cout << "Input to neural network is : " << *input_data[i] << std::endl;
 		forward_prop(*input_data[i]);
 		std::cout << "Expected output is : " << *output_data[i] << std::endl;
-		std::cout << "Output produced is : " << *layers.back() << std::endl;
+		std::cout << "Output probability is : " << *layers.back() << std::endl;
+		std::cout << "Output produced is : " << max_arg(*layers.back()) << std::endl;
 		backward_prop(*output_data[i]);
 		std::cout << "MSE : " << std::sqrt((*deltas.back()).dot((*deltas.back())) / deltas.back()->size()) << std::endl;
 	}
 }
-
-void ReadCSV(std::string filename, std::vector<Eigen::RowVectorXf*>& data)
-{
-	data.clear();
-	std::ifstream file(filename);
-	std::string line, word;
-	// determine number of columns in file
-	getline(file, line, '\n');
-	std::stringstream ss(line);
-	std::vector<float> parsed_vec;
-	while (getline(ss, word, ','))
-	{
-		parsed_vec.push_back(float(std::stof(&word[0])));
-	}
-	unsigned int cols = parsed_vec.size();
-	data.push_back(new Eigen::RowVectorXf(cols));
-	for (unsigned int i = 0; i < cols; i++)
-	{
-		data.back()->coeffRef(1, i) = parsed_vec[i];
-	}
-
-	// read the file
-	if (file.is_open())
-	{
-		while (getline(file, line, '\n'))
-		{
-			std::stringstream ss(line);
-			data.push_back(new Eigen::RowVectorXf(1, cols));
-			unsigned int i = 0;
-			while (getline(ss, word, ','))
-			{
-				data.back()->coeffRef(i) = float(std::stof(&word[0]));
-				i++;
-			}
-		}
-	}
-}
-
-void genData(std::string filename)
-{
-	std::ofstream file1(filename + "-in");
-	std::ofstream file2(filename + "-out");
-	for (unsigned int r = 0; r < 1000; r++) {
-		float x = rand() / float(RAND_MAX);
-		float y = rand() / float(RAND_MAX);
-		file1 << x << ',' << y << std::endl;
-		file2 << 2 * x + 10 + y << std::endl;
-	}
-	file1.close();
-	file2.close();
-}
-
 
 int main()
 {
