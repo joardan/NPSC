@@ -53,7 +53,7 @@ float activationFunctionDerivative(float x)
 {
 	return x > 0.0f ? 1.0f : 0.0f;
 }
-// you can use your own code here!
+
 Eigen::RowVectorXf softmax(const Eigen::RowVectorXf& x)
 {
     Eigen::RowVectorXf exp_values = x.array().exp();
@@ -220,9 +220,9 @@ int main()
     NeuralNetwork n({784, 300, 100, 10}, 0.001);
     n.train(mnist_train_vectors, mnist_train_label_vectors);
 
-	for(int i; i < n.neuron_layer_num.size(); i++)
+	for(int i; i < n.neuron_layer_num.size() - 1; i++)
 	{
-		std::cout << *n.weights[i] << std::endl;
+		std::cout << "Weight" << *n.weights[i] << std::endl;
 	}
 	
     // Cleanup
