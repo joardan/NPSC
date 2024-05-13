@@ -178,7 +178,7 @@ void genData(std::string filename)
 /*
 int main()
 {
-    NeuralNetwork n({2, 3, 1}, 0.005);
+    NeuralNetwork n({2, 3, 1}, 0.001);
     std::vector<Eigen::RowVectorXf*> in_dat, out_dat;
     genData("test");
     ReadCSV("test-in", in_dat);
