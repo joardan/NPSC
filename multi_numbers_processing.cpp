@@ -3,6 +3,7 @@
 #include <opencv2/imgproc.hpp>
 #include <opencv2/core/types.hpp>
 
+/*
 int main(int argc, char** argv )
 {
     // Make sure there's input image when running the program
@@ -143,3 +144,4 @@ int main(int argc, char** argv )
     cv::destroyAllWindows();
     return 0;
 }
+*/

@@ -88,7 +88,7 @@ void NeuralNetwork::eval_err(Eigen::RowVectorXd& output)
 	(*deltas.back()) = (output - (*layers.back()));
 	for (unsigned int i = neuron_layer_num.size() - 2; i > 0; i--)
     {
-		(*deltas[i]) = ((*deltas[i + 1]) * (weights[i]->transpose())).array() * activationFunctionDerivative(*layers[i]).array();
+		(*deltas[i]) = ((*deltas[i + 1]) * (weights[i]->transpose()));
 	}
 }
 
@@ -96,17 +96,9 @@ void NeuralNetwork::update_weights()
 {
     for (unsigned int i = 0; i < neuron_layer_num.size() - 1; i++)
     {
-        // Debug: Print the shapes of the matrices involved in the operation
-        std::cout << "Layer " << i << std::endl;
-        std::cout << "weights[" << i << "] shape: (" << weights[i]->rows() << ", " << weights[i]->cols() << ")" << std::endl;
-        std::cout << "layers[" << i << "] shape: (" << layers[i]->rows() << ", " << layers[i]->cols() << ")" << std::endl;
-        std::cout << "deltas[" << i+1 << "] shape: (" << deltas[i+1]->rows() << ", " << deltas[i+1]->cols() << ")" << std::endl;
-
         weights[i]->noalias() += learning_rate * layers[i]->transpose() * (*deltas[i + 1]);
     }
 }
-
-
 
 void NeuralNetwork::backward_prop(Eigen::RowVectorXd& output)
 {
@@ -122,9 +114,11 @@ void NeuralNetwork::train(std::vector<Eigen::RowVectorXd*> input_data, std::vect
 	for (unsigned int i = 0; i < input_data.size(); i++)
 	{
 		forward_prop(*input_data[i]);
+        /*
 		std::cout << "Expected output is : " << *output_data[i] << std::endl;
         std::cout << "Output produced is : " << max_arg(*layers.back()) << std::endl;
 		std::cout << "Output probability is : " << *layers.back() << std::endl;
+        */
 		backward_prop(*output_data[i]);
 	}
 }
@@ -146,7 +140,6 @@ double calculateAccuracy(const std::vector<Eigen::RowVectorXd*>& inputs, const s
     return static_cast<double>(correct) / inputs.size();
 }
 
-// Define a function to perform k-fold cross-validation
 double kFoldCrossValidation(const std::vector<Eigen::RowVectorXd*>& inputs, const std::vector<Eigen::RowVectorXd*>& targets, NeuralNetwork& model, int k) {
     std::vector<size_t> indices(inputs.size());
     std::iota(indices.begin(), indices.end(), 0);
@@ -156,11 +149,15 @@ double kFoldCrossValidation(const std::vector<Eigen::RowVectorXd*>& inputs, cons
     size_t fold_size = inputs.size() / k;
     for (int i = 0; i < k; ++i) {
         std::vector<Eigen::RowVectorXd*> train_inputs, train_targets, test_inputs, test_targets;
-        for (size_t j = 0; j < inputs.size(); ++j) {
-            if (j >= i * fold_size && j < (i + 1) * fold_size) {
+        for (int j = 0; j < inputs.size(); ++j)
+        {
+            if (j >= i * fold_size && j < (i + 1) * fold_size)
+            {
                 test_inputs.push_back(inputs[indices[j]]);
                 test_targets.push_back(targets[indices[j]]);
-            } else {
+            }
+            else
+            {
                 train_inputs.push_back(inputs[indices[j]]);
                 train_targets.push_back(targets[indices[j]]);
             }
