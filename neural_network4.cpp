@@ -88,7 +88,7 @@ void NeuralNetwork::eval_err(Eigen::RowVectorXd& output)
 	(*deltas.back()) = (output - (*layers.back()));
 	for (unsigned int i = neuron_layer_num.size() - 2; i > 0; i--)
     {
-		(*deltas[i]) = ((*deltas[i + 1]) * (weights[i]->transpose()));
+		(*deltas[i]) = ((*deltas[i + 1]) * (weights[i]->transpose())).array() * activationFunctionDerivative(*layers[i]).array();
 	}
 }
 
@@ -140,7 +140,7 @@ double calculateAccuracy(const std::vector<Eigen::RowVectorXd*>& inputs, const s
     return static_cast<double>(correct) / inputs.size();
 }
 
-double kFoldCrossValidation(const std::vector<Eigen::RowVectorXd*>& inputs, const std::vector<Eigen::RowVectorXd*>& targets, NeuralNetwork& model, int k) {
+double kFoldCrossValidation(const std::vector<Eigen::RowVectorXd*>& inputs, const std::vector<Eigen::RowVectorXd*>& targets, int k) {
     std::vector<size_t> indices(inputs.size());
     std::iota(indices.begin(), indices.end(), 0);
     std::random_shuffle(indices.begin(), indices.end());
@@ -148,6 +148,7 @@ double kFoldCrossValidation(const std::vector<Eigen::RowVectorXd*>& inputs, cons
     double total_accuracy = 0.0f;
     size_t fold_size = inputs.size() / k;
     for (int i = 0; i < k; ++i) {
+        NeuralNetwork model({784, 16, 16, 10}, 0.05);
         std::vector<Eigen::RowVectorXd*> train_inputs, train_targets, test_inputs, test_targets;
         for (int j = 0; j < inputs.size(); ++j)
         {
@@ -184,7 +185,7 @@ int main()
 
     NeuralNetwork n({784, 16, 16, 10}, 0.05);
     int k = 3; // Change this value as needed
-    double average_accuracy = kFoldCrossValidation(mnist_train_vectors, mnist_train_label_vectors, n, k);
+    double average_accuracy = kFoldCrossValidation(mnist_train_vectors, mnist_train_label_vectors, k);
     std::cout << "Average Accuracy: " << average_accuracy << std::endl;
 	
     // Cleanup
