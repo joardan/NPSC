@@ -67,14 +67,14 @@ unsigned char** read_mnist_image(const std::string& file_path, int num_items, in
     }
 }
 
-std::vector<Eigen::RowVectorXf*> mnistImageToEigenVector(unsigned char** mnist_image, int num_items, int image_size)
+std::vector<Eigen::RowVectorXd*> mnistImageToEigenVector(unsigned char** mnist_image, int num_items, int image_size)
 {
-    std::vector<Eigen::RowVectorXf*> vectors;
+    std::vector<Eigen::RowVectorXd*> vectors;
 
     for (int i = 0; i < num_items; ++i) {
-        Eigen::RowVectorXf* rowVector = new Eigen::RowVectorXf(image_size);
+        Eigen::RowVectorXd* rowVector = new Eigen::RowVectorXd(image_size);
         for (int j = 0; j < image_size; ++j) {
-            (*rowVector)(j) = static_cast<float>(mnist_image[i][j]) / 25500.0f;
+            (*rowVector)(j) = static_cast<double>(mnist_image[i][j]) / 255000.0f;
         }
         vectors.push_back(rowVector);
     }
@@ -82,13 +82,13 @@ std::vector<Eigen::RowVectorXf*> mnistImageToEigenVector(unsigned char** mnist_i
     return vectors;
 }
 
-std::vector<Eigen::RowVectorXf*> mnistLabelToEigenVector(unsigned char* mnist_label, int num_items)
+std::vector<Eigen::RowVectorXd*> mnistLabelToEigenVector(unsigned char* mnist_label, int num_items)
 {
-    std::vector<Eigen::RowVectorXf*> vectors;
+    std::vector<Eigen::RowVectorXd*> vectors;
 
     for (int i = 0; i < num_items; ++i) {
-        Eigen::RowVectorXf* rowVector = new Eigen::RowVectorXf(1);
-        (*rowVector)(0) = static_cast<float>(mnist_label[i]);
+        Eigen::RowVectorXd* rowVector = new Eigen::RowVectorXd(1);
+        (*rowVector)(0) = static_cast<double>(mnist_label[i]);
         vectors.push_back(rowVector);
     }
 
@@ -104,11 +104,11 @@ int main() {
     unsigned char **mnist_image_train = read_mnist_image("/media/joardan/Harddisk/Project/NPSC/dataset/train-images.idx3-ubyte", 60000, 784);
 
     // Convert MNIST images to Eigen vectors
-    std::vector<Eigen::RowVectorXf*> mnist_train_vectors = mnistImageToEigenVector(mnist_image_train, 60000, 784);
-    std::vector<Eigen::RowVectorXf*> mnist_train_label_vectors = mnistLabelToEigenVector(mnist_label_train, 60000);
+    std::vector<Eigen::RowVectorXd*> mnist_train_vectors = mnistImageToEigenVector(mnist_image_train, 60000, 784);
+    std::vector<Eigen::RowVectorXd*> mnist_train_label_vectors = mnistLabelToEigenVector(mnist_label_train, 60000);
 
     // Example of accessing a specific image (vector) in the matrix
-    Eigen::RowVectorXf* example_image_vector = mnist_train_vectors[111];
+    Eigen::RowVectorXd* example_image_vector = mnist_train_vectors[111];
 
     // Displaying the example image vector
     std::cout << "Example image vector: " << std::endl;

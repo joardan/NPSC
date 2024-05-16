@@ -5,16 +5,16 @@
 OneHot::OneHot(int classes) : num_classes(classes) {}
 
 // One-hot encoder function definition
-Eigen::RowVectorXf OneHot::encode(int label) const
+Eigen::RowVectorXd OneHot::encode(int label) const
 {
-    Eigen::RowVectorXf encoded(num_classes);
+    Eigen::RowVectorXd encoded(num_classes);
     encoded.setZero();
     encoded(label) = 1;
     return encoded;
 }
 
 // One-hot decoder function definition
-int OneHot::decode(const Eigen::RowVectorXf& encoded) const
+int OneHot::decode(const Eigen::RowVectorXd& encoded) const
 {
     for (int i = 0; i < encoded.size(); ++i)
     {

@@ -13,10 +13,10 @@ public:
     OneHot(int classes);
 
     // One-hot encoder function
-    Eigen::RowVectorXf encode(int label) const;
+    Eigen::RowVectorXd encode(int label) const;
 
     // One-hot decoder function
-    int decode(const Eigen::RowVectorXf& encoded) const;
+    int decode(const Eigen::RowVectorXd& encoded) const;
 };
 
 #endif

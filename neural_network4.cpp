@@ -1,4 +1,4 @@
-#include "neural_network2.hpp"
+#include "neural_network4.hpp"
 #include "mnist2.hpp"
 #include "encoder.hpp"
 #include <iostream>
@@ -8,7 +8,7 @@
 #include <numeric>
 
 
-NeuralNetwork::NeuralNetwork(std::vector<unsigned int> neuron_layer_num, float learning_rate)
+NeuralNetwork::NeuralNetwork(std::vector<unsigned int> neuron_layer_num, double learning_rate)
 {
     this->neuron_layer_num = neuron_layer_num;
     this->learning_rate = learning_rate;
@@ -17,21 +17,19 @@ NeuralNetwork::NeuralNetwork(std::vector<unsigned int> neuron_layer_num, float l
         // Add new layer and assign it with the number of nodes specified in the argument
         if(i == neuron_layer_num.size() - 1)
         {
-            layers.push_back(new Eigen::RowVectorXf(neuron_layer_num[i]));
+            layers.push_back(new Eigen::RowVectorXd(neuron_layer_num[i]));
         }
         else
         {
-            layers.push_back(new Eigen::RowVectorXf(neuron_layer_num[i] + 1));
+            layers.push_back(new Eigen::RowVectorXd(neuron_layer_num[i] + 1));
         }
 
-        unactive_layers.push_back(new Eigen::RowVectorXf(layers.size()));
-        deltas.push_back(new Eigen::RowVectorXf());
+        deltas.push_back(new Eigen::RowVectorXd());
 
         // Set bias node value to 1
         if(i != neuron_layer_num.size()-1)
         {
             layers.back()->coeffRef(neuron_layer_num[i]) = 0.001;
-            unactive_layers.back()->coeffRef(neuron_layer_num[i]) = 0.001;
         }
 
         // Set weight per layer and initialise with random values [-1, 1]
@@ -39,47 +37,42 @@ NeuralNetwork::NeuralNetwork(std::vector<unsigned int> neuron_layer_num, float l
         {
             if(i != neuron_layer_num.size()-1)
             {
-                weights.push_back(new Eigen::MatrixXf(neuron_layer_num[i-1] + 1, neuron_layer_num[i] + 1));
+                weights.push_back(new Eigen::MatrixXd(neuron_layer_num[i-1] + 1, neuron_layer_num[i] + 1));
                 weights.back()->setRandom();
             }
             else
             {
-                weights.push_back(new Eigen::MatrixXf(neuron_layer_num[i-1] + 1, neuron_layer_num[i]));
+                weights.push_back(new Eigen::MatrixXd(neuron_layer_num[i-1] + 1, neuron_layer_num[i]));
                 weights.back()->setRandom();
             }
         }
     }
 }
 
-void activationFunction(Eigen::RowVectorXf& input)
+void activationFunction(Eigen::RowVectorXd& input)
 {
 	input.array().max(0.0f);
 }
 
-float activationFunctionDerivative(float x)
+Eigen::RowVectorXd activationFunctionDerivative(const Eigen::RowVectorXd& x)
 {
-	return x > 0.0f ? 1.0f : 0.0f;
+    return (x.array() > 0.0f).cast<double>();
 }
 
-Eigen::RowVectorXf activationFunctionDerivative2(const Eigen::RowVectorXf& x)
+Eigen::RowVectorXd softmax(const Eigen::RowVectorXd& x)
 {
-    return (x.array() > 0.0f).cast<float>();
-}
-
-Eigen::RowVectorXf softmax(const Eigen::RowVectorXf& x)
-{
-    Eigen::RowVectorXf exp_values = x.array().exp();
+    Eigen::RowVectorXd exp_values = x.array().exp();
     return exp_values / exp_values.sum();
 }
 
-int max_arg(const Eigen::RowVectorXf& x)
+int max_arg(const Eigen::RowVectorXd& x)
 {
 	Eigen::Index arg;
 	x.maxCoeff(&arg);
     return arg;
 }
 
-void NeuralNetwork::forward_prop(Eigen::RowVectorXf& input)
+void NeuralNetwork::forward_prop(Eigen::RowVectorXd& input)
 {
     layers.front()->block(0, 0, 1, layers.front()->size()-1) = input;
     for(unsigned int i = 1; i < neuron_layer_num.size(); i++)
@@ -90,52 +83,41 @@ void NeuralNetwork::forward_prop(Eigen::RowVectorXf& input)
     (*layers.back()) = softmax(*layers.back());
 }
 
-void NeuralNetwork::eval_err(Eigen::RowVectorXf& output)
+void NeuralNetwork::eval_err(Eigen::RowVectorXd& output)
 {
-	(*deltas.back()) = output - (*layers.back());
+	(*deltas.back()) = (output - (*layers.back()));
 	for (unsigned int i = neuron_layer_num.size() - 2; i > 0; i--)
     {
-		(*deltas[i]) = (*deltas[i + 1]) * (weights[i]->transpose());
+		(*deltas[i]) = ((*deltas[i + 1]) * (weights[i]->transpose())).array() * activationFunctionDerivative(*layers[i]).array();
 	}
 }
 
 void NeuralNetwork::update_weights()
 {
-	for (unsigned int i = 0; i < neuron_layer_num.size() - 1; i++)
-	{
-		if (i != neuron_layer_num.size() - 2)
-		{
-			for (unsigned int c = 0; c < weights[i]->cols() - 1; c++)
-			{
-				for (unsigned int r = 0; r < weights[i]->rows(); r++)
-				{
-					weights[i]->coeffRef(r, c) += learning_rate * deltas[i + 1]->coeffRef(c) * activationFunctionDerivative(unactive_layers[i + 1]->coeffRef(c)) * layers[i]->coeffRef(r);
-				}
-			}
-		}
-		else
-		{
-			for (unsigned int c = 0; c < weights[i]->cols(); c++)
-			{
-				for (unsigned int r = 0; r < weights[i]->rows(); r++)
-				{
-					weights[i]->coeffRef(r, c) += learning_rate * deltas[i + 1]->coeffRef(c) * activationFunctionDerivative(unactive_layers[i + 1]->coeffRef(c)) * layers[i]->coeffRef(r);
-				}
-			}
-		}
-	}
+    for (unsigned int i = 0; i < neuron_layer_num.size() - 1; i++)
+    {
+        // Debug: Print the shapes of the matrices involved in the operation
+        std::cout << "Layer " << i << std::endl;
+        std::cout << "weights[" << i << "] shape: (" << weights[i]->rows() << ", " << weights[i]->cols() << ")" << std::endl;
+        std::cout << "layers[" << i << "] shape: (" << layers[i]->rows() << ", " << layers[i]->cols() << ")" << std::endl;
+        std::cout << "deltas[" << i+1 << "] shape: (" << deltas[i+1]->rows() << ", " << deltas[i+1]->cols() << ")" << std::endl;
+
+        weights[i]->noalias() += learning_rate * layers[i]->transpose() * (*deltas[i + 1]);
+    }
 }
 
-void NeuralNetwork::backward_prop(Eigen::RowVectorXf& output)
+
+
+void NeuralNetwork::backward_prop(Eigen::RowVectorXd& output)
 {
     // Change this later
     OneHot onehot(10);
-    Eigen::RowVectorXf output_encoded = onehot.encode(static_cast<int>(output(0)));
+    Eigen::RowVectorXd output_encoded = onehot.encode(static_cast<int>(output(0)));
     eval_err(output_encoded);
 	update_weights();
 }
 
-void NeuralNetwork::train(std::vector<Eigen::RowVectorXf*> input_data, std::vector<Eigen::RowVectorXf*> output_data)
+void NeuralNetwork::train(std::vector<Eigen::RowVectorXd*> input_data, std::vector<Eigen::RowVectorXd*> output_data)
 {
 	for (unsigned int i = 0; i < input_data.size(); i++)
 	{
@@ -147,7 +129,7 @@ void NeuralNetwork::train(std::vector<Eigen::RowVectorXf*> input_data, std::vect
 	}
 }
 
-float calculateAccuracy(const std::vector<Eigen::RowVectorXf*>& inputs, const std::vector<Eigen::RowVectorXf*>& targets, NeuralNetwork& model)
+double calculateAccuracy(const std::vector<Eigen::RowVectorXd*>& inputs, const std::vector<Eigen::RowVectorXd*>& targets, NeuralNetwork& model)
 {
     int correct = 0;
     for (size_t i = 0; i < inputs.size(); ++i)
@@ -161,19 +143,19 @@ float calculateAccuracy(const std::vector<Eigen::RowVectorXf*>& inputs, const st
         }
     }
     std::cout << "Correct: " << correct << ", out of " << inputs.size() << std::endl;
-    return static_cast<float>(correct) / inputs.size();
+    return static_cast<double>(correct) / inputs.size();
 }
 
 // Define a function to perform k-fold cross-validation
-float kFoldCrossValidation(const std::vector<Eigen::RowVectorXf*>& inputs, const std::vector<Eigen::RowVectorXf*>& targets, NeuralNetwork& model, int k) {
+double kFoldCrossValidation(const std::vector<Eigen::RowVectorXd*>& inputs, const std::vector<Eigen::RowVectorXd*>& targets, NeuralNetwork& model, int k) {
     std::vector<size_t> indices(inputs.size());
     std::iota(indices.begin(), indices.end(), 0);
     std::random_shuffle(indices.begin(), indices.end());
 
-    float total_accuracy = 0.0f;
+    double total_accuracy = 0.0f;
     size_t fold_size = inputs.size() / k;
     for (int i = 0; i < k; ++i) {
-        std::vector<Eigen::RowVectorXf*> train_inputs, train_targets, test_inputs, test_targets;
+        std::vector<Eigen::RowVectorXd*> train_inputs, train_targets, test_inputs, test_targets;
         for (size_t j = 0; j < inputs.size(); ++j) {
             if (j >= i * fold_size && j < (i + 1) * fold_size) {
                 test_inputs.push_back(inputs[indices[j]]);
@@ -185,7 +167,7 @@ float kFoldCrossValidation(const std::vector<Eigen::RowVectorXf*>& inputs, const
         }
 
         model.train(train_inputs, train_targets);
-        float accuracy = calculateAccuracy(test_inputs, test_targets, model);
+        double accuracy = calculateAccuracy(test_inputs, test_targets, model);
         total_accuracy += accuracy;
     }
 
@@ -200,12 +182,12 @@ int main()
     unsigned char **mnist_image_train = read_mnist_image("/media/joardan/Harddisk/Project/NPSC/dataset/train-images.idx3-ubyte", 60000, 784);
 
     // Convert MNIST images to Eigen vectors
-    std::vector<Eigen::RowVectorXf*> mnist_train_vectors = mnistImageToEigenVector(mnist_image_train, 60000, 784);
-    std::vector<Eigen::RowVectorXf*> mnist_train_label_vectors = mnistLabelToEigenVector(mnist_label_train, 60000);
+    std::vector<Eigen::RowVectorXd*> mnist_train_vectors = mnistImageToEigenVector(mnist_image_train, 60000, 784);
+    std::vector<Eigen::RowVectorXd*> mnist_train_label_vectors = mnistLabelToEigenVector(mnist_label_train, 60000);
 
-    NeuralNetwork n({784, 300, 100, 10}, 0.001);
+    NeuralNetwork n({784, 16, 16, 10}, 0.05);
     int k = 3; // Change this value as needed
-    float average_accuracy = kFoldCrossValidation(mnist_train_vectors, mnist_train_label_vectors, n, k);
+    double average_accuracy = kFoldCrossValidation(mnist_train_vectors, mnist_train_label_vectors, n, k);
     std::cout << "Average Accuracy: " << average_accuracy << std::endl;
 	
     // Cleanup
