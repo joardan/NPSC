@@ -13,7 +13,9 @@ class NeuralNetwork
         void backward_prop(Eigen::RowVectorXd& output);
         void eval_err(Eigen::RowVectorXd& output);
         void update_weights();
+        void print_weights() const;
         void train(std::vector<Eigen::RowVectorXd*> input_data, std::vector<Eigen::RowVectorXd*> output_data);
+        int predict(Eigen::RowVectorXd& input);
 
         std::vector<unsigned int> neuron_layer_num;
         std::vector<Eigen::RowVectorXd*> layers;

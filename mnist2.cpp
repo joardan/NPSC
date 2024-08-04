@@ -74,7 +74,7 @@ std::vector<Eigen::RowVectorXd*> mnistImageToEigenVector(unsigned char** mnist_i
     for (int i = 0; i < num_items; ++i) {
         Eigen::RowVectorXd* rowVector = new Eigen::RowVectorXd(image_size);
         for (int j = 0; j < image_size; ++j) {
-            (*rowVector)(j) = static_cast<double>(mnist_image[i][j]) / 25500.0f;
+            (*rowVector)(j) = static_cast<double>(mnist_image[i][j]) / 255.0f;
         }
         vectors.push_back(rowVector);
     }

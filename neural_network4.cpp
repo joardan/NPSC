@@ -29,7 +29,7 @@ NeuralNetwork::NeuralNetwork(std::vector<unsigned int> neuron_layer_num, double 
         // Set bias node value to 1
         if(i != neuron_layer_num.size()-1)
         {
-            layers.back()->coeffRef(neuron_layer_num[i]) = 0.001;
+            layers.back()->coeffRef(neuron_layer_num[i]) = 1;
         }
 
         // Set weight per layer and initialise with random values [-1, 1]
@@ -49,9 +49,17 @@ NeuralNetwork::NeuralNetwork(std::vector<unsigned int> neuron_layer_num, double 
     }
 }
 
+void NeuralNetwork::print_weights() const
+{
+    for (size_t i = 0; i < weights.size(); ++i)
+    {
+        std::cout << "Weights for layer " << i + 1 << ":\n" << *weights[i] << std::endl;
+    }
+}
+
 void activationFunction(Eigen::RowVectorXd& input)
 {
-	input.array().max(0.0f);
+	input = input.array().max(0.0f);
 }
 
 Eigen::RowVectorXd activationFunctionDerivative(const Eigen::RowVectorXd& x)
@@ -114,13 +122,19 @@ void NeuralNetwork::train(std::vector<Eigen::RowVectorXd*> input_data, std::vect
 	for (unsigned int i = 0; i < input_data.size(); i++)
 	{
 		forward_prop(*input_data[i]);
-        /*
-		std::cout << "Expected output is : " << *output_data[i] << std::endl;
-        std::cout << "Output produced is : " << max_arg(*layers.back()) << std::endl;
-		std::cout << "Output probability is : " << *layers.back() << std::endl;
-        */
-		backward_prop(*output_data[i]);
+
+		//std::cout << "Expected output is : " << *output_data[i] << std::endl;
+        //std::cout << "Output produced is : " << max_arg(*layers.back()) << std::endl;
+		//std::cout << "Output probability is : " << *layers.back() << std::endl;
+
+        backward_prop(*output_data[i]);
 	}
+}
+
+int NeuralNetwork::predict(Eigen::RowVectorXd& input)
+{
+    forward_prop(input);
+    return max_arg(*layers.back());
 }
 
 double calculateAccuracy(const std::vector<Eigen::RowVectorXd*>& inputs, const std::vector<Eigen::RowVectorXd*>& targets, NeuralNetwork& model)
@@ -148,7 +162,7 @@ double kFoldCrossValidation(const std::vector<Eigen::RowVectorXd*>& inputs, cons
     double total_accuracy = 0.0f;
     size_t fold_size = inputs.size() / k;
     for (int i = 0; i < k; ++i) {
-        NeuralNetwork model({784, 16, 16, 10}, 0.05);
+        NeuralNetwork model({784, 32, 16, 10}, 0.0242);
         std::vector<Eigen::RowVectorXd*> train_inputs, train_targets, test_inputs, test_targets;
         for (int j = 0; j < inputs.size(); ++j)
         {
@@ -165,6 +179,7 @@ double kFoldCrossValidation(const std::vector<Eigen::RowVectorXd*>& inputs, cons
         }
 
         model.train(train_inputs, train_targets);
+        //model.print_weights();
         double accuracy = calculateAccuracy(test_inputs, test_targets, model);
         total_accuracy += accuracy;
     }
@@ -183,7 +198,7 @@ int main()
     std::vector<Eigen::RowVectorXd*> mnist_train_vectors = mnistImageToEigenVector(mnist_image_train, 60000, 784);
     std::vector<Eigen::RowVectorXd*> mnist_train_label_vectors = mnistLabelToEigenVector(mnist_label_train, 60000);
 
-    NeuralNetwork n({784, 16, 16, 10}, 0.05);
+    NeuralNetwork n({784, 32, 16, 10}, 0.0242);
     int k = 3; // Change this value as needed
     double average_accuracy = kFoldCrossValidation(mnist_train_vectors, mnist_train_label_vectors, k);
     std::cout << "Average Accuracy: " << average_accuracy << std::endl;
