@@ -6,7 +6,35 @@
 #include <cmath>
 #include <algorithm>
 #include <numeric>
+#include <random>
 
+void initializeXavier(Eigen::MatrixXd& weights)
+{
+    std::random_device rd;
+    std::mt19937 gen(rd());
+    std::uniform_real_distribution<> dis(-sqrt(6.0 / (weights.rows() + weights.cols())), sqrt(6.0 / (weights.rows() + weights.cols())));
+    for (int i = 0; i < weights.rows(); ++i)
+    {
+        for (int j = 0; j < weights.cols(); ++j)
+        {
+            weights(i, j) = dis(gen);
+        }
+    }
+}
+
+void initializeHe(Eigen::MatrixXd& weights)
+{
+    std::random_device rd;
+    std::mt19937 gen(rd());
+    std::normal_distribution<> dis(0, sqrt(2.0 / weights.rows()));
+    for (int i = 0; i < weights.rows(); ++i)
+    {
+        for (int j = 0; j < weights.cols(); ++j)
+        {
+            weights(i, j) = dis(gen);
+        }
+    }
+}
 
 NeuralNetwork::NeuralNetwork(std::vector<unsigned int> neuron_layer_num, double learning_rate)
 {
@@ -38,12 +66,12 @@ NeuralNetwork::NeuralNetwork(std::vector<unsigned int> neuron_layer_num, double 
             if(i != neuron_layer_num.size()-1)
             {
                 weights.push_back(new Eigen::MatrixXd(neuron_layer_num[i-1] + 1, neuron_layer_num[i] + 1));
-                weights.back()->setRandom();
+                initializeHe(*weights.back());
             }
             else
             {
                 weights.push_back(new Eigen::MatrixXd(neuron_layer_num[i-1] + 1, neuron_layer_num[i]));
-                weights.back()->setRandom();
+                initializeHe(*weights.back());
             }
         }
     }
@@ -56,7 +84,18 @@ void NeuralNetwork::print_weights() const
         std::cout << "Weights for layer " << i + 1 << ":\n" << *weights[i] << std::endl;
     }
 }
+/*
+void activationFunction(Eigen::RowVectorXd& input)
+{
+    input = 1.0 / (1.0 + (-input.array()).exp());
+}
 
+Eigen::RowVectorXd activationFunctionDerivative(const Eigen::RowVectorXd& x)
+{
+    Eigen::RowVectorXd sigmoid_x = 1.0 / (1.0 + (-x.array()).exp());
+    return sigmoid_x.array() * (1.0 - sigmoid_x.array());
+}
+*/
 void activationFunction(Eigen::RowVectorXd& input)
 {
 	input = input.array().max(0.0f);
@@ -69,7 +108,8 @@ Eigen::RowVectorXd activationFunctionDerivative(const Eigen::RowVectorXd& x)
 
 Eigen::RowVectorXd softmax(const Eigen::RowVectorXd& x)
 {
-    Eigen::RowVectorXd exp_values = x.array().exp();
+    Eigen::RowVectorXd shifted_x = x.array() - x.maxCoeff();
+    Eigen::RowVectorXd exp_values = shifted_x.array().exp();
     return exp_values / exp_values.sum();
 }
 
@@ -86,8 +126,13 @@ void NeuralNetwork::forward_prop(Eigen::RowVectorXd& input)
     for(unsigned int i = 1; i < neuron_layer_num.size(); i++)
     {
         (*layers[i]) = (*layers[i-1]) * (*weights[i-1]);
-        activationFunction(*layers[i]);
+        if(i != neuron_layer_num.size() - 1)
+        {
+            //std::cout << (*layers[i]);
+            activationFunction(*layers[i]);
+        }
     }
+    //std::cout << (*layers.back());
     (*layers.back()) = softmax(*layers.back());
 }
 
@@ -96,7 +141,7 @@ void NeuralNetwork::eval_err(Eigen::RowVectorXd& output)
 	(*deltas.back()) = (output - (*layers.back()));
 	for (unsigned int i = neuron_layer_num.size() - 2; i > 0; i--)
     {
-		(*deltas[i]) = ((*deltas[i + 1]) * (weights[i]->transpose())).array() * activationFunctionDerivative(*layers[i]).array();
+            (*deltas[i]) = ((*deltas[i + 1]) * (weights[i]->transpose())).array() * activationFunctionDerivative(*layers[i]).array();
 	}
 }
 
