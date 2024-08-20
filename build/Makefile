@@ -222,29 +222,29 @@ mnist2.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/mnist2.cpp.s
 .PHONY : mnist2.cpp.s
 
-neural_network4.o: neural_network4.cpp.o
-.PHONY : neural_network4.o
+neural_network_copy1.o: neural_network_copy1.cpp.o
+.PHONY : neural_network_copy1.o
 
 # target to build an object file
-neural_network4.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/neural_network4.cpp.o
-.PHONY : neural_network4.cpp.o
+neural_network_copy1.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/neural_network_copy1.cpp.o
+.PHONY : neural_network_copy1.cpp.o
 
-neural_network4.i: neural_network4.cpp.i
-.PHONY : neural_network4.i
+neural_network_copy1.i: neural_network_copy1.cpp.i
+.PHONY : neural_network_copy1.i
 
 # target to preprocess a source file
-neural_network4.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/neural_network4.cpp.i
-.PHONY : neural_network4.cpp.i
+neural_network_copy1.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/neural_network_copy1.cpp.i
+.PHONY : neural_network_copy1.cpp.i
 
-neural_network4.s: neural_network4.cpp.s
-.PHONY : neural_network4.s
+neural_network_copy1.s: neural_network_copy1.cpp.s
+.PHONY : neural_network_copy1.s
 
 # target to generate assembly for a file
-neural_network4.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/neural_network4.cpp.s
-.PHONY : neural_network4.cpp.s
+neural_network_copy1.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/neural_network_copy1.cpp.s
+.PHONY : neural_network_copy1.cpp.s
 
 # Help Target
 help:
@@ -265,9 +265,9 @@ help:
 	@echo "... mnist2.o"
 	@echo "... mnist2.i"
 	@echo "... mnist2.s"
-	@echo "... neural_network4.o"
-	@echo "... neural_network4.i"
-	@echo "... neural_network4.s"
+	@echo "... neural_network_copy1.o"
+	@echo "... neural_network_copy1.i"
+	@echo "... neural_network_copy1.s"
 .PHONY : help
 
 

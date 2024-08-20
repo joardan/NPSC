@@ -16,7 +16,7 @@ include_directories(${OpenCV_INCLUDE_DIRS} )
 # Include Eigen headers
 include_directories(${EIGEN_DIR})
 
-add_executable(appimage encoder.cpp mnist2.cpp neural_network4.cpp)
+add_executable(appimage encoder.cpp mnist2.cpp neural_network_copy1.cpp)
 
 # Link against OpenCV libraries
 target_link_libraries(appimage ${OpenCV_LIBS})

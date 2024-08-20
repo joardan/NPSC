@@ -1,6 +1,8 @@
 CMakeFiles/appimage.dir/neural_network.cpp.o: \
  /media/joardan/Harddisk/Project/NPSC/neural_network.cpp \
  /usr/include/stdc-predef.h \
+ /media/joardan/Harddisk/Project/NPSC/neural_network.hpp \
+ /media/joardan/Harddisk/Project/NPSC/../../cpp_lib/eigen-3.4.0/Eigen/Dense \
  /media/joardan/Harddisk/Project/NPSC/../../cpp_lib/eigen-3.4.0/Eigen/Core \
  /media/joardan/Harddisk/Project/NPSC/../../cpp_lib/eigen-3.4.0/Eigen/src/Core/util/DisableStupidWarnings.h \
  /media/joardan/Harddisk/Project/NPSC/../../cpp_lib/eigen-3.4.0/Eigen/src/Core/util/Macros.h \
@@ -341,8 +343,6 @@ CMakeFiles/appimage.dir/neural_network.cpp.o: \
  /media/joardan/Harddisk/Project/NPSC/../../cpp_lib/eigen-3.4.0/Eigen/src/Core/StlIterators.h \
  /media/joardan/Harddisk/Project/NPSC/../../cpp_lib/eigen-3.4.0/Eigen/src/Core/GlobalFunctions.h \
  /media/joardan/Harddisk/Project/NPSC/../../cpp_lib/eigen-3.4.0/Eigen/src/Core/util/ReenableStupidWarnings.h \
- /media/joardan/Harddisk/Project/NPSC/../../cpp_lib/eigen-3.4.0/Eigen/Dense \
- /media/joardan/Harddisk/Project/NPSC/../../cpp_lib/eigen-3.4.0/Eigen/Core \
  /media/joardan/Harddisk/Project/NPSC/../../cpp_lib/eigen-3.4.0/Eigen/LU \
  /media/joardan/Harddisk/Project/NPSC/../../cpp_lib/eigen-3.4.0/Eigen/src/misc/Kernel.h \
  /media/joardan/Harddisk/Project/NPSC/../../cpp_lib/eigen-3.4.0/Eigen/src/misc/Image.h \
@@ -404,7 +404,15 @@ CMakeFiles/appimage.dir/neural_network.cpp.o: \
  /media/joardan/Harddisk/Project/NPSC/../../cpp_lib/eigen-3.4.0/Eigen/src/Eigenvalues/GeneralizedEigenSolver.h \
  /media/joardan/Harddisk/Project/NPSC/../../cpp_lib/eigen-3.4.0/Eigen/src/Eigenvalues/./RealQZ.h \
  /media/joardan/Harddisk/Project/NPSC/../../cpp_lib/eigen-3.4.0/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h \
- /usr/include/c++/11/iostream \
- /media/joardan/Harddisk/Project/NPSC/mnist.hpp \
+ /media/joardan/Harddisk/Project/NPSC/mnist2.hpp \
  /media/joardan/Harddisk/Project/NPSC/encoder.hpp \
- /media/joardan/Harddisk/Project/NPSC/functions.hpp
+ /usr/include/c++/11/iostream /usr/include/c++/11/fstream \
+ /usr/include/c++/11/bits/codecvt.h \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
+ /usr/include/c++/11/bits/fstream.tcc /usr/include/c++/11/numeric \
+ /usr/include/c++/11/bits/stl_numeric.h /usr/include/c++/11/bit \
+ /usr/include/c++/11/pstl/glue_numeric_defs.h /usr/include/c++/11/random \
+ /usr/include/c++/11/bits/random.h \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/opt_random.h \
+ /usr/include/c++/11/bits/random.tcc

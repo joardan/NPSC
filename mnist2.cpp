@@ -3,6 +3,7 @@
 #include <vector>
 #include <opencv2/opencv.hpp>
 #include <Eigen/Dense>
+#include "mnist2.hpp"
 
 
 void displayMNISTImage(unsigned char* image, int rows, int cols)
