@@ -3,8 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/appimage.dir/encoder.cpp.o.d"
   "CMakeFiles/appimage.dir/mnist2.cpp.o"
   "CMakeFiles/appimage.dir/mnist2.cpp.o.d"
-  "CMakeFiles/appimage.dir/neural_network_copy1.cpp.o"
-  "CMakeFiles/appimage.dir/neural_network_copy1.cpp.o.d"
+  "CMakeFiles/appimage.dir/neural_network_copy1_copy.cpp.o"
+  "CMakeFiles/appimage.dir/neural_network_copy1_copy.cpp.o.d"
   "appimage"
   "appimage.pdb"
 )

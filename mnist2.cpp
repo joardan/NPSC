@@ -96,6 +96,24 @@ std::vector<Eigen::RowVectorXd*> mnistLabelToEigenVector(unsigned char* mnist_la
     return vectors;
 }
 
+std::vector<Eigen::MatrixXd*> mnistImageToEigenMatrix(unsigned char** mnist_image, int num_items, int image_rows, int image_cols)
+{
+    std::vector<Eigen::MatrixXd*> matrices;
+
+    for (int i = 0; i < num_items; ++i)
+    {
+        Eigen::MatrixXd* matrix = new Eigen::MatrixXd(image_rows, image_cols);
+        for (int j = 0; j < image_rows; ++j)
+        {
+            for (int k = 0; k < image_cols; ++k)
+            (*matrix)(j, k) = static_cast<double>(mnist_image[i][j]) / 255.0f;
+        }
+        matrices.push_back(matrix);
+    }
+
+    return matrices;
+}
+
 // TEST MAIN FILE, MADE JUST TO TEST READING MNIST DATASET ITSELF.
 /*
 int main() {

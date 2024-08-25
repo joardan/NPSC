@@ -1072,7 +1072,7 @@ CMakeFiles/appimage.dir/mnist2.cpp.o: ../mnist2.cpp \
   /media/joardan/Harddisk/cpp_lib/eigen-3.4.0/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h \
   ../mnist2.hpp
 
-CMakeFiles/appimage.dir/neural_network_copy1.cpp.o: ../neural_network_copy1.cpp \
+CMakeFiles/appimage.dir/neural_network_copy1_copy.cpp.o: ../neural_network_copy1\ copy.cpp \
   /usr/include/stdc-predef.h \
   /usr/include/c++/11/vector \
   /usr/include/c++/11/bits/stl_algobase.h \
@@ -1320,6 +1320,14 @@ CMakeFiles/appimage.dir/neural_network_copy1.cpp.o: ../neural_network_copy1.cpp 
   /usr/include/c++/11/bits/random.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/opt_random.h \
   /usr/include/c++/11/bits/random.tcc \
+  /usr/include/c++/11/thread \
+  /usr/include/c++/11/bits/std_thread.h \
+  /usr/include/c++/11/bits/unique_ptr.h \
+  /usr/include/c++/11/bits/this_thread_sleep.h \
+  /usr/include/c++/11/chrono \
+  /usr/include/c++/11/ratio \
+  /usr/include/c++/11/ctime \
+  /usr/include/c++/11/bits/parse_numbers.h \
   /media/joardan/Harddisk/cpp_lib/eigen-3.4.0/Eigen/Dense \
   /media/joardan/Harddisk/cpp_lib/eigen-3.4.0/Eigen/Core \
   /media/joardan/Harddisk/cpp_lib/eigen-3.4.0/Eigen/src/Core/util/DisableStupidWarnings.h \
@@ -1541,6 +1549,10 @@ CMakeFiles/appimage.dir/neural_network_copy1.cpp.o: ../neural_network_copy1.cpp 
   ../encoder.hpp
 
 
+/usr/include/c++/11/bits/this_thread_sleep.h:
+
+/usr/include/c++/11/thread:
+
 /usr/include/x86_64-linux-gnu/c++/11/bits/opt_random.h:
 
 /usr/include/c++/11/bits/random.h:
@@ -1553,7 +1565,7 @@ CMakeFiles/appimage.dir/neural_network_copy1.cpp.o: ../neural_network_copy1.cpp 
 
 /usr/include/c++/11/numeric:
 
-../neural_network_copy1.cpp:
+../neural_network_copy1\ copy.cpp:
 
 ../mnist2.hpp:
 
@@ -2692,6 +2704,8 @@ CMakeFiles/appimage.dir/neural_network_copy1.cpp.o: ../neural_network_copy1.cpp 
 /media/joardan/Harddisk/cpp_lib/eigen-3.4.0/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h:
 
 /media/joardan/Harddisk/cpp_lib/opencv-4.x/modules/core/include/opencv2/core/mat.hpp:
+
+/usr/include/c++/11/bits/std_thread.h:
 
 /media/joardan/Harddisk/cpp_lib/opencv-4.x/modules/core/include/opencv2/core/mat.inl.hpp:
 

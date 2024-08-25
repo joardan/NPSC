@@ -5,6 +5,7 @@
 #include <algorithm>
 #include <numeric>
 #include <random>
+#include <thread>
 #include <Eigen/Dense>
 #include "mnist2.hpp"
 #include "encoder.hpp"
@@ -26,7 +27,7 @@ public:
         : input_size(input_size), output_size(output_size)
     {
         weights = Eigen::MatrixXd::Zero(input_size, output_size);
-        bias = Eigen::RowVectorXd::Zero(output_size);
+        bias = Eigen::RowVectorXd::Ones(output_size);
         deltas = Eigen::RowVectorXd::Zero(output_size);
         initializeHe(weights);
     }
@@ -97,18 +98,12 @@ public:
 
     void forward_prop(const Eigen::RowVectorXd& input)
     {
-        layers.front()->forward(input);
-        activationFunction(layers.front()->output);
-        //std::cout << "first_forward_ok\n";
-        for (size_t i = 1; i < layers.size(); ++i)
+        for (size_t i = 0; i < layers.size(); ++i)
         {
-            layers[i]->forward(layers[i - 1]->output);
+            layers[i]->forward((i == 0) ? input : layers[i-1]->output);
             if(i != layers.size() - 1)
-            {
                 activationFunction(layers[i]->output);
-            }
         }
-        //std::cout << "forward_no_act_f_ok\n";
         // Apply softmax to the output of the last layer
         layers.back()->output = softmax(layers.back()->output);
     }
@@ -218,41 +213,63 @@ double calculateAccuracy(const std::vector<Eigen::RowVectorXd*>& inputs, const s
     return static_cast<double>(correct) / inputs.size();
 }
 
-double kFoldCrossValidation(const std::vector<Eigen::RowVectorXd*>& inputs, const std::vector<Eigen::RowVectorXd*>& targets, int k) {
+double kFoldCrossValidation(const std::vector<Eigen::RowVectorXd*>& inputs, const std::vector<Eigen::RowVectorXd*>& targets, int k, int epochs, int early_stopping_patience) {
     std::vector<size_t> indices(inputs.size());
     std::iota(indices.begin(), indices.end(), 0);
     std::random_shuffle(indices.begin(), indices.end());
 
-    double total_accuracy = 0.0f;
+    double total_accuracy = 0.0;
     size_t fold_size = inputs.size() / k;
+
     for (int i = 0; i < k; ++i) {
         NeuralNetwork model(0.0242);
         // Add layers
         model.addLayer(784, 64);
         model.addLayer(64, 32);
-        model.addLayer(32, 10); // Output layer, no bias
-        //std::cout << "addLayer_ok\n";
+        model.addLayer(32, 16);
+        model.addLayer(16, 10); // Output layer
 
+        // Split the data into training and testing for this fold
         std::vector<Eigen::RowVectorXd*> train_inputs, train_targets, test_inputs, test_targets;
-        for (int j = 0; j < inputs.size(); ++j)
-        {
-            if (j >= i * fold_size && j < (i + 1) * fold_size)
-            {
+        for (int j = 0; j < inputs.size(); ++j) {
+            if (j >= i * fold_size && j < (i + 1) * fold_size) {
                 test_inputs.push_back(inputs[indices[j]]);
                 test_targets.push_back(targets[indices[j]]);
-            }
-            else
-            {
+            } else {
                 train_inputs.push_back(inputs[indices[j]]);
                 train_targets.push_back(targets[indices[j]]);
             }
         }
-        
-        //std::cout << "data_preprocessing_ok\n";
-        model.train(train_inputs, train_targets);
-        //model.print_weights();
-        double accuracy = calculateAccuracy(test_inputs, test_targets, model);
-        total_accuracy += accuracy;
+
+        // Early stopping variables
+        int best_epoch = 0;
+        double best_accuracy = 0.0;
+        int patience_counter = 0;
+
+        for (int epoch = 1; epoch <= epochs; ++epoch) {
+            // Train on the training data
+            model.train(train_inputs, train_targets);
+
+            // Evaluate on the testing data
+            double test_accuracy = calculateAccuracy(test_inputs, test_targets, model);
+            std::cout << "Fold " << i + 1 << " - Epoch " << epoch << " - Test Accuracy: " << test_accuracy << std::endl;
+
+            // Early stopping check
+            if (test_accuracy > best_accuracy) {
+                best_accuracy = test_accuracy;
+                best_epoch = epoch;
+                patience_counter = 0;
+            } else {
+                patience_counter++;
+            }
+
+            if (patience_counter >= early_stopping_patience) {
+                std::cout << "Early stopping at epoch " << epoch << " with best test accuracy of " << best_accuracy << " at epoch " << best_epoch << "." << std::endl;
+                break;
+            }
+        }
+
+        total_accuracy += best_accuracy;
     }
 
     return total_accuracy / k;
@@ -260,6 +277,8 @@ double kFoldCrossValidation(const std::vector<Eigen::RowVectorXd*>& inputs, cons
 
 int main()
 {
+    Eigen::setNbThreads(std::thread::hardware_concurrency());
+    
     unsigned char *mnist_label_test = read_mnist_label("/media/joardan/Harddisk/Project/NPSC/dataset/t10k-labels.idx1-ubyte", 10000);
     unsigned char **mnist_image_test = read_mnist_image("/media/joardan/Harddisk/Project/NPSC/dataset/t10k-images.idx3-ubyte", 10000, 784);
     unsigned char *mnist_label_train = read_mnist_label("/media/joardan/Harddisk/Project/NPSC/dataset/train-labels.idx1-ubyte", 60000);
@@ -270,8 +289,11 @@ int main()
     std::vector<Eigen::RowVectorXd*> mnist_train_label_vectors = mnistLabelToEigenVector(mnist_label_train, 60000);
 
     // Train the model
-    int k = 3; // Change this value as needed
-    double average_accuracy = kFoldCrossValidation(mnist_train_vectors, mnist_train_label_vectors, k);
+    int k = 3; // Number of folds
+    int epochs = 10; // Maximum number of epochs
+    int early_stopping_patience = 2; // Early stopping patience
+
+    double average_accuracy = kFoldCrossValidation(mnist_train_vectors, mnist_train_label_vectors, k, epochs, early_stopping_patience);
     std::cout << "Average Accuracy: " << average_accuracy << std::endl;
     
     // Cleanup
