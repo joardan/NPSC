@@ -174,6 +174,30 @@ appimage/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/build
 .PHONY : appimage/fast
 
+activation.o: activation.cpp.o
+.PHONY : activation.o
+
+# target to build an object file
+activation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/activation.cpp.o
+.PHONY : activation.cpp.o
+
+activation.i: activation.cpp.i
+.PHONY : activation.i
+
+# target to preprocess a source file
+activation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/activation.cpp.i
+.PHONY : activation.cpp.i
+
+activation.s: activation.cpp.s
+.PHONY : activation.s
+
+# target to generate assembly for a file
+activation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/activation.cpp.s
+.PHONY : activation.cpp.s
+
 encoder.o: encoder.cpp.o
 .PHONY : encoder.o
 
@@ -197,6 +221,78 @@ encoder.s: encoder.cpp.s
 encoder.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/encoder.cpp.s
 .PHONY : encoder.cpp.s
+
+initialiser.o: initialiser.cpp.o
+.PHONY : initialiser.o
+
+# target to build an object file
+initialiser.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/initialiser.cpp.o
+.PHONY : initialiser.cpp.o
+
+initialiser.i: initialiser.cpp.i
+.PHONY : initialiser.i
+
+# target to preprocess a source file
+initialiser.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/initialiser.cpp.i
+.PHONY : initialiser.cpp.i
+
+initialiser.s: initialiser.cpp.s
+.PHONY : initialiser.s
+
+# target to generate assembly for a file
+initialiser.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/initialiser.cpp.s
+.PHONY : initialiser.cpp.s
+
+layer.o: layer.cpp.o
+.PHONY : layer.o
+
+# target to build an object file
+layer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/layer.cpp.o
+.PHONY : layer.cpp.o
+
+layer.i: layer.cpp.i
+.PHONY : layer.i
+
+# target to preprocess a source file
+layer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/layer.cpp.i
+.PHONY : layer.cpp.i
+
+layer.s: layer.cpp.s
+.PHONY : layer.s
+
+# target to generate assembly for a file
+layer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/layer.cpp.s
+.PHONY : layer.cpp.s
+
+main.o: main.cpp.o
+.PHONY : main.o
+
+# target to build an object file
+main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/main.cpp.o
+.PHONY : main.cpp.o
+
+main.i: main.cpp.i
+.PHONY : main.i
+
+# target to preprocess a source file
+main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/main.cpp.i
+.PHONY : main.cpp.i
+
+main.s: main.cpp.s
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/main.cpp.s
+.PHONY : main.cpp.s
 
 mnist2.o: mnist2.cpp.o
 .PHONY : mnist2.o
@@ -222,29 +318,53 @@ mnist2.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/mnist2.cpp.s
 .PHONY : mnist2.cpp.s
 
-neural_network_copy1_copy.o: neural_network_copy1_copy.cpp.o
-.PHONY : neural_network_copy1_copy.o
+neural_network.o: neural_network.cpp.o
+.PHONY : neural_network.o
 
 # target to build an object file
-neural_network_copy1_copy.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/neural_network_copy1_copy.cpp.o
-.PHONY : neural_network_copy1_copy.cpp.o
+neural_network.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/neural_network.cpp.o
+.PHONY : neural_network.cpp.o
 
-neural_network_copy1_copy.i: neural_network_copy1_copy.cpp.i
-.PHONY : neural_network_copy1_copy.i
+neural_network.i: neural_network.cpp.i
+.PHONY : neural_network.i
 
 # target to preprocess a source file
-neural_network_copy1_copy.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/neural_network_copy1_copy.cpp.i
-.PHONY : neural_network_copy1_copy.cpp.i
+neural_network.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/neural_network.cpp.i
+.PHONY : neural_network.cpp.i
 
-neural_network_copy1_copy.s: neural_network_copy1_copy.cpp.s
-.PHONY : neural_network_copy1_copy.s
+neural_network.s: neural_network.cpp.s
+.PHONY : neural_network.s
 
 # target to generate assembly for a file
-neural_network_copy1_copy.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/neural_network_copy1_copy.cpp.s
-.PHONY : neural_network_copy1_copy.cpp.s
+neural_network.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/neural_network.cpp.s
+.PHONY : neural_network.cpp.s
+
+tester.o: tester.cpp.o
+.PHONY : tester.o
+
+# target to build an object file
+tester.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/tester.cpp.o
+.PHONY : tester.cpp.o
+
+tester.i: tester.cpp.i
+.PHONY : tester.i
+
+# target to preprocess a source file
+tester.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/tester.cpp.i
+.PHONY : tester.cpp.i
+
+tester.s: tester.cpp.s
+.PHONY : tester.s
+
+# target to generate assembly for a file
+tester.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/tester.cpp.s
+.PHONY : tester.cpp.s
 
 # Help Target
 help:
@@ -259,15 +379,30 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... appimage"
+	@echo "... activation.o"
+	@echo "... activation.i"
+	@echo "... activation.s"
 	@echo "... encoder.o"
 	@echo "... encoder.i"
 	@echo "... encoder.s"
+	@echo "... initialiser.o"
+	@echo "... initialiser.i"
+	@echo "... initialiser.s"
+	@echo "... layer.o"
+	@echo "... layer.i"
+	@echo "... layer.s"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 	@echo "... mnist2.o"
 	@echo "... mnist2.i"
 	@echo "... mnist2.s"
-	@echo "... neural_network_copy1_copy.o"
-	@echo "... neural_network_copy1_copy.i"
-	@echo "... neural_network_copy1_copy.s"
+	@echo "... neural_network.o"
+	@echo "... neural_network.i"
+	@echo "... neural_network.s"
+	@echo "... tester.o"
+	@echo "... tester.i"
+	@echo "... tester.s"
 .PHONY : help
 
 
