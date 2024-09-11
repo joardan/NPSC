@@ -13,7 +13,7 @@ class NeuralNetwork
         void add_Layer(unsigned int input_size, unsigned int output_size, const std::string& activation = "relu", const std::string& initialiser = "he");
         void forward_prop(const Eigen::RowVectorXd& input);
         void backward_prop(const Eigen::RowVectorXd& target);
-        void train(const std::vector<Eigen::RowVectorXd*>& input_data, const std::vector<Eigen::RowVectorXd*>& output_data);
+        void train(const std::vector<Eigen::RowVectorXd*>& input_data, const std::vector<Eigen::RowVectorXd*>& target_data);
         int predict(const Eigen::RowVectorXd& input);
 
     private:

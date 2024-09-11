@@ -270,30 +270,6 @@ layer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/layer.cpp.s
 .PHONY : layer.cpp.s
 
-main.o: main.cpp.o
-.PHONY : main.o
-
-# target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/main.cpp.o
-.PHONY : main.cpp.o
-
-main.i: main.cpp.i
-.PHONY : main.i
-
-# target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/main.cpp.i
-.PHONY : main.cpp.i
-
-main.s: main.cpp.s
-.PHONY : main.s
-
-# target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/main.cpp.s
-.PHONY : main.cpp.s
-
 mnist2.o: mnist2.cpp.o
 .PHONY : mnist2.o
 
@@ -341,6 +317,30 @@ neural_network.s: neural_network.cpp.s
 neural_network.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/neural_network.cpp.s
 .PHONY : neural_network.cpp.s
+
+neural_network_conv_FAIL.o: neural_network_conv_FAIL.cpp.o
+.PHONY : neural_network_conv_FAIL.o
+
+# target to build an object file
+neural_network_conv_FAIL.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/neural_network_conv_FAIL.cpp.o
+.PHONY : neural_network_conv_FAIL.cpp.o
+
+neural_network_conv_FAIL.i: neural_network_conv_FAIL.cpp.i
+.PHONY : neural_network_conv_FAIL.i
+
+# target to preprocess a source file
+neural_network_conv_FAIL.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/neural_network_conv_FAIL.cpp.i
+.PHONY : neural_network_conv_FAIL.cpp.i
+
+neural_network_conv_FAIL.s: neural_network_conv_FAIL.cpp.s
+.PHONY : neural_network_conv_FAIL.s
+
+# target to generate assembly for a file
+neural_network_conv_FAIL.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/neural_network_conv_FAIL.cpp.s
+.PHONY : neural_network_conv_FAIL.cpp.s
 
 tester.o: tester.cpp.o
 .PHONY : tester.o
@@ -391,15 +391,15 @@ help:
 	@echo "... layer.o"
 	@echo "... layer.i"
 	@echo "... layer.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
 	@echo "... mnist2.o"
 	@echo "... mnist2.i"
 	@echo "... mnist2.s"
 	@echo "... neural_network.o"
 	@echo "... neural_network.i"
 	@echo "... neural_network.s"
+	@echo "... neural_network_conv_FAIL.o"
+	@echo "... neural_network_conv_FAIL.i"
+	@echo "... neural_network_conv_FAIL.s"
 	@echo "... tester.o"
 	@echo "... tester.i"
 	@echo "... tester.s"

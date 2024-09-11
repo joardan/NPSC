@@ -51,12 +51,12 @@ void NeuralNetwork::backward_prop(const Eigen::RowVectorXd& target)
     }
 }
 
-void NeuralNetwork::train(const std::vector<Eigen::RowVectorXd*>& input_data, const std::vector<Eigen::RowVectorXd*>& output_data)
+void NeuralNetwork::train(const std::vector<Eigen::RowVectorXd*>& input_data, const std::vector<Eigen::RowVectorXd*>& target_data)
 {
     for (size_t i = 0; i < input_data.size(); ++i)
     {
         forward_prop(*input_data[i]);
-        backward_prop(*output_data[i]);
+        backward_prop(*target_data[i]);
     }
 }
 

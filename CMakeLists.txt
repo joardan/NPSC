@@ -16,7 +16,7 @@ include_directories(${OpenCV_INCLUDE_DIRS} )
 # Include Eigen headers
 include_directories(${EIGEN_DIR})
 
-add_executable(appimage encoder.cpp mnist2.cpp initialiser.cpp activation.cpp layer.cpp neural_network.cpp tester.cpp main.cpp)
+add_executable(appimage encoder.cpp mnist2.cpp initialiser.cpp activation.cpp layer.cpp neural_network.cpp tester.cpp neural_network_conv_FAIL.cpp)
 
 # Link against OpenCV libraries
 target_link_libraries(appimage ${OpenCV_LIBS})
@@ -25,6 +25,8 @@ set_target_properties(appimage PROPERTIES
     INSTALL_RPATH "${OpenCV_DIR}/lib"
     INSTALL_RPATH_USE_LINK_PATH TRUE
 )
+
+set(CMAKE_CXX_FLAGS_RELEASE "-O3 -march=native")
 
 install(
     TARGETS appimage

@@ -35,7 +35,8 @@ unsigned char* read_mnist_label(const std::string& file_path, int num_items) {
         file.seekg(2 * sizeof(int), std::ios::beg);
 
         unsigned char *mnist_label = new unsigned char[num_items];
-        for (int i = 0; i < num_items; ++i) {
+        for (int i = 0; i < num_items; ++i)
+        {
             file.read((char *)&mnist_label[i], sizeof(unsigned char));
         }
         file.close();
@@ -53,8 +54,10 @@ unsigned char** read_mnist_image(const std::string& file_path, int num_items, in
     std::ifstream file(file_path, std::ios::binary);
     if (file.is_open()) {
         file.seekg(4 * sizeof(int), std::ios::beg);
+        
         unsigned char **mnist_image = new unsigned char*[num_items];
-        for(int i = 0; i < num_items; i++) {
+        for(int i = 0; i < num_items; i++)
+        {
             mnist_image[i] = new unsigned char[image_size];
             file.read((char *)mnist_image[i], image_size);
         }
@@ -106,7 +109,7 @@ std::vector<Eigen::MatrixXd*> mnistImageToEigenMatrix(unsigned char** mnist_imag
         for (int j = 0; j < image_rows; ++j)
         {
             for (int k = 0; k < image_cols; ++k)
-            (*matrix)(j, k) = static_cast<double>(mnist_image[i][j]) / 255.0f;
+                (*matrix)(j, k) = static_cast<double>(mnist_image[i][j * image_cols + k]) / 255.0f;
         }
         matrices.push_back(matrix);
     }

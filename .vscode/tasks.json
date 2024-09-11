@@ -10,7 +10,10 @@
                 "-g",
                 "${file}",
                 "-o",
-                "${fileDirname}/${fileBasenameNoExtension}"
+                "${fileDirname}/${fileBasenameNoExtension}",
+                "-fopenmp",
+                "-O3",
+                "-march=native"
             ],
             "options": {
                 "cwd": "${fileDirname}"
