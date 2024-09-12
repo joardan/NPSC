@@ -564,7 +564,7 @@ int main()
     std::vector<Eigen::RowVectorXd*> mnist_test_label_vectors = mnistLabelToEigenVector(mnist_label_test, 10000);
     //std::cout << "convert data ok\n";
 
-    // Initialize your layers
+    // Initialize layers
     ConvolutionalLayer conv_layer(28, 28, 1, 3, 32);
     //std::cout << "conv create ok\n";
     MaxPoolingLayer pool_layer(26, 26, 32, 2);
