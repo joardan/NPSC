@@ -1,7 +1,6 @@
 #include <vector>
 #include <iostream>
 #include <random>
-#include <thread>
 #include <Eigen/Dense>
 #include "mnist2.hpp"
 #include "encoder.hpp"
@@ -14,9 +13,6 @@
 
 int main()
 {
-    // Set threads, it's still slow
-    Eigen::setNbThreads(std::thread::hardware_concurrency());
-    
     unsigned char *mnist_label_test = read_mnist_label("../dataset/t10k-labels.idx1-ubyte", 10000);
     unsigned char **mnist_image_test = read_mnist_image("../dataset/t10k-images.idx3-ubyte", 10000, 784);
     unsigned char *mnist_label_train = read_mnist_label("../dataset/train-labels.idx1-ubyte", 60000);

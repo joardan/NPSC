@@ -1,9 +1,11 @@
 #include <iostream>
+#include <vector>
+#include <Eigen/Dense>
 #include <opencv2/highgui/highgui.hpp>
 #include <opencv2/imgproc.hpp>
 #include <opencv2/core/types.hpp>
+#include <opencv2/core/eigen.hpp>
 
-/*
 int main(int argc, char** argv )
 {
     // Make sure there's input image when running the program
@@ -38,7 +40,7 @@ int main(int argc, char** argv )
     std::vector<std::vector<cv::Point>> contours;
     cv::findContours(thresh, contours, cv::RETR_EXTERNAL, cv::CHAIN_APPROX_SIMPLE);
 
-    //_ Find big areas that are larger than average where it's likely to be a number_____
+    // Find big areas that are larger than average where it's likely to be a number
     std::vector<int> idx;
     double avgArea = 0;
     double sumArea = 0;
@@ -142,6 +144,17 @@ int main(int argc, char** argv )
         cv::waitKey(0);
     }
     cv::destroyAllWindows();
+
+    std::vector<std::vector<Eigen::MatrixXd*>> image_matrix;
+    Eigen::MatrixXd dest(28, 28);
+    Eigen::MatrixXd* dest_ptr;
+    for (size_t i = 0; i < idx.size(); ++i)
+    {
+        cv::cv2eigen(imgs[i], dest);
+        dest_ptr = &dest;
+        std::vector<Eigen::MatrixXd*> vectorised_dest = {dest_ptr};
+        std::cout << dest << "\n\n\n\n\n";
+        image_matrix.push_back(vectorised_dest);
+    }
     return 0;
 }
-*/

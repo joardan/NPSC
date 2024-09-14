@@ -294,6 +294,30 @@ mnist2.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/mnist2.cpp.s
 .PHONY : mnist2.cpp.s
 
+multi_numbers_processing_copy.o: multi_numbers_processing_copy.cpp.o
+.PHONY : multi_numbers_processing_copy.o
+
+# target to build an object file
+multi_numbers_processing_copy.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/multi_numbers_processing_copy.cpp.o
+.PHONY : multi_numbers_processing_copy.cpp.o
+
+multi_numbers_processing_copy.i: multi_numbers_processing_copy.cpp.i
+.PHONY : multi_numbers_processing_copy.i
+
+# target to preprocess a source file
+multi_numbers_processing_copy.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/multi_numbers_processing_copy.cpp.i
+.PHONY : multi_numbers_processing_copy.cpp.i
+
+multi_numbers_processing_copy.s: multi_numbers_processing_copy.cpp.s
+.PHONY : multi_numbers_processing_copy.s
+
+# target to generate assembly for a file
+multi_numbers_processing_copy.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/multi_numbers_processing_copy.cpp.s
+.PHONY : multi_numbers_processing_copy.cpp.s
+
 neural_network.o: neural_network.cpp.o
 .PHONY : neural_network.o
 
@@ -318,29 +342,29 @@ neural_network.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/neural_network.cpp.s
 .PHONY : neural_network.cpp.s
 
-neural_network_conv_FAIL.o: neural_network_conv_FAIL.cpp.o
-.PHONY : neural_network_conv_FAIL.o
+neural_network_conv_unoptimised.o: neural_network_conv_unoptimised.cpp.o
+.PHONY : neural_network_conv_unoptimised.o
 
 # target to build an object file
-neural_network_conv_FAIL.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/neural_network_conv_FAIL.cpp.o
-.PHONY : neural_network_conv_FAIL.cpp.o
+neural_network_conv_unoptimised.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/neural_network_conv_unoptimised.cpp.o
+.PHONY : neural_network_conv_unoptimised.cpp.o
 
-neural_network_conv_FAIL.i: neural_network_conv_FAIL.cpp.i
-.PHONY : neural_network_conv_FAIL.i
+neural_network_conv_unoptimised.i: neural_network_conv_unoptimised.cpp.i
+.PHONY : neural_network_conv_unoptimised.i
 
 # target to preprocess a source file
-neural_network_conv_FAIL.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/neural_network_conv_FAIL.cpp.i
-.PHONY : neural_network_conv_FAIL.cpp.i
+neural_network_conv_unoptimised.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/neural_network_conv_unoptimised.cpp.i
+.PHONY : neural_network_conv_unoptimised.cpp.i
 
-neural_network_conv_FAIL.s: neural_network_conv_FAIL.cpp.s
-.PHONY : neural_network_conv_FAIL.s
+neural_network_conv_unoptimised.s: neural_network_conv_unoptimised.cpp.s
+.PHONY : neural_network_conv_unoptimised.s
 
 # target to generate assembly for a file
-neural_network_conv_FAIL.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/neural_network_conv_FAIL.cpp.s
-.PHONY : neural_network_conv_FAIL.cpp.s
+neural_network_conv_unoptimised.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/neural_network_conv_unoptimised.cpp.s
+.PHONY : neural_network_conv_unoptimised.cpp.s
 
 tester.o: tester.cpp.o
 .PHONY : tester.o
@@ -394,12 +418,15 @@ help:
 	@echo "... mnist2.o"
 	@echo "... mnist2.i"
 	@echo "... mnist2.s"
+	@echo "... multi_numbers_processing_copy.o"
+	@echo "... multi_numbers_processing_copy.i"
+	@echo "... multi_numbers_processing_copy.s"
 	@echo "... neural_network.o"
 	@echo "... neural_network.i"
 	@echo "... neural_network.s"
-	@echo "... neural_network_conv_FAIL.o"
-	@echo "... neural_network_conv_FAIL.i"
-	@echo "... neural_network_conv_FAIL.s"
+	@echo "... neural_network_conv_unoptimised.o"
+	@echo "... neural_network_conv_unoptimised.i"
+	@echo "... neural_network_conv_unoptimised.s"
 	@echo "... tester.o"
 	@echo "... tester.i"
 	@echo "... tester.s"
