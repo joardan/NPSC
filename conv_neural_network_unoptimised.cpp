@@ -9,7 +9,7 @@
 #include <Eigen/Dense>
 #include "mnist2.hpp"
 #include "encoder.hpp"
-#include "multi_numbers_processing_copy.cpp"
+#include "multi_numbers_processing.hpp"
 
 class ConvolutionalLayer
 {

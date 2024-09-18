@@ -174,53 +174,101 @@ appimage/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/build
 .PHONY : appimage/fast
 
-activation.o: activation.cpp.o
-.PHONY : activation.o
+conv_fc_layer.o: conv_fc_layer.cpp.o
+.PHONY : conv_fc_layer.o
 
 # target to build an object file
-activation.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/activation.cpp.o
-.PHONY : activation.cpp.o
+conv_fc_layer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/conv_fc_layer.cpp.o
+.PHONY : conv_fc_layer.cpp.o
 
-activation.i: activation.cpp.i
-.PHONY : activation.i
+conv_fc_layer.i: conv_fc_layer.cpp.i
+.PHONY : conv_fc_layer.i
 
 # target to preprocess a source file
-activation.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/activation.cpp.i
-.PHONY : activation.cpp.i
+conv_fc_layer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/conv_fc_layer.cpp.i
+.PHONY : conv_fc_layer.cpp.i
 
-activation.s: activation.cpp.s
-.PHONY : activation.s
+conv_fc_layer.s: conv_fc_layer.cpp.s
+.PHONY : conv_fc_layer.s
 
 # target to generate assembly for a file
-activation.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/activation.cpp.s
-.PHONY : activation.cpp.s
+conv_fc_layer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/conv_fc_layer.cpp.s
+.PHONY : conv_fc_layer.cpp.s
 
-conv_neural_network_unoptimised.o: conv_neural_network_unoptimised.cpp.o
-.PHONY : conv_neural_network_unoptimised.o
+conv_layer_unoptimised.o: conv_layer_unoptimised.cpp.o
+.PHONY : conv_layer_unoptimised.o
 
 # target to build an object file
-conv_neural_network_unoptimised.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/conv_neural_network_unoptimised.cpp.o
-.PHONY : conv_neural_network_unoptimised.cpp.o
+conv_layer_unoptimised.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/conv_layer_unoptimised.cpp.o
+.PHONY : conv_layer_unoptimised.cpp.o
 
-conv_neural_network_unoptimised.i: conv_neural_network_unoptimised.cpp.i
-.PHONY : conv_neural_network_unoptimised.i
+conv_layer_unoptimised.i: conv_layer_unoptimised.cpp.i
+.PHONY : conv_layer_unoptimised.i
 
 # target to preprocess a source file
-conv_neural_network_unoptimised.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/conv_neural_network_unoptimised.cpp.i
-.PHONY : conv_neural_network_unoptimised.cpp.i
+conv_layer_unoptimised.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/conv_layer_unoptimised.cpp.i
+.PHONY : conv_layer_unoptimised.cpp.i
 
-conv_neural_network_unoptimised.s: conv_neural_network_unoptimised.cpp.s
-.PHONY : conv_neural_network_unoptimised.s
+conv_layer_unoptimised.s: conv_layer_unoptimised.cpp.s
+.PHONY : conv_layer_unoptimised.s
 
 # target to generate assembly for a file
-conv_neural_network_unoptimised.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/conv_neural_network_unoptimised.cpp.s
-.PHONY : conv_neural_network_unoptimised.cpp.s
+conv_layer_unoptimised.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/conv_layer_unoptimised.cpp.s
+.PHONY : conv_layer_unoptimised.cpp.s
+
+conv_max_pool.o: conv_max_pool.cpp.o
+.PHONY : conv_max_pool.o
+
+# target to build an object file
+conv_max_pool.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/conv_max_pool.cpp.o
+.PHONY : conv_max_pool.cpp.o
+
+conv_max_pool.i: conv_max_pool.cpp.i
+.PHONY : conv_max_pool.i
+
+# target to preprocess a source file
+conv_max_pool.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/conv_max_pool.cpp.i
+.PHONY : conv_max_pool.cpp.i
+
+conv_max_pool.s: conv_max_pool.cpp.s
+.PHONY : conv_max_pool.s
+
+# target to generate assembly for a file
+conv_max_pool.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/conv_max_pool.cpp.s
+.PHONY : conv_max_pool.cpp.s
+
+conv_neural_network_main.o: conv_neural_network_main.cpp.o
+.PHONY : conv_neural_network_main.o
+
+# target to build an object file
+conv_neural_network_main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/conv_neural_network_main.cpp.o
+.PHONY : conv_neural_network_main.cpp.o
+
+conv_neural_network_main.i: conv_neural_network_main.cpp.i
+.PHONY : conv_neural_network_main.i
+
+# target to preprocess a source file
+conv_neural_network_main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/conv_neural_network_main.cpp.i
+.PHONY : conv_neural_network_main.cpp.i
+
+conv_neural_network_main.s: conv_neural_network_main.cpp.s
+.PHONY : conv_neural_network_main.s
+
+# target to generate assembly for a file
+conv_neural_network_main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/conv_neural_network_main.cpp.s
+.PHONY : conv_neural_network_main.cpp.s
 
 encoder.o: encoder.cpp.o
 .PHONY : encoder.o
@@ -246,54 +294,6 @@ encoder.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/encoder.cpp.s
 .PHONY : encoder.cpp.s
 
-initialiser.o: initialiser.cpp.o
-.PHONY : initialiser.o
-
-# target to build an object file
-initialiser.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/initialiser.cpp.o
-.PHONY : initialiser.cpp.o
-
-initialiser.i: initialiser.cpp.i
-.PHONY : initialiser.i
-
-# target to preprocess a source file
-initialiser.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/initialiser.cpp.i
-.PHONY : initialiser.cpp.i
-
-initialiser.s: initialiser.cpp.s
-.PHONY : initialiser.s
-
-# target to generate assembly for a file
-initialiser.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/initialiser.cpp.s
-.PHONY : initialiser.cpp.s
-
-layer.o: layer.cpp.o
-.PHONY : layer.o
-
-# target to build an object file
-layer.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/layer.cpp.o
-.PHONY : layer.cpp.o
-
-layer.i: layer.cpp.i
-.PHONY : layer.i
-
-# target to preprocess a source file
-layer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/layer.cpp.i
-.PHONY : layer.cpp.i
-
-layer.s: layer.cpp.s
-.PHONY : layer.s
-
-# target to generate assembly for a file
-layer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/layer.cpp.s
-.PHONY : layer.cpp.s
-
 mnist2.o: mnist2.cpp.o
 .PHONY : mnist2.o
 
@@ -318,77 +318,29 @@ mnist2.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/mnist2.cpp.s
 .PHONY : mnist2.cpp.s
 
-multi_numbers_processing_copy.o: multi_numbers_processing_copy.cpp.o
-.PHONY : multi_numbers_processing_copy.o
+multi_numbers_processing.o: multi_numbers_processing.cpp.o
+.PHONY : multi_numbers_processing.o
 
 # target to build an object file
-multi_numbers_processing_copy.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/multi_numbers_processing_copy.cpp.o
-.PHONY : multi_numbers_processing_copy.cpp.o
+multi_numbers_processing.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/multi_numbers_processing.cpp.o
+.PHONY : multi_numbers_processing.cpp.o
 
-multi_numbers_processing_copy.i: multi_numbers_processing_copy.cpp.i
-.PHONY : multi_numbers_processing_copy.i
-
-# target to preprocess a source file
-multi_numbers_processing_copy.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/multi_numbers_processing_copy.cpp.i
-.PHONY : multi_numbers_processing_copy.cpp.i
-
-multi_numbers_processing_copy.s: multi_numbers_processing_copy.cpp.s
-.PHONY : multi_numbers_processing_copy.s
-
-# target to generate assembly for a file
-multi_numbers_processing_copy.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/multi_numbers_processing_copy.cpp.s
-.PHONY : multi_numbers_processing_copy.cpp.s
-
-neural_network.o: neural_network.cpp.o
-.PHONY : neural_network.o
-
-# target to build an object file
-neural_network.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/neural_network.cpp.o
-.PHONY : neural_network.cpp.o
-
-neural_network.i: neural_network.cpp.i
-.PHONY : neural_network.i
+multi_numbers_processing.i: multi_numbers_processing.cpp.i
+.PHONY : multi_numbers_processing.i
 
 # target to preprocess a source file
-neural_network.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/neural_network.cpp.i
-.PHONY : neural_network.cpp.i
+multi_numbers_processing.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/multi_numbers_processing.cpp.i
+.PHONY : multi_numbers_processing.cpp.i
 
-neural_network.s: neural_network.cpp.s
-.PHONY : neural_network.s
-
-# target to generate assembly for a file
-neural_network.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/neural_network.cpp.s
-.PHONY : neural_network.cpp.s
-
-tester.o: tester.cpp.o
-.PHONY : tester.o
-
-# target to build an object file
-tester.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/tester.cpp.o
-.PHONY : tester.cpp.o
-
-tester.i: tester.cpp.i
-.PHONY : tester.i
-
-# target to preprocess a source file
-tester.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/tester.cpp.i
-.PHONY : tester.cpp.i
-
-tester.s: tester.cpp.s
-.PHONY : tester.s
+multi_numbers_processing.s: multi_numbers_processing.cpp.s
+.PHONY : multi_numbers_processing.s
 
 # target to generate assembly for a file
-tester.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/tester.cpp.s
-.PHONY : tester.cpp.s
+multi_numbers_processing.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/multi_numbers_processing.cpp.s
+.PHONY : multi_numbers_processing.cpp.s
 
 # Help Target
 help:
@@ -403,33 +355,27 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... appimage"
-	@echo "... activation.o"
-	@echo "... activation.i"
-	@echo "... activation.s"
-	@echo "... conv_neural_network_unoptimised.o"
-	@echo "... conv_neural_network_unoptimised.i"
-	@echo "... conv_neural_network_unoptimised.s"
+	@echo "... conv_fc_layer.o"
+	@echo "... conv_fc_layer.i"
+	@echo "... conv_fc_layer.s"
+	@echo "... conv_layer_unoptimised.o"
+	@echo "... conv_layer_unoptimised.i"
+	@echo "... conv_layer_unoptimised.s"
+	@echo "... conv_max_pool.o"
+	@echo "... conv_max_pool.i"
+	@echo "... conv_max_pool.s"
+	@echo "... conv_neural_network_main.o"
+	@echo "... conv_neural_network_main.i"
+	@echo "... conv_neural_network_main.s"
 	@echo "... encoder.o"
 	@echo "... encoder.i"
 	@echo "... encoder.s"
-	@echo "... initialiser.o"
-	@echo "... initialiser.i"
-	@echo "... initialiser.s"
-	@echo "... layer.o"
-	@echo "... layer.i"
-	@echo "... layer.s"
 	@echo "... mnist2.o"
 	@echo "... mnist2.i"
 	@echo "... mnist2.s"
-	@echo "... multi_numbers_processing_copy.o"
-	@echo "... multi_numbers_processing_copy.i"
-	@echo "... multi_numbers_processing_copy.s"
-	@echo "... neural_network.o"
-	@echo "... neural_network.i"
-	@echo "... neural_network.s"
-	@echo "... tester.o"
-	@echo "... tester.i"
-	@echo "... tester.s"
+	@echo "... multi_numbers_processing.o"
+	@echo "... multi_numbers_processing.i"
+	@echo "... multi_numbers_processing.s"
 .PHONY : help
 
 

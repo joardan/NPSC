@@ -1,5 +1,5 @@
-#ifndef LAYER_HPP
-#define LAYER_HPP
+#ifndef MULTI_NUM_HPP
+#define MULTI_NUM_HPP
 
 #include <Eigen/Dense>
 #include <opencv2/highgui/highgui.hpp>

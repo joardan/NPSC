@@ -69,19 +69,19 @@ include CMakeFiles/appimage.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/appimage.dir/flags.make
 
-CMakeFiles/appimage.dir/multi_numbers_processing_copy.cpp.o: CMakeFiles/appimage.dir/flags.make
-CMakeFiles/appimage.dir/multi_numbers_processing_copy.cpp.o: ../multi_numbers_processing_copy.cpp
-CMakeFiles/appimage.dir/multi_numbers_processing_copy.cpp.o: CMakeFiles/appimage.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/joardan/Harddisk/Project/NPSC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/appimage.dir/multi_numbers_processing_copy.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/appimage.dir/multi_numbers_processing_copy.cpp.o -MF CMakeFiles/appimage.dir/multi_numbers_processing_copy.cpp.o.d -o CMakeFiles/appimage.dir/multi_numbers_processing_copy.cpp.o -c /media/joardan/Harddisk/Project/NPSC/multi_numbers_processing_copy.cpp
+CMakeFiles/appimage.dir/multi_numbers_processing.cpp.o: CMakeFiles/appimage.dir/flags.make
+CMakeFiles/appimage.dir/multi_numbers_processing.cpp.o: ../multi_numbers_processing.cpp
+CMakeFiles/appimage.dir/multi_numbers_processing.cpp.o: CMakeFiles/appimage.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/joardan/Harddisk/Project/NPSC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/appimage.dir/multi_numbers_processing.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/appimage.dir/multi_numbers_processing.cpp.o -MF CMakeFiles/appimage.dir/multi_numbers_processing.cpp.o.d -o CMakeFiles/appimage.dir/multi_numbers_processing.cpp.o -c /media/joardan/Harddisk/Project/NPSC/multi_numbers_processing.cpp
 
-CMakeFiles/appimage.dir/multi_numbers_processing_copy.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appimage.dir/multi_numbers_processing_copy.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/joardan/Harddisk/Project/NPSC/multi_numbers_processing_copy.cpp > CMakeFiles/appimage.dir/multi_numbers_processing_copy.cpp.i
+CMakeFiles/appimage.dir/multi_numbers_processing.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appimage.dir/multi_numbers_processing.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/joardan/Harddisk/Project/NPSC/multi_numbers_processing.cpp > CMakeFiles/appimage.dir/multi_numbers_processing.cpp.i
 
-CMakeFiles/appimage.dir/multi_numbers_processing_copy.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appimage.dir/multi_numbers_processing_copy.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/joardan/Harddisk/Project/NPSC/multi_numbers_processing_copy.cpp -o CMakeFiles/appimage.dir/multi_numbers_processing_copy.cpp.s
+CMakeFiles/appimage.dir/multi_numbers_processing.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appimage.dir/multi_numbers_processing.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/joardan/Harddisk/Project/NPSC/multi_numbers_processing.cpp -o CMakeFiles/appimage.dir/multi_numbers_processing.cpp.s
 
 CMakeFiles/appimage.dir/encoder.cpp.o: CMakeFiles/appimage.dir/flags.make
 CMakeFiles/appimage.dir/encoder.cpp.o: ../encoder.cpp
@@ -111,114 +111,82 @@ CMakeFiles/appimage.dir/mnist2.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appimage.dir/mnist2.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/joardan/Harddisk/Project/NPSC/mnist2.cpp -o CMakeFiles/appimage.dir/mnist2.cpp.s
 
-CMakeFiles/appimage.dir/initialiser.cpp.o: CMakeFiles/appimage.dir/flags.make
-CMakeFiles/appimage.dir/initialiser.cpp.o: ../initialiser.cpp
-CMakeFiles/appimage.dir/initialiser.cpp.o: CMakeFiles/appimage.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/joardan/Harddisk/Project/NPSC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/appimage.dir/initialiser.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/appimage.dir/initialiser.cpp.o -MF CMakeFiles/appimage.dir/initialiser.cpp.o.d -o CMakeFiles/appimage.dir/initialiser.cpp.o -c /media/joardan/Harddisk/Project/NPSC/initialiser.cpp
+CMakeFiles/appimage.dir/conv_layer_unoptimised.cpp.o: CMakeFiles/appimage.dir/flags.make
+CMakeFiles/appimage.dir/conv_layer_unoptimised.cpp.o: ../conv_layer_unoptimised.cpp
+CMakeFiles/appimage.dir/conv_layer_unoptimised.cpp.o: CMakeFiles/appimage.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/joardan/Harddisk/Project/NPSC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/appimage.dir/conv_layer_unoptimised.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/appimage.dir/conv_layer_unoptimised.cpp.o -MF CMakeFiles/appimage.dir/conv_layer_unoptimised.cpp.o.d -o CMakeFiles/appimage.dir/conv_layer_unoptimised.cpp.o -c /media/joardan/Harddisk/Project/NPSC/conv_layer_unoptimised.cpp
 
-CMakeFiles/appimage.dir/initialiser.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appimage.dir/initialiser.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/joardan/Harddisk/Project/NPSC/initialiser.cpp > CMakeFiles/appimage.dir/initialiser.cpp.i
+CMakeFiles/appimage.dir/conv_layer_unoptimised.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appimage.dir/conv_layer_unoptimised.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/joardan/Harddisk/Project/NPSC/conv_layer_unoptimised.cpp > CMakeFiles/appimage.dir/conv_layer_unoptimised.cpp.i
 
-CMakeFiles/appimage.dir/initialiser.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appimage.dir/initialiser.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/joardan/Harddisk/Project/NPSC/initialiser.cpp -o CMakeFiles/appimage.dir/initialiser.cpp.s
+CMakeFiles/appimage.dir/conv_layer_unoptimised.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appimage.dir/conv_layer_unoptimised.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/joardan/Harddisk/Project/NPSC/conv_layer_unoptimised.cpp -o CMakeFiles/appimage.dir/conv_layer_unoptimised.cpp.s
 
-CMakeFiles/appimage.dir/activation.cpp.o: CMakeFiles/appimage.dir/flags.make
-CMakeFiles/appimage.dir/activation.cpp.o: ../activation.cpp
-CMakeFiles/appimage.dir/activation.cpp.o: CMakeFiles/appimage.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/joardan/Harddisk/Project/NPSC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/appimage.dir/activation.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/appimage.dir/activation.cpp.o -MF CMakeFiles/appimage.dir/activation.cpp.o.d -o CMakeFiles/appimage.dir/activation.cpp.o -c /media/joardan/Harddisk/Project/NPSC/activation.cpp
+CMakeFiles/appimage.dir/conv_max_pool.cpp.o: CMakeFiles/appimage.dir/flags.make
+CMakeFiles/appimage.dir/conv_max_pool.cpp.o: ../conv_max_pool.cpp
+CMakeFiles/appimage.dir/conv_max_pool.cpp.o: CMakeFiles/appimage.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/joardan/Harddisk/Project/NPSC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/appimage.dir/conv_max_pool.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/appimage.dir/conv_max_pool.cpp.o -MF CMakeFiles/appimage.dir/conv_max_pool.cpp.o.d -o CMakeFiles/appimage.dir/conv_max_pool.cpp.o -c /media/joardan/Harddisk/Project/NPSC/conv_max_pool.cpp
 
-CMakeFiles/appimage.dir/activation.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appimage.dir/activation.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/joardan/Harddisk/Project/NPSC/activation.cpp > CMakeFiles/appimage.dir/activation.cpp.i
+CMakeFiles/appimage.dir/conv_max_pool.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appimage.dir/conv_max_pool.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/joardan/Harddisk/Project/NPSC/conv_max_pool.cpp > CMakeFiles/appimage.dir/conv_max_pool.cpp.i
 
-CMakeFiles/appimage.dir/activation.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appimage.dir/activation.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/joardan/Harddisk/Project/NPSC/activation.cpp -o CMakeFiles/appimage.dir/activation.cpp.s
+CMakeFiles/appimage.dir/conv_max_pool.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appimage.dir/conv_max_pool.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/joardan/Harddisk/Project/NPSC/conv_max_pool.cpp -o CMakeFiles/appimage.dir/conv_max_pool.cpp.s
 
-CMakeFiles/appimage.dir/layer.cpp.o: CMakeFiles/appimage.dir/flags.make
-CMakeFiles/appimage.dir/layer.cpp.o: ../layer.cpp
-CMakeFiles/appimage.dir/layer.cpp.o: CMakeFiles/appimage.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/joardan/Harddisk/Project/NPSC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/appimage.dir/layer.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/appimage.dir/layer.cpp.o -MF CMakeFiles/appimage.dir/layer.cpp.o.d -o CMakeFiles/appimage.dir/layer.cpp.o -c /media/joardan/Harddisk/Project/NPSC/layer.cpp
+CMakeFiles/appimage.dir/conv_fc_layer.cpp.o: CMakeFiles/appimage.dir/flags.make
+CMakeFiles/appimage.dir/conv_fc_layer.cpp.o: ../conv_fc_layer.cpp
+CMakeFiles/appimage.dir/conv_fc_layer.cpp.o: CMakeFiles/appimage.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/joardan/Harddisk/Project/NPSC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/appimage.dir/conv_fc_layer.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/appimage.dir/conv_fc_layer.cpp.o -MF CMakeFiles/appimage.dir/conv_fc_layer.cpp.o.d -o CMakeFiles/appimage.dir/conv_fc_layer.cpp.o -c /media/joardan/Harddisk/Project/NPSC/conv_fc_layer.cpp
 
-CMakeFiles/appimage.dir/layer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appimage.dir/layer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/joardan/Harddisk/Project/NPSC/layer.cpp > CMakeFiles/appimage.dir/layer.cpp.i
+CMakeFiles/appimage.dir/conv_fc_layer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appimage.dir/conv_fc_layer.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/joardan/Harddisk/Project/NPSC/conv_fc_layer.cpp > CMakeFiles/appimage.dir/conv_fc_layer.cpp.i
 
-CMakeFiles/appimage.dir/layer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appimage.dir/layer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/joardan/Harddisk/Project/NPSC/layer.cpp -o CMakeFiles/appimage.dir/layer.cpp.s
+CMakeFiles/appimage.dir/conv_fc_layer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appimage.dir/conv_fc_layer.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/joardan/Harddisk/Project/NPSC/conv_fc_layer.cpp -o CMakeFiles/appimage.dir/conv_fc_layer.cpp.s
 
-CMakeFiles/appimage.dir/neural_network.cpp.o: CMakeFiles/appimage.dir/flags.make
-CMakeFiles/appimage.dir/neural_network.cpp.o: ../neural_network.cpp
-CMakeFiles/appimage.dir/neural_network.cpp.o: CMakeFiles/appimage.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/joardan/Harddisk/Project/NPSC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/appimage.dir/neural_network.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/appimage.dir/neural_network.cpp.o -MF CMakeFiles/appimage.dir/neural_network.cpp.o.d -o CMakeFiles/appimage.dir/neural_network.cpp.o -c /media/joardan/Harddisk/Project/NPSC/neural_network.cpp
+CMakeFiles/appimage.dir/conv_neural_network_main.cpp.o: CMakeFiles/appimage.dir/flags.make
+CMakeFiles/appimage.dir/conv_neural_network_main.cpp.o: ../conv_neural_network_main.cpp
+CMakeFiles/appimage.dir/conv_neural_network_main.cpp.o: CMakeFiles/appimage.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/joardan/Harddisk/Project/NPSC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/appimage.dir/conv_neural_network_main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/appimage.dir/conv_neural_network_main.cpp.o -MF CMakeFiles/appimage.dir/conv_neural_network_main.cpp.o.d -o CMakeFiles/appimage.dir/conv_neural_network_main.cpp.o -c /media/joardan/Harddisk/Project/NPSC/conv_neural_network_main.cpp
 
-CMakeFiles/appimage.dir/neural_network.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appimage.dir/neural_network.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/joardan/Harddisk/Project/NPSC/neural_network.cpp > CMakeFiles/appimage.dir/neural_network.cpp.i
+CMakeFiles/appimage.dir/conv_neural_network_main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appimage.dir/conv_neural_network_main.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/joardan/Harddisk/Project/NPSC/conv_neural_network_main.cpp > CMakeFiles/appimage.dir/conv_neural_network_main.cpp.i
 
-CMakeFiles/appimage.dir/neural_network.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appimage.dir/neural_network.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/joardan/Harddisk/Project/NPSC/neural_network.cpp -o CMakeFiles/appimage.dir/neural_network.cpp.s
-
-CMakeFiles/appimage.dir/tester.cpp.o: CMakeFiles/appimage.dir/flags.make
-CMakeFiles/appimage.dir/tester.cpp.o: ../tester.cpp
-CMakeFiles/appimage.dir/tester.cpp.o: CMakeFiles/appimage.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/joardan/Harddisk/Project/NPSC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/appimage.dir/tester.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/appimage.dir/tester.cpp.o -MF CMakeFiles/appimage.dir/tester.cpp.o.d -o CMakeFiles/appimage.dir/tester.cpp.o -c /media/joardan/Harddisk/Project/NPSC/tester.cpp
-
-CMakeFiles/appimage.dir/tester.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appimage.dir/tester.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/joardan/Harddisk/Project/NPSC/tester.cpp > CMakeFiles/appimage.dir/tester.cpp.i
-
-CMakeFiles/appimage.dir/tester.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appimage.dir/tester.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/joardan/Harddisk/Project/NPSC/tester.cpp -o CMakeFiles/appimage.dir/tester.cpp.s
-
-CMakeFiles/appimage.dir/conv_neural_network_unoptimised.cpp.o: CMakeFiles/appimage.dir/flags.make
-CMakeFiles/appimage.dir/conv_neural_network_unoptimised.cpp.o: ../conv_neural_network_unoptimised.cpp
-CMakeFiles/appimage.dir/conv_neural_network_unoptimised.cpp.o: CMakeFiles/appimage.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/joardan/Harddisk/Project/NPSC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/appimage.dir/conv_neural_network_unoptimised.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/appimage.dir/conv_neural_network_unoptimised.cpp.o -MF CMakeFiles/appimage.dir/conv_neural_network_unoptimised.cpp.o.d -o CMakeFiles/appimage.dir/conv_neural_network_unoptimised.cpp.o -c /media/joardan/Harddisk/Project/NPSC/conv_neural_network_unoptimised.cpp
-
-CMakeFiles/appimage.dir/conv_neural_network_unoptimised.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appimage.dir/conv_neural_network_unoptimised.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/joardan/Harddisk/Project/NPSC/conv_neural_network_unoptimised.cpp > CMakeFiles/appimage.dir/conv_neural_network_unoptimised.cpp.i
-
-CMakeFiles/appimage.dir/conv_neural_network_unoptimised.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appimage.dir/conv_neural_network_unoptimised.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/joardan/Harddisk/Project/NPSC/conv_neural_network_unoptimised.cpp -o CMakeFiles/appimage.dir/conv_neural_network_unoptimised.cpp.s
+CMakeFiles/appimage.dir/conv_neural_network_main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appimage.dir/conv_neural_network_main.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/joardan/Harddisk/Project/NPSC/conv_neural_network_main.cpp -o CMakeFiles/appimage.dir/conv_neural_network_main.cpp.s
 
 # Object files for target appimage
 appimage_OBJECTS = \
-"CMakeFiles/appimage.dir/multi_numbers_processing_copy.cpp.o" \
+"CMakeFiles/appimage.dir/multi_numbers_processing.cpp.o" \
 "CMakeFiles/appimage.dir/encoder.cpp.o" \
 "CMakeFiles/appimage.dir/mnist2.cpp.o" \
-"CMakeFiles/appimage.dir/initialiser.cpp.o" \
-"CMakeFiles/appimage.dir/activation.cpp.o" \
-"CMakeFiles/appimage.dir/layer.cpp.o" \
-"CMakeFiles/appimage.dir/neural_network.cpp.o" \
-"CMakeFiles/appimage.dir/tester.cpp.o" \
-"CMakeFiles/appimage.dir/conv_neural_network_unoptimised.cpp.o"
+"CMakeFiles/appimage.dir/conv_layer_unoptimised.cpp.o" \
+"CMakeFiles/appimage.dir/conv_max_pool.cpp.o" \
+"CMakeFiles/appimage.dir/conv_fc_layer.cpp.o" \
+"CMakeFiles/appimage.dir/conv_neural_network_main.cpp.o"
 
 # External object files for target appimage
 appimage_EXTERNAL_OBJECTS =
 
-appimage: CMakeFiles/appimage.dir/multi_numbers_processing_copy.cpp.o
+appimage: CMakeFiles/appimage.dir/multi_numbers_processing.cpp.o
 appimage: CMakeFiles/appimage.dir/encoder.cpp.o
 appimage: CMakeFiles/appimage.dir/mnist2.cpp.o
-appimage: CMakeFiles/appimage.dir/initialiser.cpp.o
-appimage: CMakeFiles/appimage.dir/activation.cpp.o
-appimage: CMakeFiles/appimage.dir/layer.cpp.o
-appimage: CMakeFiles/appimage.dir/neural_network.cpp.o
-appimage: CMakeFiles/appimage.dir/tester.cpp.o
-appimage: CMakeFiles/appimage.dir/conv_neural_network_unoptimised.cpp.o
+appimage: CMakeFiles/appimage.dir/conv_layer_unoptimised.cpp.o
+appimage: CMakeFiles/appimage.dir/conv_max_pool.cpp.o
+appimage: CMakeFiles/appimage.dir/conv_fc_layer.cpp.o
+appimage: CMakeFiles/appimage.dir/conv_neural_network_main.cpp.o
 appimage: CMakeFiles/appimage.dir/build.make
 appimage: /media/joardan/Harddisk/cpp_lib/build/lib/libopencv_gapi.so.4.9.0
 appimage: /media/joardan/Harddisk/cpp_lib/build/lib/libopencv_highgui.so.4.9.0
@@ -236,7 +204,7 @@ appimage: /media/joardan/Harddisk/cpp_lib/build/lib/libopencv_flann.so.4.9.0
 appimage: /media/joardan/Harddisk/cpp_lib/build/lib/libopencv_imgproc.so.4.9.0
 appimage: /media/joardan/Harddisk/cpp_lib/build/lib/libopencv_core.so.4.9.0
 appimage: CMakeFiles/appimage.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/media/joardan/Harddisk/Project/NPSC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable appimage"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/media/joardan/Harddisk/Project/NPSC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable appimage"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/appimage.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
