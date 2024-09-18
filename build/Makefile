@@ -198,6 +198,30 @@ activation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/activation.cpp.s
 .PHONY : activation.cpp.s
 
+conv_neural_network_unoptimised.o: conv_neural_network_unoptimised.cpp.o
+.PHONY : conv_neural_network_unoptimised.o
+
+# target to build an object file
+conv_neural_network_unoptimised.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/conv_neural_network_unoptimised.cpp.o
+.PHONY : conv_neural_network_unoptimised.cpp.o
+
+conv_neural_network_unoptimised.i: conv_neural_network_unoptimised.cpp.i
+.PHONY : conv_neural_network_unoptimised.i
+
+# target to preprocess a source file
+conv_neural_network_unoptimised.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/conv_neural_network_unoptimised.cpp.i
+.PHONY : conv_neural_network_unoptimised.cpp.i
+
+conv_neural_network_unoptimised.s: conv_neural_network_unoptimised.cpp.s
+.PHONY : conv_neural_network_unoptimised.s
+
+# target to generate assembly for a file
+conv_neural_network_unoptimised.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/conv_neural_network_unoptimised.cpp.s
+.PHONY : conv_neural_network_unoptimised.cpp.s
+
 encoder.o: encoder.cpp.o
 .PHONY : encoder.o
 
@@ -342,30 +366,6 @@ neural_network.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/neural_network.cpp.s
 .PHONY : neural_network.cpp.s
 
-neural_network_conv_unoptimised.o: neural_network_conv_unoptimised.cpp.o
-.PHONY : neural_network_conv_unoptimised.o
-
-# target to build an object file
-neural_network_conv_unoptimised.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/neural_network_conv_unoptimised.cpp.o
-.PHONY : neural_network_conv_unoptimised.cpp.o
-
-neural_network_conv_unoptimised.i: neural_network_conv_unoptimised.cpp.i
-.PHONY : neural_network_conv_unoptimised.i
-
-# target to preprocess a source file
-neural_network_conv_unoptimised.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/neural_network_conv_unoptimised.cpp.i
-.PHONY : neural_network_conv_unoptimised.cpp.i
-
-neural_network_conv_unoptimised.s: neural_network_conv_unoptimised.cpp.s
-.PHONY : neural_network_conv_unoptimised.s
-
-# target to generate assembly for a file
-neural_network_conv_unoptimised.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/neural_network_conv_unoptimised.cpp.s
-.PHONY : neural_network_conv_unoptimised.cpp.s
-
 tester.o: tester.cpp.o
 .PHONY : tester.o
 
@@ -406,6 +406,9 @@ help:
 	@echo "... activation.o"
 	@echo "... activation.i"
 	@echo "... activation.s"
+	@echo "... conv_neural_network_unoptimised.o"
+	@echo "... conv_neural_network_unoptimised.i"
+	@echo "... conv_neural_network_unoptimised.s"
 	@echo "... encoder.o"
 	@echo "... encoder.i"
 	@echo "... encoder.s"
@@ -424,9 +427,6 @@ help:
 	@echo "... neural_network.o"
 	@echo "... neural_network.i"
 	@echo "... neural_network.s"
-	@echo "... neural_network_conv_unoptimised.o"
-	@echo "... neural_network_conv_unoptimised.i"
-	@echo "... neural_network_conv_unoptimised.s"
 	@echo "... tester.o"
 	@echo "... tester.i"
 	@echo "... tester.s"

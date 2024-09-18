@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/appimage.dir/activation.cpp.o"
   "CMakeFiles/appimage.dir/activation.cpp.o.d"
+  "CMakeFiles/appimage.dir/conv_neural_network_unoptimised.cpp.o"
+  "CMakeFiles/appimage.dir/conv_neural_network_unoptimised.cpp.o.d"
   "CMakeFiles/appimage.dir/encoder.cpp.o"
   "CMakeFiles/appimage.dir/encoder.cpp.o.d"
   "CMakeFiles/appimage.dir/initialiser.cpp.o"
@@ -13,8 +15,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/appimage.dir/multi_numbers_processing_copy.cpp.o.d"
   "CMakeFiles/appimage.dir/neural_network.cpp.o"
   "CMakeFiles/appimage.dir/neural_network.cpp.o.d"
-  "CMakeFiles/appimage.dir/neural_network_conv_unoptimised.cpp.o"
-  "CMakeFiles/appimage.dir/neural_network_conv_unoptimised.cpp.o.d"
   "CMakeFiles/appimage.dir/tester.cpp.o"
   "CMakeFiles/appimage.dir/tester.cpp.o.d"
   "appimage"

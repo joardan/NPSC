@@ -131,6 +131,7 @@ public:
         {
             Eigen::MatrixXd* dest = new Eigen::MatrixXd(28, 28);
             cv::cv2eigen(processedImages[i], *dest);
+            std::cout << *dest << std::endl;
             *dest = *dest / 255.0f;
             image_matrices.push_back({(dest)});
         }

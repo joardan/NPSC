@@ -181,19 +181,19 @@ CMakeFiles/appimage.dir/tester.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appimage.dir/tester.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/joardan/Harddisk/Project/NPSC/tester.cpp -o CMakeFiles/appimage.dir/tester.cpp.s
 
-CMakeFiles/appimage.dir/neural_network_conv_unoptimised.cpp.o: CMakeFiles/appimage.dir/flags.make
-CMakeFiles/appimage.dir/neural_network_conv_unoptimised.cpp.o: ../neural_network_conv_unoptimised.cpp
-CMakeFiles/appimage.dir/neural_network_conv_unoptimised.cpp.o: CMakeFiles/appimage.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/joardan/Harddisk/Project/NPSC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/appimage.dir/neural_network_conv_unoptimised.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/appimage.dir/neural_network_conv_unoptimised.cpp.o -MF CMakeFiles/appimage.dir/neural_network_conv_unoptimised.cpp.o.d -o CMakeFiles/appimage.dir/neural_network_conv_unoptimised.cpp.o -c /media/joardan/Harddisk/Project/NPSC/neural_network_conv_unoptimised.cpp
+CMakeFiles/appimage.dir/conv_neural_network_unoptimised.cpp.o: CMakeFiles/appimage.dir/flags.make
+CMakeFiles/appimage.dir/conv_neural_network_unoptimised.cpp.o: ../conv_neural_network_unoptimised.cpp
+CMakeFiles/appimage.dir/conv_neural_network_unoptimised.cpp.o: CMakeFiles/appimage.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/joardan/Harddisk/Project/NPSC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/appimage.dir/conv_neural_network_unoptimised.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/appimage.dir/conv_neural_network_unoptimised.cpp.o -MF CMakeFiles/appimage.dir/conv_neural_network_unoptimised.cpp.o.d -o CMakeFiles/appimage.dir/conv_neural_network_unoptimised.cpp.o -c /media/joardan/Harddisk/Project/NPSC/conv_neural_network_unoptimised.cpp
 
-CMakeFiles/appimage.dir/neural_network_conv_unoptimised.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appimage.dir/neural_network_conv_unoptimised.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/joardan/Harddisk/Project/NPSC/neural_network_conv_unoptimised.cpp > CMakeFiles/appimage.dir/neural_network_conv_unoptimised.cpp.i
+CMakeFiles/appimage.dir/conv_neural_network_unoptimised.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appimage.dir/conv_neural_network_unoptimised.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/joardan/Harddisk/Project/NPSC/conv_neural_network_unoptimised.cpp > CMakeFiles/appimage.dir/conv_neural_network_unoptimised.cpp.i
 
-CMakeFiles/appimage.dir/neural_network_conv_unoptimised.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appimage.dir/neural_network_conv_unoptimised.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/joardan/Harddisk/Project/NPSC/neural_network_conv_unoptimised.cpp -o CMakeFiles/appimage.dir/neural_network_conv_unoptimised.cpp.s
+CMakeFiles/appimage.dir/conv_neural_network_unoptimised.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appimage.dir/conv_neural_network_unoptimised.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/joardan/Harddisk/Project/NPSC/conv_neural_network_unoptimised.cpp -o CMakeFiles/appimage.dir/conv_neural_network_unoptimised.cpp.s
 
 # Object files for target appimage
 appimage_OBJECTS = \
@@ -205,7 +205,7 @@ appimage_OBJECTS = \
 "CMakeFiles/appimage.dir/layer.cpp.o" \
 "CMakeFiles/appimage.dir/neural_network.cpp.o" \
 "CMakeFiles/appimage.dir/tester.cpp.o" \
-"CMakeFiles/appimage.dir/neural_network_conv_unoptimised.cpp.o"
+"CMakeFiles/appimage.dir/conv_neural_network_unoptimised.cpp.o"
 
 # External object files for target appimage
 appimage_EXTERNAL_OBJECTS =
@@ -218,7 +218,7 @@ appimage: CMakeFiles/appimage.dir/activation.cpp.o
 appimage: CMakeFiles/appimage.dir/layer.cpp.o
 appimage: CMakeFiles/appimage.dir/neural_network.cpp.o
 appimage: CMakeFiles/appimage.dir/tester.cpp.o
-appimage: CMakeFiles/appimage.dir/neural_network_conv_unoptimised.cpp.o
+appimage: CMakeFiles/appimage.dir/conv_neural_network_unoptimised.cpp.o
 appimage: CMakeFiles/appimage.dir/build.make
 appimage: /media/joardan/Harddisk/cpp_lib/build/lib/libopencv_gapi.so.4.9.0
 appimage: /media/joardan/Harddisk/cpp_lib/build/lib/libopencv_highgui.so.4.9.0
