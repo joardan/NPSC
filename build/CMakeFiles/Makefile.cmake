@@ -7,10 +7,10 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
-  "../CMakeLists.txt"
   "CMakeFiles/3.22.1/CMakeCCompiler.cmake"
   "CMakeFiles/3.22.1/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.22.1/CMakeSystem.cmake"
+  "/media/joardan/Harddisk/Project/NPSC/src_cnn_experimental/CMakeLists.txt"
   "/media/joardan/Harddisk/cpp_lib/build/OpenCVConfig-version.cmake"
   "/media/joardan/Harddisk/cpp_lib/build/OpenCVConfig.cmake"
   "/media/joardan/Harddisk/cpp_lib/build/OpenCVModules.cmake"
@@ -123,5 +123,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/appimage.dir/DependInfo.cmake"
+  "CMakeFiles/test.dir/DependInfo.cmake"
+  "CMakeFiles/run.dir/DependInfo.cmake"
+  "CMakeFiles/train.dir/DependInfo.cmake"
   )

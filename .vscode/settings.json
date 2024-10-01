@@ -85,5 +85,6 @@
         "openglsupport": "cpp",
         "specialfunctions": "cpp",
         "splines": "cpp"
-    }
+    },
+    "cmake.sourceDirectory": "/media/joardan/Harddisk/Project/NPSC/src_cnn_experimental"
 }

@@ -57,7 +57,7 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /media/joardan/Harddisk/Project/NPSC
+CMAKE_SOURCE_DIR = /media/joardan/Harddisk/Project/NPSC/src_cnn_experimental
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /media/joardan/Harddisk/Project/NPSC/build
@@ -162,24 +162,52 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named appimage
+# Target rules for targets named test
 
 # Build rule for target.
-appimage: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 appimage
-.PHONY : appimage
+test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test
+.PHONY : test
 
 # fast build rule for target.
-appimage/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/build
-.PHONY : appimage/fast
+test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/build
+.PHONY : test/fast
+
+#=============================================================================
+# Target rules for targets named run
+
+# Build rule for target.
+run: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 run
+.PHONY : run
+
+# fast build rule for target.
+run/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/build
+.PHONY : run/fast
+
+#=============================================================================
+# Target rules for targets named train
+
+# Build rule for target.
+train: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 train
+.PHONY : train
+
+# fast build rule for target.
+train/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/train.dir/build.make CMakeFiles/train.dir/build
+.PHONY : train/fast
 
 conv_fc_layer.o: conv_fc_layer.cpp.o
 .PHONY : conv_fc_layer.o
 
 # target to build an object file
 conv_fc_layer.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/conv_fc_layer.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/conv_fc_layer.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/conv_fc_layer.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/train.dir/build.make CMakeFiles/train.dir/conv_fc_layer.cpp.o
 .PHONY : conv_fc_layer.cpp.o
 
 conv_fc_layer.i: conv_fc_layer.cpp.i
@@ -187,7 +215,9 @@ conv_fc_layer.i: conv_fc_layer.cpp.i
 
 # target to preprocess a source file
 conv_fc_layer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/conv_fc_layer.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/conv_fc_layer.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/conv_fc_layer.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/train.dir/build.make CMakeFiles/train.dir/conv_fc_layer.cpp.i
 .PHONY : conv_fc_layer.cpp.i
 
 conv_fc_layer.s: conv_fc_layer.cpp.s
@@ -195,15 +225,49 @@ conv_fc_layer.s: conv_fc_layer.cpp.s
 
 # target to generate assembly for a file
 conv_fc_layer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/conv_fc_layer.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/conv_fc_layer.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/conv_fc_layer.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/train.dir/build.make CMakeFiles/train.dir/conv_fc_layer.cpp.s
 .PHONY : conv_fc_layer.cpp.s
+
+conv_function.o: conv_function.cpp.o
+.PHONY : conv_function.o
+
+# target to build an object file
+conv_function.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/conv_function.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/conv_function.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/train.dir/build.make CMakeFiles/train.dir/conv_function.cpp.o
+.PHONY : conv_function.cpp.o
+
+conv_function.i: conv_function.cpp.i
+.PHONY : conv_function.i
+
+# target to preprocess a source file
+conv_function.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/conv_function.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/conv_function.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/train.dir/build.make CMakeFiles/train.dir/conv_function.cpp.i
+.PHONY : conv_function.cpp.i
+
+conv_function.s: conv_function.cpp.s
+.PHONY : conv_function.s
+
+# target to generate assembly for a file
+conv_function.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/conv_function.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/conv_function.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/train.dir/build.make CMakeFiles/train.dir/conv_function.cpp.s
+.PHONY : conv_function.cpp.s
 
 conv_layer_unoptimised.o: conv_layer_unoptimised.cpp.o
 .PHONY : conv_layer_unoptimised.o
 
 # target to build an object file
 conv_layer_unoptimised.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/conv_layer_unoptimised.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/conv_layer_unoptimised.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/conv_layer_unoptimised.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/train.dir/build.make CMakeFiles/train.dir/conv_layer_unoptimised.cpp.o
 .PHONY : conv_layer_unoptimised.cpp.o
 
 conv_layer_unoptimised.i: conv_layer_unoptimised.cpp.i
@@ -211,7 +275,9 @@ conv_layer_unoptimised.i: conv_layer_unoptimised.cpp.i
 
 # target to preprocess a source file
 conv_layer_unoptimised.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/conv_layer_unoptimised.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/conv_layer_unoptimised.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/conv_layer_unoptimised.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/train.dir/build.make CMakeFiles/train.dir/conv_layer_unoptimised.cpp.i
 .PHONY : conv_layer_unoptimised.cpp.i
 
 conv_layer_unoptimised.s: conv_layer_unoptimised.cpp.s
@@ -219,15 +285,91 @@ conv_layer_unoptimised.s: conv_layer_unoptimised.cpp.s
 
 # target to generate assembly for a file
 conv_layer_unoptimised.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/conv_layer_unoptimised.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/conv_layer_unoptimised.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/conv_layer_unoptimised.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/train.dir/build.make CMakeFiles/train.dir/conv_layer_unoptimised.cpp.s
 .PHONY : conv_layer_unoptimised.cpp.s
+
+conv_main_run.o: conv_main_run.cpp.o
+.PHONY : conv_main_run.o
+
+# target to build an object file
+conv_main_run.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/conv_main_run.cpp.o
+.PHONY : conv_main_run.cpp.o
+
+conv_main_run.i: conv_main_run.cpp.i
+.PHONY : conv_main_run.i
+
+# target to preprocess a source file
+conv_main_run.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/conv_main_run.cpp.i
+.PHONY : conv_main_run.cpp.i
+
+conv_main_run.s: conv_main_run.cpp.s
+.PHONY : conv_main_run.s
+
+# target to generate assembly for a file
+conv_main_run.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/conv_main_run.cpp.s
+.PHONY : conv_main_run.cpp.s
+
+conv_main_test.o: conv_main_test.cpp.o
+.PHONY : conv_main_test.o
+
+# target to build an object file
+conv_main_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/conv_main_test.cpp.o
+.PHONY : conv_main_test.cpp.o
+
+conv_main_test.i: conv_main_test.cpp.i
+.PHONY : conv_main_test.i
+
+# target to preprocess a source file
+conv_main_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/conv_main_test.cpp.i
+.PHONY : conv_main_test.cpp.i
+
+conv_main_test.s: conv_main_test.cpp.s
+.PHONY : conv_main_test.s
+
+# target to generate assembly for a file
+conv_main_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/conv_main_test.cpp.s
+.PHONY : conv_main_test.cpp.s
+
+conv_main_train.o: conv_main_train.cpp.o
+.PHONY : conv_main_train.o
+
+# target to build an object file
+conv_main_train.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/train.dir/build.make CMakeFiles/train.dir/conv_main_train.cpp.o
+.PHONY : conv_main_train.cpp.o
+
+conv_main_train.i: conv_main_train.cpp.i
+.PHONY : conv_main_train.i
+
+# target to preprocess a source file
+conv_main_train.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/train.dir/build.make CMakeFiles/train.dir/conv_main_train.cpp.i
+.PHONY : conv_main_train.cpp.i
+
+conv_main_train.s: conv_main_train.cpp.s
+.PHONY : conv_main_train.s
+
+# target to generate assembly for a file
+conv_main_train.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/train.dir/build.make CMakeFiles/train.dir/conv_main_train.cpp.s
+.PHONY : conv_main_train.cpp.s
 
 conv_max_pool.o: conv_max_pool.cpp.o
 .PHONY : conv_max_pool.o
 
 # target to build an object file
 conv_max_pool.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/conv_max_pool.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/conv_max_pool.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/conv_max_pool.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/train.dir/build.make CMakeFiles/train.dir/conv_max_pool.cpp.o
 .PHONY : conv_max_pool.cpp.o
 
 conv_max_pool.i: conv_max_pool.cpp.i
@@ -235,7 +377,9 @@ conv_max_pool.i: conv_max_pool.cpp.i
 
 # target to preprocess a source file
 conv_max_pool.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/conv_max_pool.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/conv_max_pool.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/conv_max_pool.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/train.dir/build.make CMakeFiles/train.dir/conv_max_pool.cpp.i
 .PHONY : conv_max_pool.cpp.i
 
 conv_max_pool.s: conv_max_pool.cpp.s
@@ -243,39 +387,19 @@ conv_max_pool.s: conv_max_pool.cpp.s
 
 # target to generate assembly for a file
 conv_max_pool.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/conv_max_pool.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/conv_max_pool.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/conv_max_pool.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/train.dir/build.make CMakeFiles/train.dir/conv_max_pool.cpp.s
 .PHONY : conv_max_pool.cpp.s
-
-conv_neural_network_main.o: conv_neural_network_main.cpp.o
-.PHONY : conv_neural_network_main.o
-
-# target to build an object file
-conv_neural_network_main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/conv_neural_network_main.cpp.o
-.PHONY : conv_neural_network_main.cpp.o
-
-conv_neural_network_main.i: conv_neural_network_main.cpp.i
-.PHONY : conv_neural_network_main.i
-
-# target to preprocess a source file
-conv_neural_network_main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/conv_neural_network_main.cpp.i
-.PHONY : conv_neural_network_main.cpp.i
-
-conv_neural_network_main.s: conv_neural_network_main.cpp.s
-.PHONY : conv_neural_network_main.s
-
-# target to generate assembly for a file
-conv_neural_network_main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/conv_neural_network_main.cpp.s
-.PHONY : conv_neural_network_main.cpp.s
 
 encoder.o: encoder.cpp.o
 .PHONY : encoder.o
 
 # target to build an object file
 encoder.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/encoder.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/encoder.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/encoder.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/train.dir/build.make CMakeFiles/train.dir/encoder.cpp.o
 .PHONY : encoder.cpp.o
 
 encoder.i: encoder.cpp.i
@@ -283,7 +407,9 @@ encoder.i: encoder.cpp.i
 
 # target to preprocess a source file
 encoder.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/encoder.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/encoder.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/encoder.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/train.dir/build.make CMakeFiles/train.dir/encoder.cpp.i
 .PHONY : encoder.cpp.i
 
 encoder.s: encoder.cpp.s
@@ -291,7 +417,9 @@ encoder.s: encoder.cpp.s
 
 # target to generate assembly for a file
 encoder.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/encoder.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/encoder.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/encoder.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/train.dir/build.make CMakeFiles/train.dir/encoder.cpp.s
 .PHONY : encoder.cpp.s
 
 mnist2.o: mnist2.cpp.o
@@ -299,7 +427,9 @@ mnist2.o: mnist2.cpp.o
 
 # target to build an object file
 mnist2.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/mnist2.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/mnist2.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/mnist2.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/train.dir/build.make CMakeFiles/train.dir/mnist2.cpp.o
 .PHONY : mnist2.cpp.o
 
 mnist2.i: mnist2.cpp.i
@@ -307,7 +437,9 @@ mnist2.i: mnist2.cpp.i
 
 # target to preprocess a source file
 mnist2.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/mnist2.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/mnist2.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/mnist2.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/train.dir/build.make CMakeFiles/train.dir/mnist2.cpp.i
 .PHONY : mnist2.cpp.i
 
 mnist2.s: mnist2.cpp.s
@@ -315,7 +447,9 @@ mnist2.s: mnist2.cpp.s
 
 # target to generate assembly for a file
 mnist2.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/mnist2.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/mnist2.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/mnist2.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/train.dir/build.make CMakeFiles/train.dir/mnist2.cpp.s
 .PHONY : mnist2.cpp.s
 
 multi_numbers_processing.o: multi_numbers_processing.cpp.o
@@ -323,7 +457,9 @@ multi_numbers_processing.o: multi_numbers_processing.cpp.o
 
 # target to build an object file
 multi_numbers_processing.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/multi_numbers_processing.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/multi_numbers_processing.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/multi_numbers_processing.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/train.dir/build.make CMakeFiles/train.dir/multi_numbers_processing.cpp.o
 .PHONY : multi_numbers_processing.cpp.o
 
 multi_numbers_processing.i: multi_numbers_processing.cpp.i
@@ -331,7 +467,9 @@ multi_numbers_processing.i: multi_numbers_processing.cpp.i
 
 # target to preprocess a source file
 multi_numbers_processing.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/multi_numbers_processing.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/multi_numbers_processing.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/multi_numbers_processing.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/train.dir/build.make CMakeFiles/train.dir/multi_numbers_processing.cpp.i
 .PHONY : multi_numbers_processing.cpp.i
 
 multi_numbers_processing.s: multi_numbers_processing.cpp.s
@@ -339,7 +477,9 @@ multi_numbers_processing.s: multi_numbers_processing.cpp.s
 
 # target to generate assembly for a file
 multi_numbers_processing.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/appimage.dir/build.make CMakeFiles/appimage.dir/multi_numbers_processing.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/multi_numbers_processing.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/multi_numbers_processing.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/train.dir/build.make CMakeFiles/train.dir/multi_numbers_processing.cpp.s
 .PHONY : multi_numbers_processing.cpp.s
 
 # Help Target
@@ -354,19 +494,30 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... appimage"
+	@echo "... run"
+	@echo "... test"
+	@echo "... train"
 	@echo "... conv_fc_layer.o"
 	@echo "... conv_fc_layer.i"
 	@echo "... conv_fc_layer.s"
+	@echo "... conv_function.o"
+	@echo "... conv_function.i"
+	@echo "... conv_function.s"
 	@echo "... conv_layer_unoptimised.o"
 	@echo "... conv_layer_unoptimised.i"
 	@echo "... conv_layer_unoptimised.s"
+	@echo "... conv_main_run.o"
+	@echo "... conv_main_run.i"
+	@echo "... conv_main_run.s"
+	@echo "... conv_main_test.o"
+	@echo "... conv_main_test.i"
+	@echo "... conv_main_test.s"
+	@echo "... conv_main_train.o"
+	@echo "... conv_main_train.i"
+	@echo "... conv_main_train.s"
 	@echo "... conv_max_pool.o"
 	@echo "... conv_max_pool.i"
 	@echo "... conv_max_pool.s"
-	@echo "... conv_neural_network_main.o"
-	@echo "... conv_neural_network_main.i"
-	@echo "... conv_neural_network_main.s"
 	@echo "... encoder.o"
 	@echo "... encoder.i"
 	@echo "... encoder.s"

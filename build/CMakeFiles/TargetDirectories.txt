@@ -1,4 +1,6 @@
-/media/joardan/Harddisk/Project/NPSC/build/CMakeFiles/appimage.dir
+/media/joardan/Harddisk/Project/NPSC/build/CMakeFiles/test.dir
+/media/joardan/Harddisk/Project/NPSC/build/CMakeFiles/run.dir
+/media/joardan/Harddisk/Project/NPSC/build/CMakeFiles/train.dir
 /media/joardan/Harddisk/Project/NPSC/build/CMakeFiles/edit_cache.dir
 /media/joardan/Harddisk/Project/NPSC/build/CMakeFiles/rebuild_cache.dir
 /media/joardan/Harddisk/Project/NPSC/build/CMakeFiles/list_install_components.dir

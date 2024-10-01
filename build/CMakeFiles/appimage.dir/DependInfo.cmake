@@ -8,13 +8,13 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/media/joardan/Harddisk/Project/NPSC/conv_fc_layer.cpp" "CMakeFiles/appimage.dir/conv_fc_layer.cpp.o" "gcc" "CMakeFiles/appimage.dir/conv_fc_layer.cpp.o.d"
-  "/media/joardan/Harddisk/Project/NPSC/conv_layer_unoptimised.cpp" "CMakeFiles/appimage.dir/conv_layer_unoptimised.cpp.o" "gcc" "CMakeFiles/appimage.dir/conv_layer_unoptimised.cpp.o.d"
-  "/media/joardan/Harddisk/Project/NPSC/conv_max_pool.cpp" "CMakeFiles/appimage.dir/conv_max_pool.cpp.o" "gcc" "CMakeFiles/appimage.dir/conv_max_pool.cpp.o.d"
-  "/media/joardan/Harddisk/Project/NPSC/conv_neural_network_main.cpp" "CMakeFiles/appimage.dir/conv_neural_network_main.cpp.o" "gcc" "CMakeFiles/appimage.dir/conv_neural_network_main.cpp.o.d"
-  "/media/joardan/Harddisk/Project/NPSC/encoder.cpp" "CMakeFiles/appimage.dir/encoder.cpp.o" "gcc" "CMakeFiles/appimage.dir/encoder.cpp.o.d"
-  "/media/joardan/Harddisk/Project/NPSC/mnist2.cpp" "CMakeFiles/appimage.dir/mnist2.cpp.o" "gcc" "CMakeFiles/appimage.dir/mnist2.cpp.o.d"
-  "/media/joardan/Harddisk/Project/NPSC/multi_numbers_processing.cpp" "CMakeFiles/appimage.dir/multi_numbers_processing.cpp.o" "gcc" "CMakeFiles/appimage.dir/multi_numbers_processing.cpp.o.d"
+  "/media/joardan/Harddisk/Project/NPSC/src_cnn_experimental/conv_fc_layer.cpp" "CMakeFiles/appimage.dir/conv_fc_layer.cpp.o" "gcc" "CMakeFiles/appimage.dir/conv_fc_layer.cpp.o.d"
+  "/media/joardan/Harddisk/Project/NPSC/src_cnn_experimental/conv_layer_unoptimised.cpp" "CMakeFiles/appimage.dir/conv_layer_unoptimised.cpp.o" "gcc" "CMakeFiles/appimage.dir/conv_layer_unoptimised.cpp.o.d"
+  "/media/joardan/Harddisk/Project/NPSC/src_cnn_experimental/conv_main_run.cpp" "CMakeFiles/appimage.dir/conv_main_run.cpp.o" "gcc" "CMakeFiles/appimage.dir/conv_main_run.cpp.o.d"
+  "/media/joardan/Harddisk/Project/NPSC/src_cnn_experimental/conv_max_pool.cpp" "CMakeFiles/appimage.dir/conv_max_pool.cpp.o" "gcc" "CMakeFiles/appimage.dir/conv_max_pool.cpp.o.d"
+  "/media/joardan/Harddisk/Project/NPSC/src_cnn_experimental/encoder.cpp" "CMakeFiles/appimage.dir/encoder.cpp.o" "gcc" "CMakeFiles/appimage.dir/encoder.cpp.o.d"
+  "/media/joardan/Harddisk/Project/NPSC/src_cnn_experimental/mnist2.cpp" "CMakeFiles/appimage.dir/mnist2.cpp.o" "gcc" "CMakeFiles/appimage.dir/mnist2.cpp.o.d"
+  "/media/joardan/Harddisk/Project/NPSC/src_cnn_experimental/multi_numbers_processing.cpp" "CMakeFiles/appimage.dir/multi_numbers_processing.cpp.o" "gcc" "CMakeFiles/appimage.dir/multi_numbers_processing.cpp.o.d"
   )
 
 # Targets to which this target links.
