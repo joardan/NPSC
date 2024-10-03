@@ -1,0 +1,5 @@
+C:/Users/joardan/Desktop/realnpsc2/NPSC/build/CMakeFiles/test.dir
+C:/Users/joardan/Desktop/realnpsc2/NPSC/build/CMakeFiles/run.dir
+C:/Users/joardan/Desktop/realnpsc2/NPSC/build/CMakeFiles/train.dir
+C:/Users/joardan/Desktop/realnpsc2/NPSC/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/joardan/Desktop/realnpsc2/NPSC/build/CMakeFiles/ZERO_CHECK.dir

@@ -1,7 +1,0 @@
-/media/joardan/Harddisk/Project/NPSC/build_win/CMakeFiles/appimage.dir
-/media/joardan/Harddisk/Project/NPSC/build_win/CMakeFiles/edit_cache.dir
-/media/joardan/Harddisk/Project/NPSC/build_win/CMakeFiles/rebuild_cache.dir
-/media/joardan/Harddisk/Project/NPSC/build_win/CMakeFiles/list_install_components.dir
-/media/joardan/Harddisk/Project/NPSC/build_win/CMakeFiles/install.dir
-/media/joardan/Harddisk/Project/NPSC/build_win/CMakeFiles/install/local.dir
-/media/joardan/Harddisk/Project/NPSC/build_win/CMakeFiles/install/strip.dir

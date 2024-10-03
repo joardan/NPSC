@@ -1,0 +1,10 @@
+^C:\USERS\JOARDAN\DESKTOP\REALNPSC2\NPSC\SRC_CNN_EXPERIMENTAL\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/joardan/Desktop/realnpsc2/NPSC/src_cnn_experimental -BC:/Users/joardan/Desktop/realnpsc2/NPSC/build --check-stamp-file C:/Users/joardan/Desktop/realnpsc2/NPSC/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

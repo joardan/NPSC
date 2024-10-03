@@ -1,0 +1,10 @@
+^C:\USERS\JOARDAN\DESKTOP\REALNPSC2\NPSC\BUILD\CMAKEFILES\47BA93D86531EB75B232E349E2D2760B\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/joardan/Desktop/realnpsc2/NPSC/src_cnn_experimental -BC:/Users/joardan/Desktop/realnpsc2/NPSC/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/joardan/Desktop/realnpsc2/NPSC/build/cnn.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

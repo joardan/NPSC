@@ -1,0 +1,340 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{DD6AA5DB-602B-315D-902B-57B3CD5A097E}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>run</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\joardan\Desktop\realnpsc2\NPSC\build\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">run.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">run</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\joardan\Desktop\realnpsc2\NPSC\build\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">run.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">run</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\joardan\Desktop\realnpsc2\NPSC\build\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">run.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">run</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\joardan\Desktop\realnpsc2\NPSC\build\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">run.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">run</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\lib\install\opencv\include;C:\Users\joardan\Desktop\realnpsc2\NPSC\src_cnn_experimental\..\eigen-3.4.0;C:\Users\joardan\Desktop\realnpsc2\NPSC\src_cnn_experimental\..\include_cnn;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;WINVER=0x0601;_WIN32_WINNT=0x0601;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;WINVER=0x0601;_WIN32_WINNT=0x0601;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\lib\install\opencv\include;C:\Users\joardan\Desktop\realnpsc2\NPSC\src_cnn_experimental\..\eigen-3.4.0;C:\Users\joardan\Desktop\realnpsc2\NPSC\src_cnn_experimental\..\include_cnn;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\lib\install\opencv\include;C:\Users\joardan\Desktop\realnpsc2\NPSC\src_cnn_experimental\..\eigen-3.4.0;C:\Users\joardan\Desktop\realnpsc2\NPSC\src_cnn_experimental\..\include_cnn;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\lib\install\opencv\x64\vc17\staticlib\ade.lib;C:\lib\install\opencv\x64\vc17\staticlib\aded.lib;C:\lib\install\opencv\x64\vc17\staticlib\IlmImf.lib;C:\lib\install\opencv\x64\vc17\staticlib\IlmImfd.lib;C:\lib\install\opencv\x64\vc17\staticlib\ippicvmt.lib;C:\lib\install\opencv\x64\vc17\staticlib\ippiw.lib;C:\lib\install\opencv\x64\vc17\staticlib\ippiwd.lib;C:\lib\install\opencv\x64\vc17\staticlib\ittnotify.lib;C:\lib\install\opencv\x64\vc17\staticlib\ittnotifyd.lib;C:\lib\install\opencv\x64\vc17\staticlib\libjpeg-turbo.lib;C:\lib\install\opencv\x64\vc17\staticlib\libjpeg-turbod.lib;C:\lib\install\opencv\x64\vc17\staticlib\libopenjp2.lib;C:\lib\install\opencv\x64\vc17\staticlib\libopenjp2d.lib;C:\lib\install\opencv\x64\vc17\staticlib\libpng.lib;C:\lib\install\opencv\x64\vc17\staticlib\libpngd.lib;C:\lib\install\opencv\x64\vc17\staticlib\libprotobuf.lib;C:\lib\install\opencv\x64\vc17\staticlib\libprotobufd.lib;C:\lib\install\opencv\x64\vc17\staticlib\libtiff.lib;C:\lib\install\opencv\x64\vc17\staticlib\libtiffd.lib;C:\lib\install\opencv\x64\vc17\staticlib\libwebp.lib;C:\lib\install\opencv\x64\vc17\staticlib\libwebpd.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_aruco490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_aruco490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_bgsegm490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_bgsegm490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_bioinspired490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_bioinspired490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_calib3d490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_calib3d490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_ccalib490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_ccalib490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_core490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_core490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_datasets490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_datasets490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_dnn490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_dnn490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_dnn_objdetect490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_dnn_objdetect490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_dnn_superres490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_dnn_superres490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_dpm490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_dpm490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_face490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_face490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_features2d490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_features2d490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_flann490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_flann490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_fuzzy490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_fuzzy490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_gapi490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_gapi490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_hfs490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_hfs490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_highgui490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_highgui490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_imgcodecs490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_imgcodecs490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_imgproc490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_imgproc490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_img_hash490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_img_hash490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_intensity_transform490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_intensity_transform490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_line_descriptor490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_line_descriptor490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_mcc490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_mcc490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_ml490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_ml490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_objdetect490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_objdetect490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_optflow490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_optflow490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_phase_unwrapping490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_phase_unwrapping490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_photo490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_photo490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_plot490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_plot490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_quality490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_quality490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_rapid490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_rapid490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_reg490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_reg490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_rgbd490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_rgbd490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_saliency490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_saliency490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_shape490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_shape490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_signal490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_signal490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_stereo490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_stereo490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_stitching490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_stitching490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_structured_light490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_structured_light490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_superres490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_superres490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_surface_matching490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_surface_matching490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_text490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_text490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_tracking490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_tracking490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_video490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_video490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_videoio490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_videoio490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_videostab490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_videostab490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_wechat_qrcode490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_wechat_qrcode490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_xfeatures2d490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_xfeatures2d490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_ximgproc490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_ximgproc490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_xobjdetect490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_xobjdetect490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_xphoto490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_xphoto490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\zlib.lib;C:\lib\install\opencv\x64\vc17\staticlib\zlibd.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/joardan/Desktop/realnpsc2/NPSC/build/Debug/run.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/joardan/Desktop/realnpsc2/NPSC/build/Debug/run.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\lib\install\opencv\include;C:\Users\joardan\Desktop\realnpsc2\NPSC\src_cnn_experimental\..\eigen-3.4.0;C:\Users\joardan\Desktop\realnpsc2\NPSC\src_cnn_experimental\..\include_cnn;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;WINVER=0x0601;_WIN32_WINNT=0x0601;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;WINVER=0x0601;_WIN32_WINNT=0x0601;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\lib\install\opencv\include;C:\Users\joardan\Desktop\realnpsc2\NPSC\src_cnn_experimental\..\eigen-3.4.0;C:\Users\joardan\Desktop\realnpsc2\NPSC\src_cnn_experimental\..\include_cnn;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\lib\install\opencv\include;C:\Users\joardan\Desktop\realnpsc2\NPSC\src_cnn_experimental\..\eigen-3.4.0;C:\Users\joardan\Desktop\realnpsc2\NPSC\src_cnn_experimental\..\include_cnn;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\lib\install\opencv\x64\vc17\staticlib\ade.lib;C:\lib\install\opencv\x64\vc17\staticlib\aded.lib;C:\lib\install\opencv\x64\vc17\staticlib\IlmImf.lib;C:\lib\install\opencv\x64\vc17\staticlib\IlmImfd.lib;C:\lib\install\opencv\x64\vc17\staticlib\ippicvmt.lib;C:\lib\install\opencv\x64\vc17\staticlib\ippiw.lib;C:\lib\install\opencv\x64\vc17\staticlib\ippiwd.lib;C:\lib\install\opencv\x64\vc17\staticlib\ittnotify.lib;C:\lib\install\opencv\x64\vc17\staticlib\ittnotifyd.lib;C:\lib\install\opencv\x64\vc17\staticlib\libjpeg-turbo.lib;C:\lib\install\opencv\x64\vc17\staticlib\libjpeg-turbod.lib;C:\lib\install\opencv\x64\vc17\staticlib\libopenjp2.lib;C:\lib\install\opencv\x64\vc17\staticlib\libopenjp2d.lib;C:\lib\install\opencv\x64\vc17\staticlib\libpng.lib;C:\lib\install\opencv\x64\vc17\staticlib\libpngd.lib;C:\lib\install\opencv\x64\vc17\staticlib\libprotobuf.lib;C:\lib\install\opencv\x64\vc17\staticlib\libprotobufd.lib;C:\lib\install\opencv\x64\vc17\staticlib\libtiff.lib;C:\lib\install\opencv\x64\vc17\staticlib\libtiffd.lib;C:\lib\install\opencv\x64\vc17\staticlib\libwebp.lib;C:\lib\install\opencv\x64\vc17\staticlib\libwebpd.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_aruco490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_aruco490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_bgsegm490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_bgsegm490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_bioinspired490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_bioinspired490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_calib3d490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_calib3d490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_ccalib490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_ccalib490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_core490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_core490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_datasets490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_datasets490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_dnn490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_dnn490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_dnn_objdetect490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_dnn_objdetect490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_dnn_superres490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_dnn_superres490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_dpm490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_dpm490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_face490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_face490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_features2d490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_features2d490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_flann490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_flann490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_fuzzy490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_fuzzy490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_gapi490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_gapi490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_hfs490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_hfs490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_highgui490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_highgui490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_imgcodecs490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_imgcodecs490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_imgproc490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_imgproc490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_img_hash490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_img_hash490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_intensity_transform490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_intensity_transform490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_line_descriptor490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_line_descriptor490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_mcc490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_mcc490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_ml490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_ml490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_objdetect490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_objdetect490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_optflow490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_optflow490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_phase_unwrapping490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_phase_unwrapping490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_photo490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_photo490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_plot490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_plot490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_quality490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_quality490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_rapid490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_rapid490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_reg490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_reg490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_rgbd490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_rgbd490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_saliency490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_saliency490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_shape490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_shape490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_signal490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_signal490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_stereo490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_stereo490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_stitching490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_stitching490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_structured_light490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_structured_light490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_superres490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_superres490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_surface_matching490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_surface_matching490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_text490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_text490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_tracking490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_tracking490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_video490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_video490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_videoio490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_videoio490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_videostab490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_videostab490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_wechat_qrcode490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_wechat_qrcode490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_xfeatures2d490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_xfeatures2d490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_ximgproc490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_ximgproc490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_xobjdetect490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_xobjdetect490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_xphoto490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_xphoto490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\zlib.lib;C:\lib\install\opencv\x64\vc17\staticlib\zlibd.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/joardan/Desktop/realnpsc2/NPSC/build/Release/run.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/joardan/Desktop/realnpsc2/NPSC/build/Release/run.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\lib\install\opencv\include;C:\Users\joardan\Desktop\realnpsc2\NPSC\src_cnn_experimental\..\eigen-3.4.0;C:\Users\joardan\Desktop\realnpsc2\NPSC\src_cnn_experimental\..\include_cnn;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;WINVER=0x0601;_WIN32_WINNT=0x0601;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;WINVER=0x0601;_WIN32_WINNT=0x0601;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\lib\install\opencv\include;C:\Users\joardan\Desktop\realnpsc2\NPSC\src_cnn_experimental\..\eigen-3.4.0;C:\Users\joardan\Desktop\realnpsc2\NPSC\src_cnn_experimental\..\include_cnn;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\lib\install\opencv\include;C:\Users\joardan\Desktop\realnpsc2\NPSC\src_cnn_experimental\..\eigen-3.4.0;C:\Users\joardan\Desktop\realnpsc2\NPSC\src_cnn_experimental\..\include_cnn;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\lib\install\opencv\x64\vc17\staticlib\ade.lib;C:\lib\install\opencv\x64\vc17\staticlib\aded.lib;C:\lib\install\opencv\x64\vc17\staticlib\IlmImf.lib;C:\lib\install\opencv\x64\vc17\staticlib\IlmImfd.lib;C:\lib\install\opencv\x64\vc17\staticlib\ippicvmt.lib;C:\lib\install\opencv\x64\vc17\staticlib\ippiw.lib;C:\lib\install\opencv\x64\vc17\staticlib\ippiwd.lib;C:\lib\install\opencv\x64\vc17\staticlib\ittnotify.lib;C:\lib\install\opencv\x64\vc17\staticlib\ittnotifyd.lib;C:\lib\install\opencv\x64\vc17\staticlib\libjpeg-turbo.lib;C:\lib\install\opencv\x64\vc17\staticlib\libjpeg-turbod.lib;C:\lib\install\opencv\x64\vc17\staticlib\libopenjp2.lib;C:\lib\install\opencv\x64\vc17\staticlib\libopenjp2d.lib;C:\lib\install\opencv\x64\vc17\staticlib\libpng.lib;C:\lib\install\opencv\x64\vc17\staticlib\libpngd.lib;C:\lib\install\opencv\x64\vc17\staticlib\libprotobuf.lib;C:\lib\install\opencv\x64\vc17\staticlib\libprotobufd.lib;C:\lib\install\opencv\x64\vc17\staticlib\libtiff.lib;C:\lib\install\opencv\x64\vc17\staticlib\libtiffd.lib;C:\lib\install\opencv\x64\vc17\staticlib\libwebp.lib;C:\lib\install\opencv\x64\vc17\staticlib\libwebpd.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_aruco490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_aruco490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_bgsegm490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_bgsegm490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_bioinspired490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_bioinspired490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_calib3d490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_calib3d490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_ccalib490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_ccalib490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_core490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_core490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_datasets490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_datasets490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_dnn490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_dnn490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_dnn_objdetect490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_dnn_objdetect490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_dnn_superres490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_dnn_superres490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_dpm490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_dpm490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_face490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_face490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_features2d490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_features2d490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_flann490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_flann490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_fuzzy490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_fuzzy490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_gapi490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_gapi490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_hfs490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_hfs490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_highgui490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_highgui490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_imgcodecs490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_imgcodecs490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_imgproc490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_imgproc490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_img_hash490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_img_hash490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_intensity_transform490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_intensity_transform490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_line_descriptor490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_line_descriptor490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_mcc490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_mcc490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_ml490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_ml490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_objdetect490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_objdetect490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_optflow490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_optflow490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_phase_unwrapping490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_phase_unwrapping490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_photo490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_photo490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_plot490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_plot490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_quality490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_quality490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_rapid490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_rapid490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_reg490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_reg490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_rgbd490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_rgbd490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_saliency490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_saliency490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_shape490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_shape490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_signal490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_signal490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_stereo490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_stereo490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_stitching490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_stitching490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_structured_light490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_structured_light490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_superres490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_superres490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_surface_matching490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_surface_matching490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_text490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_text490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_tracking490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_tracking490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_video490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_video490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_videoio490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_videoio490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_videostab490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_videostab490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_wechat_qrcode490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_wechat_qrcode490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_xfeatures2d490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_xfeatures2d490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_ximgproc490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_ximgproc490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_xobjdetect490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_xobjdetect490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_xphoto490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_xphoto490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\zlib.lib;C:\lib\install\opencv\x64\vc17\staticlib\zlibd.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/joardan/Desktop/realnpsc2/NPSC/build/MinSizeRel/run.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/joardan/Desktop/realnpsc2/NPSC/build/MinSizeRel/run.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\lib\install\opencv\include;C:\Users\joardan\Desktop\realnpsc2\NPSC\src_cnn_experimental\..\eigen-3.4.0;C:\Users\joardan\Desktop\realnpsc2\NPSC\src_cnn_experimental\..\include_cnn;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;WINVER=0x0601;_WIN32_WINNT=0x0601;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;WINVER=0x0601;_WIN32_WINNT=0x0601;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\lib\install\opencv\include;C:\Users\joardan\Desktop\realnpsc2\NPSC\src_cnn_experimental\..\eigen-3.4.0;C:\Users\joardan\Desktop\realnpsc2\NPSC\src_cnn_experimental\..\include_cnn;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\lib\install\opencv\include;C:\Users\joardan\Desktop\realnpsc2\NPSC\src_cnn_experimental\..\eigen-3.4.0;C:\Users\joardan\Desktop\realnpsc2\NPSC\src_cnn_experimental\..\include_cnn;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\lib\install\opencv\x64\vc17\staticlib\ade.lib;C:\lib\install\opencv\x64\vc17\staticlib\aded.lib;C:\lib\install\opencv\x64\vc17\staticlib\IlmImf.lib;C:\lib\install\opencv\x64\vc17\staticlib\IlmImfd.lib;C:\lib\install\opencv\x64\vc17\staticlib\ippicvmt.lib;C:\lib\install\opencv\x64\vc17\staticlib\ippiw.lib;C:\lib\install\opencv\x64\vc17\staticlib\ippiwd.lib;C:\lib\install\opencv\x64\vc17\staticlib\ittnotify.lib;C:\lib\install\opencv\x64\vc17\staticlib\ittnotifyd.lib;C:\lib\install\opencv\x64\vc17\staticlib\libjpeg-turbo.lib;C:\lib\install\opencv\x64\vc17\staticlib\libjpeg-turbod.lib;C:\lib\install\opencv\x64\vc17\staticlib\libopenjp2.lib;C:\lib\install\opencv\x64\vc17\staticlib\libopenjp2d.lib;C:\lib\install\opencv\x64\vc17\staticlib\libpng.lib;C:\lib\install\opencv\x64\vc17\staticlib\libpngd.lib;C:\lib\install\opencv\x64\vc17\staticlib\libprotobuf.lib;C:\lib\install\opencv\x64\vc17\staticlib\libprotobufd.lib;C:\lib\install\opencv\x64\vc17\staticlib\libtiff.lib;C:\lib\install\opencv\x64\vc17\staticlib\libtiffd.lib;C:\lib\install\opencv\x64\vc17\staticlib\libwebp.lib;C:\lib\install\opencv\x64\vc17\staticlib\libwebpd.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_aruco490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_aruco490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_bgsegm490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_bgsegm490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_bioinspired490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_bioinspired490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_calib3d490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_calib3d490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_ccalib490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_ccalib490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_core490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_core490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_datasets490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_datasets490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_dnn490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_dnn490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_dnn_objdetect490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_dnn_objdetect490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_dnn_superres490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_dnn_superres490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_dpm490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_dpm490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_face490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_face490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_features2d490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_features2d490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_flann490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_flann490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_fuzzy490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_fuzzy490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_gapi490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_gapi490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_hfs490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_hfs490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_highgui490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_highgui490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_imgcodecs490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_imgcodecs490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_imgproc490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_imgproc490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_img_hash490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_img_hash490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_intensity_transform490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_intensity_transform490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_line_descriptor490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_line_descriptor490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_mcc490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_mcc490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_ml490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_ml490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_objdetect490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_objdetect490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_optflow490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_optflow490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_phase_unwrapping490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_phase_unwrapping490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_photo490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_photo490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_plot490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_plot490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_quality490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_quality490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_rapid490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_rapid490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_reg490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_reg490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_rgbd490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_rgbd490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_saliency490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_saliency490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_shape490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_shape490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_signal490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_signal490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_stereo490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_stereo490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_stitching490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_stitching490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_structured_light490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_structured_light490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_superres490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_superres490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_surface_matching490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_surface_matching490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_text490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_text490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_tracking490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_tracking490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_video490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_video490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_videoio490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_videoio490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_videostab490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_videostab490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_wechat_qrcode490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_wechat_qrcode490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_xfeatures2d490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_xfeatures2d490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_ximgproc490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_ximgproc490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_xobjdetect490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_xobjdetect490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_xphoto490.lib;C:\lib\install\opencv\x64\vc17\staticlib\opencv_xphoto490d.lib;C:\lib\install\opencv\x64\vc17\staticlib\zlib.lib;C:\lib\install\opencv\x64\vc17\staticlib\zlibd.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/joardan/Desktop/realnpsc2/NPSC/build/RelWithDebInfo/run.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/joardan/Desktop/realnpsc2/NPSC/build/RelWithDebInfo/run.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\joardan\Desktop\realnpsc2\NPSC\src_cnn_experimental\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/joardan/Desktop/realnpsc2/NPSC/src_cnn_experimental/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/joardan/Desktop/realnpsc2/NPSC/src_cnn_experimental -BC:/Users/joardan/Desktop/realnpsc2/NPSC/build --check-stamp-file C:/Users/joardan/Desktop/realnpsc2/NPSC/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\WindowsPaths.cmake;C:\Users\joardan\Desktop\realnpsc2\NPSC\build\CMakeFiles\3.29.2\CMakeCCompiler.cmake;C:\Users\joardan\Desktop\realnpsc2\NPSC\build\CMakeFiles\3.29.2\CMakeCXXCompiler.cmake;C:\Users\joardan\Desktop\realnpsc2\NPSC\build\CMakeFiles\3.29.2\CMakeRCCompiler.cmake;C:\Users\joardan\Desktop\realnpsc2\NPSC\build\CMakeFiles\3.29.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\joardan\Desktop\realnpsc2\NPSC\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/joardan/Desktop/realnpsc2/NPSC/src_cnn_experimental/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/joardan/Desktop/realnpsc2/NPSC/src_cnn_experimental -BC:/Users/joardan/Desktop/realnpsc2/NPSC/build --check-stamp-file C:/Users/joardan/Desktop/realnpsc2/NPSC/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\WindowsPaths.cmake;C:\Users\joardan\Desktop\realnpsc2\NPSC\build\CMakeFiles\3.29.2\CMakeCCompiler.cmake;C:\Users\joardan\Desktop\realnpsc2\NPSC\build\CMakeFiles\3.29.2\CMakeCXXCompiler.cmake;C:\Users\joardan\Desktop\realnpsc2\NPSC\build\CMakeFiles\3.29.2\CMakeRCCompiler.cmake;C:\Users\joardan\Desktop\realnpsc2\NPSC\build\CMakeFiles\3.29.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\joardan\Desktop\realnpsc2\NPSC\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/joardan/Desktop/realnpsc2/NPSC/src_cnn_experimental/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/joardan/Desktop/realnpsc2/NPSC/src_cnn_experimental -BC:/Users/joardan/Desktop/realnpsc2/NPSC/build --check-stamp-file C:/Users/joardan/Desktop/realnpsc2/NPSC/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\WindowsPaths.cmake;C:\Users\joardan\Desktop\realnpsc2\NPSC\build\CMakeFiles\3.29.2\CMakeCCompiler.cmake;C:\Users\joardan\Desktop\realnpsc2\NPSC\build\CMakeFiles\3.29.2\CMakeCXXCompiler.cmake;C:\Users\joardan\Desktop\realnpsc2\NPSC\build\CMakeFiles\3.29.2\CMakeRCCompiler.cmake;C:\Users\joardan\Desktop\realnpsc2\NPSC\build\CMakeFiles\3.29.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\joardan\Desktop\realnpsc2\NPSC\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/joardan/Desktop/realnpsc2/NPSC/src_cnn_experimental/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/joardan/Desktop/realnpsc2/NPSC/src_cnn_experimental -BC:/Users/joardan/Desktop/realnpsc2/NPSC/build --check-stamp-file C:/Users/joardan/Desktop/realnpsc2/NPSC/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\WindowsPaths.cmake;C:\Users\joardan\Desktop\realnpsc2\NPSC\build\CMakeFiles\3.29.2\CMakeCCompiler.cmake;C:\Users\joardan\Desktop\realnpsc2\NPSC\build\CMakeFiles\3.29.2\CMakeCXXCompiler.cmake;C:\Users\joardan\Desktop\realnpsc2\NPSC\build\CMakeFiles\3.29.2\CMakeRCCompiler.cmake;C:\Users\joardan\Desktop\realnpsc2\NPSC\build\CMakeFiles\3.29.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\joardan\Desktop\realnpsc2\NPSC\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\joardan\Desktop\realnpsc2\NPSC\src_cnn_experimental\multi_numbers_processing.cpp" />
+    <ClCompile Include="C:\Users\joardan\Desktop\realnpsc2\NPSC\src_cnn_experimental\encoder.cpp" />
+    <ClCompile Include="C:\Users\joardan\Desktop\realnpsc2\NPSC\src_cnn_experimental\mnist2.cpp" />
+    <ClCompile Include="C:\Users\joardan\Desktop\realnpsc2\NPSC\src_cnn_experimental\conv_layer_unoptimised.cpp" />
+    <ClCompile Include="C:\Users\joardan\Desktop\realnpsc2\NPSC\src_cnn_experimental\conv_max_pool.cpp" />
+    <ClCompile Include="C:\Users\joardan\Desktop\realnpsc2\NPSC\src_cnn_experimental\conv_fc_layer.cpp" />
+    <ClCompile Include="C:\Users\joardan\Desktop\realnpsc2\NPSC\src_cnn_experimental\conv_function.cpp" />
+    <ClCompile Include="C:\Users\joardan\Desktop\realnpsc2\NPSC\src_cnn_experimental\conv_main_run.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\joardan\Desktop\realnpsc2\NPSC\build\ZERO_CHECK.vcxproj">
+      <Project>{E291E0B5-4E15-3924-9EEF-8AD988F3E190}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
